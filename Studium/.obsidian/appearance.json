@@ -1,4 +1,6 @@
 {
   "theme": "obsidian",
-  "cssTheme": "Catppuccin"
+  "cssTheme": "Catppuccin",
+  "interfaceFontFamily": "",
+  "textFontFamily": "Inter"
 }

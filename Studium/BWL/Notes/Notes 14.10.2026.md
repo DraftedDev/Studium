@@ -1,4 +1,3 @@
-
 ## Min-Max-Prinzip
 - Maximumprinizip: Mit gegebenen Mitteln das maximale Ergebnis erwirtschaften.
 - Minimumprinizip: Ergebnis mit geringsmöglichen Mitteln herbeiführen.
