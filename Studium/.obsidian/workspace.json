@@ -11,10 +11,14 @@
             "id": "24fd724f66432dca",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Mathe/Notes.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Notes"
             }
           }
         ]
@@ -179,7 +183,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 277.09375
+    "width": 277.09375,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,8 +201,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "24fd724f66432dca",
+  "active": "ad1498db2f8997a5",
   "lastOpenFiles": [
+    "Untitled Kanban.md",
     "Informatik/Notizen - 15.10.2026.md",
     "Informatik/Assets/Pasted image 20261015105051.png",
     "Informatik/Assets/Pasted image 20261015104800.png",
