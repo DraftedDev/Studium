@@ -15,13 +15,13 @@ Reelle Zahlen $\mathbb{R}=\{\mathbb{R}; \text{reelle Zahlen}\}$
 3. $\{\} \implies \varnothing\implies\text{Leere Menge}$
 
 4. $M\subset N$ - $M$ ist Teilmenge von $N$
-	- Bsp. $\{2;3\} \subset \{2;3;4\}$
+	- **Bsp.** $\{2;3\} \subset \{2;3;4\}$
 
 5. $M \cap N$ - $M$ und $N$
-	- Bsp. $\{2;3\} \cap \{2;4;5\} = \{2\}$
+	- **Bsp.** $\{2;3\} \cap \{2;4;5\} = \{2\}$
 
 6. $M \cup N$ - $M$ oder $N$
-	- Bsp. $\{2;3\} \cup \{2;4;5\} = \{2;3;4;5\}$
+	- **Bsp:** $\{2;3\} \cup \{2;4;5\} = \{2;3;4;5\}$
 
 7. $M \setminus N$ - $M$ ohne $N$
-	- Bsp. $\{2;3\} \setminus \{2;4;5\} = \{3\}$
+	- **Bsp:** $\{2;3\} \setminus \{2;4;5\} = \{3\}$
