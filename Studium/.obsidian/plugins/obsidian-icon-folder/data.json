@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiLayoutList",
       "LiFileStack",
       "LiCalculator",
       "LiPaintbrush",
-      "LiBinary",
-      "LiAperture"
+      "LiBinary"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -72,11 +72,18 @@
   },
   "Marketing/Assets": {
     "iconName": "LiFileStack",
-    "iconColor": "#404040"
+    "iconColor": "#949494"
   },
   "Informatik/Assets": {
     "iconName": "LiFileStack",
-    "iconColor": "#404040"
+    "iconColor": "#949494"
   },
-  "BWL/Assets": "LiFileStack"
+  "BWL/Assets": {
+    "iconName": "LiFileStack",
+    "iconColor": "#949494"
+  },
+  "Mathe/Content": "LiLayoutList",
+  "Marketing/Content": "LiLayoutList",
+  "Informatik/Content": "LiLayoutList",
+  "BWL/Content": "LiLayoutList"
 }
