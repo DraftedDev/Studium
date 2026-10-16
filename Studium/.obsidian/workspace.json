@@ -1,0 +1,219 @@
+{
+  "main": {
+    "id": "687ddf985b30acf5",
+    "type": "split",
+    "children": [
+      {
+        "id": "8556800df4b1514d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1ce53acdf3aff6f1",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5683a9273a640786",
+    "type": "split",
+    "children": [
+      {
+        "id": "a39bc639225b2c19",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ad1498db2f8997a5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "602a6a0782118fda",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "fa1a58b9e1150132",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7a3ad9e6d4410e2a",
+    "type": "split",
+    "children": [
+      {
+        "id": "0d8fb6bb605bfa9e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aa2722d172a61b56",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "0cbf09446c763a99",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "12a18ab9a55dbbab",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "97be768482fac4b8",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "edf15ac1af75c738",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-kanban:Create new board": false,
+      "omnisearch:Omnisearch": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "ad1498db2f8997a5",
+  "lastOpenFiles": [
+    "Informatik/Notizen - 15.10.2026.md",
+    "Informatik/Assets/Pasted image 20261015105051.png",
+    "Informatik/Assets/Pasted image 20261015104800.png",
+    "Informatik/Assets/Pasted image 20261015104358.png",
+    "Informatik/Assets/Pasted image 20261015104146.png",
+    "Pasted image 20261015104105.png",
+    "Informatik/Assets/Pasted image 20261015092602.png",
+    "Informatik/Assets/Pasted image 20261015092132.png",
+    "Informatik/Assets/Pasted image 20261015100805.png",
+    "Pasted image 20261015092625.png",
+    "Informatik/Assets/Pasted image 20261015091549.png",
+    "Informatik/Notizen - 08.10.2026.md",
+    "Marketing/Notizen - 14.10.2026.md",
+    "Marketing/Assets",
+    "BWL/Notizen 14.10.2026.md",
+    "Marketing",
+    "Informatik/Notes.md",
+    "Informatik/Assets",
+    "BWL/Assets",
+    "BWL/Notizen 18.08.2026.md",
+    "Bücher.md",
+    "BWL",
+    "Mathe/Notes.md",
+    "Informatik",
+    "BWL",
+    "Mathe",
+    "Welcome.md"
+  ]
+}
