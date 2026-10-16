@@ -6,8 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "LiAArrowDown",
-      "LiPaperclip"
+      "LiFileStack",
+      "LiCalculator",
+      "LiPaintbrush",
+      "LiBinary",
+      "LiAperture"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -31,5 +34,49 @@
     "debugMode": false,
     "useInternalPlugins": false
   },
-  "BWL/Notes": "LiAArrowDown"
+  "BWL/Notes": {
+    "iconName": "LiPaperclip",
+    "iconColor": "#808080"
+  },
+  "Marketing/Notes": {
+    "iconName": "LiPaperclip",
+    "iconColor": "#808080"
+  },
+  "Mathe/Notes": {
+    "iconName": "LiPaperclip",
+    "iconColor": "#808080"
+  },
+  "BWL": {
+    "iconName": "LiBriefcaseBusiness",
+    "iconColor": "#fcff5c"
+  },
+  "Informatik/Notes": {
+    "iconName": "LiPaperclip",
+    "iconColor": "#808080"
+  },
+  "Allgemein": {
+    "iconName": "LiAperture",
+    "iconColor": "#ffffff"
+  },
+  "Informatik": {
+    "iconName": "LiBinary",
+    "iconColor": "#5df483"
+  },
+  "Marketing": {
+    "iconName": "LiPaintbrush",
+    "iconColor": "#ea4d4d"
+  },
+  "Mathe": {
+    "iconName": "LiCalculator",
+    "iconColor": "#3d67ff"
+  },
+  "Marketing/Assets": {
+    "iconName": "LiFileStack",
+    "iconColor": "#404040"
+  },
+  "Informatik/Assets": {
+    "iconName": "LiFileStack",
+    "iconColor": "#404040"
+  },
+  "BWL/Assets": "LiFileStack"
 }
