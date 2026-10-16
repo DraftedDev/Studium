@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8556800df4b1514d",
+        "id": "7980cfb1795365a3",
         "type": "tabs",
         "children": [
           {
-            "id": "1ce53acdf3aff6f1",
+            "id": "24fd724f66432dca",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -163,13 +163,23 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "78998ea77df97dbc",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 277.09375
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -186,7 +196,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "ad1498db2f8997a5",
+  "active": "24fd724f66432dca",
   "lastOpenFiles": [
     "Informatik/Notizen - 15.10.2026.md",
     "Informatik/Assets/Pasted image 20261015105051.png",

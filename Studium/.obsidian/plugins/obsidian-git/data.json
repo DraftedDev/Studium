@@ -1,9 +1,9 @@
 {
   "commitMessage": "Vault Update: {{date}}",
-  "autoCommitMessage": "vault backup: {{date}}",
+  "autoCommitMessage": "Vault Update: {{date}}",
   "commitMessageScript": "",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
-  "autoSaveInterval": 5,
+  "autoSaveInterval": 10,
   "autoPushInterval": 0,
   "autoPullInterval": 0,
   "autoPullOnBoot": false,
