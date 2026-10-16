@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mathe/Content/Mengen & Operationen.md",
+                "file": "Mathe/Content/Basics/Potenzregeln.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mengen & Operationen"
+              "title": "Potenzregeln"
             }
           }
         ]
@@ -202,9 +202,11 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "307dc6c90fad7947",
+  "active": "ad1498db2f8997a5",
   "lastOpenFiles": [
-    "Mathe/Content/Mengen & Operationen.md",
+    "Mathe/Content/Basics",
+    "Mathe/Content/Basics/Mengen & Operationen.md",
+    "Mathe/Content/Basics/Potenzregeln.md",
     "Informatik/Notes/Notes.md",
     "Untitled.md",
     "Mathe/Untitled.base",

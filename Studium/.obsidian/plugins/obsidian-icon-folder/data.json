@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiAnvil",
+      "LiArchive",
       "LiLayoutList",
       "LiFileStack",
-      "LiCalculator",
-      "LiPaintbrush",
-      "LiBinary"
+      "LiCalculator"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -85,5 +85,6 @@
   "Mathe/Content": "LiLayoutList",
   "Marketing/Content": "LiLayoutList",
   "Informatik/Content": "LiLayoutList",
-  "BWL/Content": "LiLayoutList"
+  "BWL/Content": "LiLayoutList",
+  "Mathe/Content/Basics": "LiAnvil"
 }
