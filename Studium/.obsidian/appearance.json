@@ -2,5 +2,8 @@
   "theme": "obsidian",
   "cssTheme": "Catppuccin",
   "interfaceFontFamily": "",
-  "textFontFamily": "Inter"
+  "textFontFamily": "Inter",
+  "enabledCssSnippets": [
+    "latex"
+  ]
 }
