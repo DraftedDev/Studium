@@ -15,6 +15,11 @@ Für alle $n_{1}<n_{2}$ gilt: $a_{n_{1}} \leq a_{n_{2}}$
 ### (Streng) Monoton Fallend
 Für alle $n_{1} < n_{2}$ gilt: $a_{n_{1}} \geq a_{n_{2}}$
 **Steng:** Unaufhaltsam fallend ($a_{n_{1}} > a_{n_{2}}$)
+### Beispiele
+- $(a_{k})^\infty_{k=0} = -1, 0, -1, 5, 4, 0, 0, 0$ => Nicht Monoton
+- $(a_{k})^\infty_{k=0} = 0,1,2,3$ => Streng Monoton Wachsend
+- $(a_{k})^\infty_{k=0} = 5,3,2,1$ => Streng Monoton Fallend
+- $(a_{k})^\infty_{k=0} = 0,1,2,2,3,3$ => Monoton Wachsend
 # Konvergenz & Divergenz
 ## Konvergenz
 Eine Folge $(a_{k})^\infty_{k=0}$ ist konvergent gegen einen festen Grenzwert $a \in \mathbb{R}$, wenn gilt:
