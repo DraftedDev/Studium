@@ -183,8 +183,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 277.09375,
-    "collapsed": true
+    "width": 277.09375
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -202,7 +201,7 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "ad1498db2f8997a5",
+  "active": "8f056da18f1a22d4",
   "lastOpenFiles": [
     "Arbeitstechniken/Assets/Pasted image 20261017234548.png",
     "Arbeitstechniken/Untitled.md",

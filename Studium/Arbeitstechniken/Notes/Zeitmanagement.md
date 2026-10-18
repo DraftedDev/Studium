@@ -1,11 +1,11 @@
 # Ziele
-- Positiv Kreislauf: *Ziel -> gerichtete Aktion -> Erfolgserlebnis -> Freude & Stolz -> Ansporn -> Ziel*
-- Negativ Kreislauf: *Ziellosigkeit -> Planlosigkeit -> keine Erfolgserlebnisse -> Minderwertigkeitsgefühle -> Schaffenslähmung -> Ziellosigkeit*
-- Ziel Messbarkeit: *Wer? Was? Wie viel? Wo? Wann? Warum?*
+- Positiv Kreislauf: Ziel -> gerichtete Aktion -> Erfolgserlebnis -> Freude & Stolz -> Ansporn -> Ziel
+- Negativ Kreislauf: Ziellosigkeit -> Planlosigkeit -> keine Erfolgserlebnisse -> Minderwertigkeitsgefühle -> Schaffenslähmung -> Ziellosigkeit.
+- Ziel Messbarkeit: Wer? Was? Wie viel? Wo? Wann? Warum?
 - Ziel Machbarkeit: Herausfordernde Ziele, aber keine unerreichbaren.
-- *Tipp: Positive Zielformulierung & Ziele schriftlich festhalten*
-- *SMART* - Spezifisch (definiert); Messbar; Aktivierend (erstrebenswert); Realistisch; Terminierbar (fixer Zeitraum).
-- *Lebensziel -> Lebenszielplan -> Periodenzielplan -> Jahreszielplan -> Monatszielplan -> Tageszielplan*
+- Tipp: Positive Zielformulierung & Ziele schriftlich festhalten
+- SMART - Spezifisch (definiert); Messbar; Aktivierend (erstrebenswert); Realistisch; Terminierbar (fixer Zeitraum).
+- Lebensziel -> Lebenszielplan -> Periodenzielplan -> Jahreszielplan -> Monatszielplan -> Tageszielplan.
 - 80-20-Regel: 20% der Arbeitszeit bringt 80% der Ergebnisse.
 	- Konzentrieren auf entscheidende Dinge.
 - Effizient sein: "Die Dinge richtig tun".
@@ -80,4 +80,16 @@
 		- Ziele festlegen & welche Art von Ergebnis erreicht werden soll.
 		- Unterlagen rechtzeitig verteilen.
 		- Teilnehmer müssen sich vorbereiten.
-		- Moderator/Leiter & Protokollant 
+		- Moderator/Leiter & Protokollant sollten vorher festgelegt werden.
+		- Anfang und Ende einhalten.
+		- Fragen & Zwischenergebnisse visualisieren.
+		- Kurze Pausen bei langen Besprechungen.
+		- Protokolle kurz & knapp, idealerweise mit To-Do-Listen (Wer? Was? Wann?).
+		- Wer muss am Meeting wirklich teilnehmen? Wer ist direkt betroffen? Wer ist benötigt? Müssen alle Teilnehmer immer anwesend sein?
+		- Redezeit-Begrenzung, Feedback-Regeln, Regeln für Entscheidungsfindung, Pünktlichkeit.
+		- Nicht-konstruktive Punkte ausweichen.
+		- Ergebnisse zusammenfassen: To-Do-Liste; Folgebesprechung.
+		- Protokoll direkt mitschreiben und an alle verteilen.
+- Emails Bearbeiten: Ordner anlegen; Priorisierung von Emails; Emails im Block bearbeiten.
+- Emails Schreiben: Betreffzeile; Begrüßung und Gruß am Ende; Gleich zum Punkt; Auf Originalnachricht antworten; Kurze & knackige Antworten.
+- Studium-Emails: Ansprache ohne Prof. Dr. sondern nur Prof; Voller Name & Matrikelnummer in die Signatur (ggf. noch Semester & Studiengang); Korrekte Ansprache; Anhänge < 20 MB.
