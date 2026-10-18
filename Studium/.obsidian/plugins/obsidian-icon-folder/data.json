@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiAlbum",
       "LiPaperclip",
       "LiListTodo",
       "LiAnvil",
-      "LiArchive",
-      "LiLayoutList"
+      "LiArchive"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -43,7 +43,7 @@
   },
   "Informatik/Notes": "LiPaperclip",
   "Allgemein": {
-    "iconName": "LiArchive",
+    "iconName": "LiAlbum",
     "iconColor": "#ffffff"
   },
   "Informatik": {
@@ -52,7 +52,7 @@
   },
   "Marketing": {
     "iconName": "LiPaintbrush",
-    "iconColor": "#c4b5b5"
+    "iconColor": "#9f988e"
   },
   "Mathe": {
     "iconName": "LiCalculator",

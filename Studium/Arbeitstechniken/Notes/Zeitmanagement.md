@@ -1,3 +1,4 @@
+# Ziele
 - Positiv Kreislauf: *Ziel -> gerichtete Aktion -> Erfolgserlebnis -> Freude & Stolz -> Ansporn -> Ziel*
 - Negativ Kreislauf: *Ziellosigkeit -> Planlosigkeit -> keine Erfolgserlebnisse -> Minderwertigkeitsgefühle -> Schaffenslähmung -> Ziellosigkeit*
 - Ziel Messbarkeit: *Wer? Was? Wie viel? Wo? Wann? Warum?*
@@ -19,13 +20,64 @@
 	- Zuerst A-Aufgaben, aber jeden Tag an einer langfristigen B-Aufgabe.
 ![[Pasted image 20261017234548.png|415]]
 - Goldene Regel zu Aufgaben: Nein, wenn möglich. Ja, wenn nötig.
-- Druck oder Defizite: Arbeit, Familie & Freunde, Körper & Gesundheit, Psychische Augeglichenheit; Finanzen.
+- Druck oder Defizite: Arbeit, Familie & Freunde, Körper & Gesundheit, Psychische Ausgeglichenheit; Finanzen.
 - Balance finden: Lebensrollen -> Student; Team-Leiter; Sohn; Partner; etc.
 	- Ein Lebensziel für jede Rolle.
 	- Warum Ziele? Motivation?
 	- Burnout: dauerhafte "seelische Müdigkeit", Motivationslosigkeit.
 		- Regelmäßig Energie tanken.
 		- Auszeiten planen.
-
----
-
+# Planung
+- Keine Planung ohne Termin; Schriftlich; Notieren aller Aktivitäten, Aufgaben, Termine.
+- 60-40-Regel: 60% Zeit für Aufgaben. 40% für Verzögerung und Unerwartetes.
+- Identifizierung von "Zeitfressern".
+- Bündeln gleichartiger Aufgaben: Telefonate; Emails beantworten; Lernen; etc.
+- Störfreie Zeit planen.
+- Tagesplanung:
+	- Frühaufsteher sind meist Morgens produktiv.
+	- Abendmenschen sind meist Abends am produktivsten.
+	- Tagesplan (dauert meist 8-10 Minuten).
+	- Am Anfang oder am letzten Tag: Wochenplan.
+	- To-Do-Liste (Siehe A,B,C,D-Aufgaben).
+	- Liste von kleinen Aufgaben, bei Leerlauf erledigen.
+	- Neue Aufgaben zu neuer To-Do-Liste hinzufügen.
+- Vorteil Wochenplanung: Mehr Freiraum für Aufgabenverteilung; Mehr Platz für Pufferzeit; Flexibilität; Gut überschaubar.
+- "Kiesel-Prinzip": Kleine Steine: B-Aufgaben; Große Steine: A-Aufgaben.
+	- Zuerst Große Aufgaben Planen, dann kleine.
+- Für jede Lebensrolle eine B-Aufgabe, der jeden Tag 90 Minuten gewidmet wird.
+- Checkliste: Spart Zeit; Reduziert Fehlerrisiko; Optimierung von Prozessen.
+- Planungssysteme
+	- To-Do-Listen: 
+		- Gut für tägliche oder wöchentliche Aufgabenplanung.
+		- Schlecht für Termine, langfristige Planung.
+	- Kalender:
+		- Unerläßlich für Terminplanung.
+		- Meist kein Platz für Aufgaben.
+	- Einfacher Planer:
+		- Oft mit Kalender; To-Do-Listen; Blanko-Checklisten; etc.
+		- Gut für Tages- und Wochenplanung.
+	- Zeitplanbücher:
+		- Neben Kalender, meist diverse Planungshilfen, Jahres- und Monatsübersichten; Chechlisten & Extras.
+		- Meist teuer.
+	- Diverse Apps & Möglichkeiten.
+# Tagesgestaltung
+- Zeitfresser: Fehlende Ziele & Prioritäten; Versuch, alles auf einmal; Schwer Nein-Sagen; Fehlende Infos; Perfektionismus; Ablenkungen; Falsche Zeiteinschätzung.
+- Aufschieben: Unangenehme Aufgaben; Schwierige Aufgaben; Harte Entscheidungen.
+	- Warum aufschieben?
+	- Selbstdisziplin vor Lustprinzip.
+	- Aufgaben erledigen.
+	- Teilziele & Teilschritte planen -> Motivierend.
+	- Belohnung für Bewältigung unangenehmer Aufgaben.
+- Besprechungen:
+	- Besprechungen in Blöcke fassen.
+	- Vorher kurze Ziele, Fragen, etc. notieren.
+	- Klärung des Ziels der Besprechung.
+	- Wichtige Punkte notieren.
+	-  Am Ende Gespräch zusammenfassen.
+	- Planung von Zeiten ohne telefonische Erreichbarkeit.
+	- Meetings mit mehreren Leuten:
+		- Tagesordnungen planen.
+		- Ziele festlegen & welche Art von Ergebnis erreicht werden soll.
+		- Unterlagen rechtzeitig verteilen.
+		- Teilnehmer müssen sich vorbereiten.
+		- Moderator/Leiter & Protokollant 
