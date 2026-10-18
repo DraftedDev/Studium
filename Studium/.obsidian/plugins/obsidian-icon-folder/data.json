@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiPaperclip",
+      "LiListTodo",
       "LiAnvil",
       "LiArchive",
-      "LiLayoutList",
-      "LiFileStack",
-      "LiCalculator"
+      "LiLayoutList"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -34,28 +34,16 @@
     "debugMode": false,
     "useInternalPlugins": false
   },
-  "BWL/Notes": {
-    "iconName": "LiPaperclip",
-    "iconColor": "#808080"
-  },
-  "Marketing/Notes": {
-    "iconName": "LiPaperclip",
-    "iconColor": "#808080"
-  },
-  "Mathe/Notes": {
-    "iconName": "LiPaperclip",
-    "iconColor": "#808080"
-  },
+  "BWL/Notes": "LiPaperclip",
+  "Marketing/Notes": "LiPaperclip",
+  "Mathe/Notes": "LiPaperclip",
   "BWL": {
     "iconName": "LiBriefcaseBusiness",
     "iconColor": "#fcff5c"
   },
-  "Informatik/Notes": {
-    "iconName": "LiPaperclip",
-    "iconColor": "#808080"
-  },
+  "Informatik/Notes": "LiPaperclip",
   "Allgemein": {
-    "iconName": "LiAperture",
+    "iconName": "LiArchive",
     "iconColor": "#ffffff"
   },
   "Informatik": {
@@ -64,27 +52,26 @@
   },
   "Marketing": {
     "iconName": "LiPaintbrush",
-    "iconColor": "#ea4d4d"
+    "iconColor": "#c4b5b5"
   },
   "Mathe": {
     "iconName": "LiCalculator",
     "iconColor": "#3d67ff"
   },
-  "Marketing/Assets": {
-    "iconName": "LiFileStack",
-    "iconColor": "#949494"
-  },
-  "Informatik/Assets": {
-    "iconName": "LiFileStack",
-    "iconColor": "#949494"
-  },
-  "BWL/Assets": {
-    "iconName": "LiFileStack",
-    "iconColor": "#949494"
-  },
+  "Marketing/Assets": "LiFileStack",
+  "Informatik/Assets": "LiFileStack",
+  "BWL/Assets": "LiFileStack",
   "Mathe/Content": "LiLayoutList",
   "Marketing/Content": "LiLayoutList",
   "Informatik/Content": "LiLayoutList",
   "BWL/Content": "LiLayoutList",
-  "Mathe/Content/Basics": "LiAnvil"
+  "Mathe/Content/Basics": "LiAnvil",
+  "Arbeitstechniken": {
+    "iconName": "LiListTodo",
+    "iconColor": "#ff8a8a"
+  },
+  "Arbeitstechniken/Assets": "LiFileStack",
+  "Mathe/Assets": "LiFileStack",
+  "Arbeitstechniken/Notes": "LiPaperclip",
+  "Arbeitstechniken/Content": "LiLayoutList"
 }

@@ -1,0 +1,31 @@
+- Positiv Kreislauf: *Ziel -> gerichtete Aktion -> Erfolgserlebnis -> Freude & Stolz -> Ansporn -> Ziel*
+- Negativ Kreislauf: *Ziellosigkeit -> Planlosigkeit -> keine Erfolgserlebnisse -> Minderwertigkeitsgefühle -> Schaffenslähmung -> Ziellosigkeit*
+- Ziel Messbarkeit: *Wer? Was? Wie viel? Wo? Wann? Warum?*
+- Ziel Machbarkeit: Herausfordernde Ziele, aber keine unerreichbaren.
+- *Tipp: Positive Zielformulierung & Ziele schriftlich festhalten*
+- *SMART* - Spezifisch (definiert); Messbar; Aktivierend (erstrebenswert); Realistisch; Terminierbar (fixer Zeitraum).
+- *Lebensziel -> Lebenszielplan -> Periodenzielplan -> Jahreszielplan -> Monatszielplan -> Tageszielplan*
+- 80-20-Regel: 20% der Arbeitszeit bringt 80% der Ergebnisse.
+	- Konzentrieren auf entscheidende Dinge.
+- Effizient sein: "Die Dinge richtig tun".
+	- Gutes Ergebnis in geplanter Zeit.
+	- Optimierung der Arbeitsschritte.
+- Effektiv sein: "Die richtigen Dinge tun".
+	- Den direktesten Weg zum Ziel nehmen.
+	- Auf die Aufgabe konzentrieren, die die größten Erfolge bringen.
+- Eisenhower-Prinzip:
+	- A,B,C,(D)-Aufgaben.
+	- Wichtigkeit vor Dringlichkeit.
+	- Zuerst A-Aufgaben, aber jeden Tag an einer langfristigen B-Aufgabe.
+![[Pasted image 20261017234548.png|415]]
+- Goldene Regel zu Aufgaben: Nein, wenn möglich. Ja, wenn nötig.
+- Druck oder Defizite: Arbeit, Familie & Freunde, Körper & Gesundheit, Psychische Augeglichenheit; Finanzen.
+- Balance finden: Lebensrollen -> Student; Team-Leiter; Sohn; Partner; etc.
+	- Ein Lebensziel für jede Rolle.
+	- Warum Ziele? Motivation?
+	- Burnout: dauerhafte "seelische Müdigkeit", Motivationslosigkeit.
+		- Regelmäßig Energie tanken.
+		- Auszeiten planen.
+
+---
+
