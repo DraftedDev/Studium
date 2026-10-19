@@ -49,3 +49,54 @@ graph LR
 	- *Burnout:* dauerhafte "seelische Müdigkeit".
 	- Auszeiten planen & Energie tanken.
 # Zeitplanung
+- *Planung:* Immer mit Termin; Schriftlich; Notieren aller Aktivitäten, Aufgaben & Termine.
+- *60-40-Regel:* 60% Zeit für Aufgaben, 40% für Verzögerung und Unerwartetes.
+- Identifikation von *Zeitfressern*:
+	- Fehlende Ziele & Prioritäten.
+	- Alles auf einmal machen.
+	- Schwer Nein-Sagen.
+	- Fehlende Infos.
+	- Perfektionismus.
+	- Falsche Zeiteinschätzung.
+- *Bündeln* gleichartiger Aufgaben.
+- *Störfreie Zeit* planen.
+- *Tagesplanung:*
+	- Frühaufsteher/Abendmenschen sind meist Morgens/Abends produktiv.
+	- Tagesplan (dauert ~10 Minuten).
+	- To-Do-Liste, Liste kleiner Aufgaben bei Leerlauf erledigen.
+	- Neue Aufgaben zu neuer To-Do-Liste.
+- *Wochenplanung:* Mehr Freiraum für Aufgabenverteilung; Mehr Platz für Pufferzeit; Überschaubar.
+- *"Kiesel-Prinzip":* Zuerst große Aufgaben, dann kleine Aufgaben.
+- Für jede Lebensrolle eine *B-Aufgabe*, die jeden Tag *90 Minuten* gewidmet wird.
+- *Planungssysteme:*
+	- *To-Do-Listen:*
+		- Gut für tägliche oder wöchentliche Aufgabenplanung.
+		- Schlecht für Termine, langfristige Planung.
+	- *Kalender:*
+		- Unerläßlich für Terminplanung.
+		- Meist kein Platz für Aufgaben.
+	- *Zeitplaner:*
+		- Mit integriertem Kalender & To-Do-Liste.
+		- Möglicherweise teuer.
+# Tagesgestaltung
+- *Aufschieben* von Aufgaben:
+	- Warum aufschieben?
+	- Teilziele & Teilschritte planen.
+	- Belohnung für schwere Aufgaben.
+- *Besprechungen (1:1):*
+	- In Blöcke Fassen.
+	- Vorher kurze Ziele, Fragen, etc. notieren.
+	- Immer Notizen machen.
+	- Planung von Zeiten ohne telefonische Erreichbarkeit.
+- *Meetings (mehrere Personen):*
+	- *Tagesordnung* planen.
+	- Ziele festlegen & Ergebnis planen.
+	- Teilnehmer vorbereiten & vorbereiten lassen.
+	- *Moderator* für Redezeit & Feedback & *Protokollant* festlegen.
+	- Fragen & Zwischenergebnisse visualisieren.
+	- *Pause* bei langen Besprechungen.
+	- Protokoll kurz und knapp: Wer? Was? Wann?
+	- Wer muss wirklich am Meeting teilnehmen? Müssen alle immer anwesend sein?
+	- Ausweichen von *nicht-konstruktiven* Punkten.
+	- *Protokoll* an alle vergeben.
+- 
