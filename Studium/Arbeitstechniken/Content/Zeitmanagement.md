@@ -99,4 +99,4 @@ graph LR
 	- Wer muss wirklich am Meeting teilnehmen? Müssen alle immer anwesend sein?
 	- Ausweichen von *nicht-konstruktiven* Punkten.
 	- *Protokoll* an alle vergeben.
-- 
+- *Emails* nur mit Prof. und nicht Prof. Dr. & Anhänge < 20 MB.
