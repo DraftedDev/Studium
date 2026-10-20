@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "98479589209d13bb",
+        "id": "8fa8182624181980",
         "type": "tabs",
         "children": [
           {
-            "id": "1293cf38be7d9a28",
+            "id": "57d41cb18f24e176",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Arbeitstechniken/Content/Zeitmanagement.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Zeitmanagement"
+              "title": "New tab"
             }
           }
         ]
@@ -204,8 +200,11 @@
   },
   "active": "ad1498db2f8997a5",
   "lastOpenFiles": [
-    "Arbeitstechniken/Notes/Zeitmanagement.md",
+    "Einführung KI/Notes",
+    "Einführung KI/Untitled.md",
     "Arbeitstechniken/Content/Zeitmanagement.md",
+    "Einführung KI",
+    "Arbeitstechniken/Notes/Zeitmanagement.md",
     "Mathe/Content/Basics/Untitled.md",
     "Mathe/Tasks/Hausaufgabenblatt - Woche 4.md",
     "Mathe/Tasks",
@@ -229,7 +228,6 @@
     "Mathe 1/Content/Basics",
     "Mathe 1/Notes",
     "Mathe 1/Formelsammlung.pdf",
-    "Mathe 1/Content",
     "Mathe/Content/Folgen & Konvergenz.md",
     "Mathe/Content/Fakultäten & Binomische Sätze.md",
     "Mathe/Content/Basics/Ungleichungen & Beträge.md",
@@ -239,8 +237,6 @@
     "Mathe/Content/Basics/Sinus- & Cosinussatz.md",
     "Mathe/Content/Basics/Potenzregeln.md",
     "Mathe/Content/Basics/Mengen & Operationen.md",
-    "Untitled.md",
-    "Allgemein/Bücher.md",
     "Marketing/Assets/Pasted image 20261014101653.png",
     "Untitled.canvas",
     "Informatik/Assets/Pasted image 20261015105051.png",

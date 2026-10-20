@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiWashingMachine",
       "LiPenSquare",
       "LiActivity",
       "LiAlbum",
-      "LiPaperclip",
-      "LiListTodo"
+      "LiPaperclip"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -73,5 +73,10 @@
   "Arbeitstechniken/Assets": "LiFileStack",
   "Mathe/Assets": "LiFileStack",
   "Arbeitstechniken/Notes": "LiPaperclip",
-  "Arbeitstechniken/Content": "LiLayoutList"
+  "Arbeitstechniken/Content": "LiLayoutList",
+  "Einführung KI/Notes": "LiPaperclip",
+  "Einführung KI": {
+    "iconName": "LiWashingMachine",
+    "iconColor": "#7066ff"
+  }
 }
