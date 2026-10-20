@@ -11,10 +11,14 @@
             "id": "57d41cb18f24e176",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Einführung KI/Notes/Notes - 20.10.2026.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Notes - 20.10.2026"
             }
           }
         ]
@@ -198,11 +202,21 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "ad1498db2f8997a5",
+  "active": "57d41cb18f24e176",
   "lastOpenFiles": [
+    "Pasted image 20261020161334.png",
+    "Untitled.base",
+    "Einführung KI/Notes/Notes - 20.10.2026.md",
+    "Pasted image 20261020161219.png",
+    "Pasted image 20261020161038.png",
+    "Pasted image 20261020161011.png",
+    "Pasted image 20261020160734.png",
+    "Pasted image 20261020160722.png",
+    "Einführung KI/Assets",
+    "Einführung KI/Assets/Pasted image 20261020160449.png",
+    "Arbeitstechniken/Content/Zeitmanagement.md",
     "Einführung KI/Notes",
     "Einführung KI/Untitled.md",
-    "Arbeitstechniken/Content/Zeitmanagement.md",
     "Einführung KI",
     "Arbeitstechniken/Notes/Zeitmanagement.md",
     "Mathe/Content/Basics/Untitled.md",
@@ -225,9 +239,6 @@
     "Mathe 1/Content/Basics/Potenzregeln.md",
     "Mathe 1/Content/Basics/Mengen & Operationen.md",
     "Mathe 1/Notes/Notes.md",
-    "Mathe 1/Content/Basics",
-    "Mathe 1/Notes",
-    "Mathe 1/Formelsammlung.pdf",
     "Mathe/Content/Folgen & Konvergenz.md",
     "Mathe/Content/Fakultäten & Binomische Sätze.md",
     "Mathe/Content/Basics/Ungleichungen & Beträge.md",
@@ -236,16 +247,9 @@
     "~/s.md",
     "Mathe/Content/Basics/Sinus- & Cosinussatz.md",
     "Mathe/Content/Basics/Potenzregeln.md",
-    "Mathe/Content/Basics/Mengen & Operationen.md",
     "Marketing/Assets/Pasted image 20261014101653.png",
     "Untitled.canvas",
     "Informatik/Assets/Pasted image 20261015105051.png",
-    "Informatik/Assets/Pasted image 20261015104800.png",
-    "Informatik/Assets/Pasted image 20261015104358.png",
-    "Informatik/Assets/Pasted image 20261015104146.png",
-    "Pasted image 20261015104105.png",
-    "Informatik/Assets/Pasted image 20261015092602.png",
-    "Informatik/Assets/Pasted image 20261015092132.png",
-    "Informatik/Assets/Pasted image 20261015100805.png"
+    "Informatik/Assets/Pasted image 20261015104800.png"
   ]
 }
