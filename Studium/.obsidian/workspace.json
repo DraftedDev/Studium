@@ -11,10 +11,14 @@
             "id": "1293cf38be7d9a28",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Arbeitstechniken/Content/Zeitmanagement.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Zeitmanagement"
             }
           }
         ]
@@ -200,14 +204,14 @@
   },
   "active": "ad1498db2f8997a5",
   "lastOpenFiles": [
+    "Arbeitstechniken/Notes/Zeitmanagement.md",
+    "Arbeitstechniken/Content/Zeitmanagement.md",
     "Mathe/Content/Basics/Untitled.md",
     "Mathe/Tasks/Hausaufgabenblatt - Woche 4.md",
     "Mathe/Tasks",
     "Informatik/Notes/Notes - 08.10.2026.md",
     "Informatik/Notes/Notes - 15.10.2026.md",
     "Informatik/Notes/Notes.md",
-    "Arbeitstechniken/Content/Zeitmanagement.md",
-    "Arbeitstechniken/Notes/Zeitmanagement.md",
     "Arbeitstechniken/Assets/Pasted image 20261017234548.png",
     "Arbeitstechniken/Untitled.md",
     "Arbeitstechniken/Content",
