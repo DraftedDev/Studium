@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiPenSquare",
+      "LiActivity",
       "LiAlbum",
       "LiPaperclip",
-      "LiListTodo",
-      "LiAnvil",
-      "LiArchive"
+      "LiListTodo"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -73,5 +73,6 @@
   "Arbeitstechniken/Assets": "LiFileStack",
   "Mathe/Assets": "LiFileStack",
   "Arbeitstechniken/Notes": "LiPaperclip",
-  "Arbeitstechniken/Content": "LiLayoutList"
+  "Arbeitstechniken/Content": "LiLayoutList",
+  "Mathe/Tasks": "LiPenSquare"
 }
