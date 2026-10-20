@@ -73,6 +73,5 @@
   "Arbeitstechniken/Assets": "LiFileStack",
   "Mathe/Assets": "LiFileStack",
   "Arbeitstechniken/Notes": "LiPaperclip",
-  "Arbeitstechniken/Content": "LiLayoutList",
-  "Mathe/Tasks": "LiPenSquare"
+  "Arbeitstechniken/Content": "LiLayoutList"
 }
