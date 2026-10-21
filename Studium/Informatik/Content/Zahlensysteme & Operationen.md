@@ -95,3 +95,44 @@ $$
 - $\overline{\land}\text{ ("nand")} \to \lnot (a \land b)$
 - $\overline{\lor}\text{ ("nor")} \to \lnot (a \neq b)$
 - Insgesamt 16 logische Operationen.
+## Binäres Rechnen
+### Addition & Subtraktion
+- *Addition* von zwei Binärziffern:
+	- $0 + 0 = 0$
+	- $0 + 1 = 1$
+	- $1 + 0 = 1$
+	- $1 + 1 = 0; \text{ Übertrag } 1$
+- *Subtraktion* von zwei Binärziffern:
+	- $0 - 0 = 0$
+	- $0 - 1 = 1;\text{ Übertrag } -1$
+	- $1 - 0 = 1$
+	- $1 - 1 = 0$
+- Bis auf Übertrag, identisch zu XOR.
+- Lässt sich einfach auf Dualbrüche erweitern.
+## Multiplikation & Division
+- *Multiplikation* von zwei Binärziffern:
+	- $0\cdot 0=0$
+	- $0\cdot 1=0$
+	- $1\cdot 0=0$
+	- $1\cdot 1=1$
+- Identisch zu AND.
+- Mehrstellig: Wie im 10er-System:
+![[Pasted image 20261021160046.png]]
+## Schiebeoperationen
+- Erhöhung/Verringern des Exponenten in der Bruchdarstellung.
+	- $\text{SL }1010 = 10100$
+	- $\text{SR }1010 = 101; \text{ SR }1001 = 100,1$
+# Darstellung ganzer Zahlen
+### Negative Zahlen
+- Negative Zahlen haben Sign-Bit.
+- Problem: Es gibt $0$ und $-0$.
+#### Sign-Bit an erster Stelle
+- Problem: Wo ist die erste Stelle?
+- Lösung: Binärzahlen mit definierter Länge.
+	- Üblich: 64 (aktuell); 32; 16; 8.
+- Problem: Dualbrüche.
+- Problem: $5 = 000101; -5 = 100101 \implies 000101 + 100101 = 101010 = -10$
+#### Sign-Bit an letzter Stelle
+- Beispiel: $5_{dez} = 1010; -5_{dez} = 1011$.
+- Problem: $5 + (-5) = 1010 + 1011 = 10101 = -10$
+- Problem: Wo ist die letzte Stelle bei Dualbrüchen?
