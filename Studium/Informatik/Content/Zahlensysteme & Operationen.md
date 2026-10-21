@@ -57,3 +57,13 @@ Beispiel: $123,76 = 1\cdot 10^2 + 2\cdot 10^1 + 3\cdot 10^0 + 7\cdot 10^{-1} + 6
 $r = a_{n}2^n + a_{n-1} 2 ^{n-1} + \dots + a_{1} 2^1 + a_{0} 2^0 + a_{-1} 2^{-1} + \dots + a_{-m} 2^{-m}$
 
 Beispiel: $11,01_{bin} = 1\cdot 2^1 + 1\cdot 2^0 + 0\cdot 2^{-1} + 1\cdot 2^{-2} = 2 + 1 + 0 + 0,25 = 3,25_{dez}$
+
+## Dezimalzahl zu Dualbruch
+$$
+2 \cdot 0,6875 = 1,375 \quad R=1 \\
+2 \cdot 0,375 = 0,75 \quad R=0 \\
+2 \cdot 0,75 = 1,5 \quad R=1 \\
+2 \cdot 0,5 = 1 \quad R=1 \\ \\
+0,6875_{dez} = 0,1011_{bin}
+$$
+
