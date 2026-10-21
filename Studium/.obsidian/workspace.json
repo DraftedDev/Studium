@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Informatik/Content/Informatik & Modelle.md",
+                "file": "Informatik/Content/Zahlensysteme & Operationen.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Informatik & Modelle"
+              "title": "Zahlensysteme & Operationen"
             }
           }
         ]
@@ -33,12 +33,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Informatik/Notes/Notes - 08.10.2026.md",
+                "file": "Informatik/Notes/Notes - 15.10.2026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Notes - 08.10.2026"
+              "title": "Notes - 15.10.2026"
             }
           }
         ]
@@ -222,11 +222,13 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "1bbe71efa687fe2c",
+  "active": "ad1498db2f8997a5",
   "lastOpenFiles": [
-    "Marketing/Notes/Notes - 14.10.2026.md",
     "Informatik/Content/Informatik & Modelle.md",
+    "Informatik/Notes/Notes - 15.10.2026.md",
+    "Informatik/Content/Zahlensysteme & Operationen.md",
     "Informatik/Notes/Notes - 08.10.2026.md",
+    "Marketing/Notes/Notes - 14.10.2026.md",
     "BWL/Notes/Notes - 21.10.2026.md",
     "BWL/Assets/Pasted image 20261021084159.png",
     "Informatik/Content/Geschichte der Computer.md",
@@ -237,7 +239,6 @@
     "BWL/Assets/Pasted image 20261021085103.png",
     "Arbeitstechniken/Content/Zeitmanagement.md",
     "Informatik/Notes/Notes.md",
-    "Informatik/Notes/Notes - 15.10.2026.md",
     "BWL/Notes/Notes - 14.10.2026.md",
     "BWL/Assets/Pasted image 20261021081619.png",
     "BWL/Assets/Pasted image 20261021081656.png",
@@ -269,7 +270,6 @@
     "Mathe/Content/Folgen & Konvergenz.md",
     "Mathe/Content/Fakultäten & Binomische Sätze.md",
     "Mathe/Content/Basics/Ungleichungen & Beträge.md",
-    "().md",
     "Untitled.canvas"
   ]
 }

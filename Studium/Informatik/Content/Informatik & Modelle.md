@@ -103,4 +103,34 @@
 - Systemmodell (Modellierungssprache).
 - Aufgabenmodell.
 - Datenbankmodell: Rationales Datenmodell (Entity-Relationship-Modell).
-- 
+- Objektmodell; Komponentenmodell.
+- Prozessmodell.
+- Zustandsmodell; Ereignismodell; Verhaltensmodell.
+## Untersuchungsmodelle
+- Mathematisches Modell.
+- Analytisches Modell.
+- Simulationsmodell.
+## Mentale Modelle
+- Konzeptuelles Modell.
+- Modellwelt; Modellvorstellung.
+- *Modellklassen:* Schichtenmodell; Basismodell; Grundmodell.
+## Bildmodelle
+- Bild, Abbild: Monitorbild; Holographie.
+- *Teilschematische* Abbildung; Piktogramm; Computerkunst.
+- *Vollschematische* Abbildung: CAD Darstellung.
+## Darstellungsmodelle (Symbolisch)
+- *Diagramm:* Performance-Chart, Excel-Diagramme.
+- *Darstellungsgraph:* ER-Datenmodell; Suchbaum; Syntaxdiagramm.
+- *Flussdiagramm:*
+	- Physikotechnisches Flussdiagramm; Zustandsdiagramm; Struktogramm.
+	- Organogramm; Datenflussdiagramm; Petri-Netz.
+	- Soziodiagramm: Interaktionsdiagramm; Kollaberationsdiagramm.
+- *Schaltbild:*
+	- Vollständiges Schaltbild; logische Schaltgitterpläne.
+	- Blockschaltbild (z.B. Von-Neumann-Architektur).
+## Technische Modelle
+- *Mechanische Modelle:* Statische (z.B. Abakus); Dynamische (z.B. Rechenmaschine) Modelle.
+- *Elektrotechnische Modelle:* Elektromechanisch; Elektrotechnisch; Elektrochemisch.
+- *Psychotechnische Modelle:* Tele-Learning; Blended Learning.
+- *Soziotechnische Modelle:* Office-Modell; Mensch-Maschinen-Modell.
+- *Biotechnische Modelle*: DNA; Gedächtnischip.
