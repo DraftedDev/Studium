@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "655d4757014b808d",
+        "id": "65ba0996ccdc4773",
         "type": "tabs",
         "children": [
           {
-            "id": "f83cbdf833af3cc2",
+            "id": "1bbe71efa687fe2c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "id": "65ba0996ccdc4773",
+        "id": "ae4e061c0653ef06",
         "type": "tabs",
         "children": [
           {
-            "id": "1bbe71efa687fe2c",
+            "id": "f66d2561cf3c8986",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -222,18 +222,18 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "f83cbdf833af3cc2",
+  "active": "1bbe71efa687fe2c",
   "lastOpenFiles": [
-    "Informatik/Content/Geschichte der Computer.md",
+    "Informatik/Notes/Notes - 08.10.2026.md",
     "Informatik/Content/Informatik & Modelle.md",
     "BWL/Notes/Notes - 21.10.2026.md",
-    "Pasted image 20261021085619.png",
-    "Pasted image 20261021085256.png",
-    "Pasted image 20261021085206.png",
-    "Pasted image 20261021085148.png",
-    "Pasted image 20261021085103.png",
-    "Informatik/Notes/Notes - 08.10.2026.md",
-    "Pasted image 20261021084159.png",
+    "BWL/Assets/Pasted image 20261021084159.png",
+    "Informatik/Content/Geschichte der Computer.md",
+    "BWL/Assets/Pasted image 20261021085619.png",
+    "BWL/Assets/Pasted image 20261021085256.png",
+    "BWL/Assets/Pasted image 20261021085206.png",
+    "BWL/Assets/Pasted image 20261021085148.png",
+    "BWL/Assets/Pasted image 20261021085103.png",
     "Arbeitstechniken/Content/Zeitmanagement.md",
     "Informatik/Notes/Notes.md",
     "Informatik/Notes/Notes - 15.10.2026.md",
@@ -269,7 +269,6 @@
     "Mathe/Content/Fakultäten & Binomische Sätze.md",
     "Mathe/Content/Basics/Ungleichungen & Beträge.md",
     "().md",
-    "Mathe.md",
     "Untitled.canvas"
   ]
 }

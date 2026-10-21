@@ -40,4 +40,47 @@
 - Repräsentieren nur relevante Aspekte.
 ## Funktion des Modells
 - *Logisches Modell*
-	- O
+	- Original und Modell liegen als System von Zeichen vor.
+	- Nur der logische Inhalt ist von Interesse.
+- *Erkenntnistheoretisches Modell*
+	- Erkenntnisgewinn zu einem realen Original.
+	- Erfolgt durch Experimentieren, Simulieren, Prüfen & Analysieren.
+- *Technisches Modell*
+	- Modell & Original sind materiell-realer Natur.
+	- Durch möglichst vollständige Analogie wird Modell zum Ersatz für das Original.
+- *Maschinelles "natürliches" Modell*
+	- Modell ist ein Muster, das sich auf die Gestaltung des Originals auswirkt.
+## Klassifikation
+- *Mathematisch-logisch*
+- *Immateriell*
+- *Materiell*
+	- *Ikonisch*
+		- Statisch / Dynamisch.
+	- *Symbolisch*
+		- Statisch / Dynamisch.
+		- Diskret / Kontinuierlich.
+	- *Enakt*
+		- Simulierend.
+		- Registrierend.
+		- Regelnd.
+		- Autonom.
+## Darstellung
+- *Graphische Modelle*
+	- Meist zweidimensional.
+	- Aus dem Bereich des Wahrnehmens, Vorstellens und gedanklicher Operationen.
+	- *Ikonisch* = repräsentieren unmittelbar ihre Bedeutung.
+	- *Symbolisch* = Bedeutung / Code muss noch zugeordnet werden.
+- *Technische Modelle*
+	- Meist dreidimensional, raum-zeitlich und materiell-energetisch.
+	- Physiko-, bio-, psycho- und soziotechnische Modelle.
+- *Semantische Modelle*
+	- Kommunikationssysteme, die ein Subjekt zur informationellen Verarbeitung seiner Wirklichkeit verwendet.
+	- Unterscheidung zwischen internen Modellen (Perzeption, Denken).
+	- Externe Modelle (Zeichen, Zeichenkombinationen).
+## Perspektive (Informatiksysteme)
+- *Maschinenperspektive*
+	- Maschinen sind nur von Experten zu durchschauen (Rechner, EVA, elektronisches Fließband).
+- *Systemperspektive*
+	- Benutzer und Computer werden als gleichwertig hinsichtlich der Informationsverbeitung gesehen.
+- *Kommunikationsperspektive*
+	- 
