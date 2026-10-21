@@ -1,4 +1,4 @@
-# Ganze Zahlen
+# Natürliche Zahlen
 ## Dezimalsystem
 Eine natürliche Zahl $\geq 0$ wird als Summe von Potenzen zur Basis $B_{dez} = 10$ dargestellt:
 
@@ -122,17 +122,27 @@ $$
 - Erhöhung/Verringern des Exponenten in der Bruchdarstellung.
 	- $\text{SL }1010 = 10100$
 	- $\text{SR }1010 = 101; \text{ SR }1001 = 100,1$
-# Darstellung ganzer Zahlen
-### Negative Zahlen
+# Ganze Zahlen
+## Negative Zahlen
 - Negative Zahlen haben Sign-Bit.
 - Problem: Es gibt $0$ und $-0$.
-#### Sign-Bit an erster Stelle
+### Sign-Bit an erster Stelle
 - Problem: Wo ist die erste Stelle?
 - Lösung: Binärzahlen mit definierter Länge.
 	- Üblich: 64 (aktuell); 32; 16; 8.
 - Problem: Dualbrüche.
 - Problem: $5 = 000101; -5 = 100101 \implies 000101 + 100101 = 101010 = -10$
-#### Sign-Bit an letzter Stelle
+### Sign-Bit an letzter Stelle
 - Beispiel: $5_{dez} = 1010; -5_{dez} = 1011$.
 - Problem: $5 + (-5) = 1010 + 1011 = 10101 = -10$
 - Problem: Wo ist die letzte Stelle bei Dualbrüchen?
+## Komplementdarstellung
+- Binärzahl definierter Länge.
+- Erstes Bit gibt Vorzeichen an.
+- Negative Zahl => restliche Bits werden invertiert.
+- Beispiel: $5 = 000101; -5 = 11101010$
+	- Problem: $5 + (-5) = 111111 = -0$
+	- Problem: $3 + (-2) = 0$ aber $2 + (-3) = -1$
+## Zweierkomplement
+- Wie Komplement, aber nach dem Invertieren wird die Zahl um eins erhöht.
+- Beispiel: $5 = 000101; -5 = 111011$
