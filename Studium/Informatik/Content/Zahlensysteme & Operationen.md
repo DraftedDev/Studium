@@ -57,7 +57,6 @@ Beispiel: $123,76 = 1\cdot 10^2 + 2\cdot 10^1 + 3\cdot 10^0 + 7\cdot 10^{-1} + 6
 $r = a_{n}2^n + a_{n-1} 2 ^{n-1} + \dots + a_{1} 2^1 + a_{0} 2^0 + a_{-1} 2^{-1} + \dots + a_{-m} 2^{-m}$
 
 Beispiel: $11,01_{bin} = 1\cdot 2^1 + 1\cdot 2^0 + 0\cdot 2^{-1} + 1\cdot 2^{-2} = 2 + 1 + 0 + 0,25 = 3,25_{dez}$
-
 ## Dezimalzahl zu Dualbruch
 $$
 2 \cdot 0,6875 = 1,375 \quad R=1 \\
@@ -66,12 +65,33 @@ $$
 2 \cdot 0,5 = 1 \quad R=1 \\ \\
 0,6875_{dez} = 0,1011_{bin}
 $$
-
-
-
-
-
-
-
-
-
+## Periodische Brüche
+- Nicht alle Brüche lassen sich exakt darstellen.
+- Rationale Zahl $\frac{p}{q}\text{ mit } ggT(p, q) = 1$, d.h. $p$ und $q$ sind teilerfremd.
+- Wenn *alle* Primfaktoren von $q$ auch Primfaktoren der Basis sind => Exakte Darstellung möglich.
+- Basis 10 => Primfaktoren $2$ und $5$: $1/3$, d.h. $q = 3$.
+- Basis 2 => Primfaktoren $2$: $1/10$, d.h. $q = 10$ mit Primfaktoren $2$ und $5$.
+## Konsequenzen
+- Nicht jede rationale Zahl lässt sich auf einem IT-System exakt darstellen.
+- *Reelle* Zahlen sowieso nicht.
+- *Jeder Dualbruch* lässt sich als Dezimalbruch darstellen.
+- *Nicht jeder Dezimalbruch* lässt sich als Dualbruch darstellen.
+# Logische Operationen
+## Aussagenlogik
+- $\text{Wahr}=1;\text{ Falsch} = 0$
+- $\land \text{ ("und")}$
+	- $0 \land 0 = 0$
+	- $0 \land 1 = 0$
+	- $1 \land 0 = 0$
+	- $1 \land 1 = 1$
+- $\lor\text{ ("oder")}$
+	- $0 \lor 0 = 0$
+	- $0 \lor 1 = 1$
+	- $1 \lor 0 = 1$
+	- $1 \lor 1 = 1$
+- $\lnot\text{ ("not")}$
+	- $\lnot 0 = 1$
+	- $\lnot 1 = 0$
+- $\overline{\land}\text{ ("nand")} \to \lnot (a \land b)$
+- $\overline{\lor}\text{ ("nor")} \to \lnot (a \neq b)$
+- Insgesamt 16 logische Operationen.
