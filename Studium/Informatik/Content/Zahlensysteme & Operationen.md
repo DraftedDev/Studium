@@ -43,4 +43,8 @@ $$
 | *0110*   | 6         | 6        | 6       | *1110*   | 16        | E        | 14      |
 | *0111*   | 7         | 7        | 7       | *1111*   | 17        | F        | 15      |
 
-# 
+# Rationale Zahlen
+## Dezimalbrüche
+Natürliche Zahl $\geq 0: z = a_{n}10^n + a_{n-1}10^{n-1} + \dots + a_{1} 10^1 + a_{0} 10^0$
+Erweiterung um Exponenten $< 0$ ergibt Dezimalbrüche.
+$r = a_{n} 10^n + a_{n-1} 10^{n-1}$
