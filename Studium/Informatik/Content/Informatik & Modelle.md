@@ -49,6 +49,7 @@
 - Abbildung & Repräsentation natürlicher oder künstlicher Originale.
 - Modelle können wiederum andere Modelle darstellen.
 - Repräsentieren nur relevante Aspekte.
+- Merkmale: *Abbildungsmerkmal*; *Verkürzungsmerkmal*; *Pragmatisches Merkmal*.
 ## Funktion des Modells
 - *Logisches Modell*
 	- Original und Modell liegen als System von Zeichen vor.

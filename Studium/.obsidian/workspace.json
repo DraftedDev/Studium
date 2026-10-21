@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Informatik/Content/Zahlensysteme & Operationen.md",
+                "file": "Informatik/Content/Informatik & Modelle.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Zahlensysteme & Operationen"
+              "title": "Informatik & Modelle"
             }
           }
         ]
@@ -202,7 +202,7 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "1bbe71efa687fe2c",
+  "active": "ad1498db2f8997a5",
   "lastOpenFiles": [
     "Informatik/Content/Zahlensysteme & Operationen.md",
     "Informatik/Content/Informatik & Modelle.md",
