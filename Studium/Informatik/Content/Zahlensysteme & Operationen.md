@@ -162,7 +162,12 @@ $$
 - Schiebeoperationen nach links: Unproblematisch.
 ## Überlauf
 - Beispiel: $127 + 1 = 01111111 + 00000001 = 10000000 = -128$
+- *Ignorieren:*
 	- Normalverhalten in vielen CPUs.
 	- Explosion der Ariane 5.
 	- Verwendung sicherer Bibliotheken.
-- CPU bricht Verarbeitung aab
+- *CPU bricht Verarbeitung ab:*
+	- Für kritische Anwendungen, spezieller CPU notwendig.
+- *Spezialwert "Fehler":*
+	- Idealerweise bei $10000000$.
+	- Software muss Ergebnisse prüfen, um Fehlerort zu bestimmen.
