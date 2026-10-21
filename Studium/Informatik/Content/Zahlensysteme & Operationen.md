@@ -146,3 +146,23 @@ $$
 ## Zweierkomplement
 - Wie Komplement, aber nach dem Invertieren wird die Zahl um eins erhöht.
 - Beispiel: $5 = 000101; -5 = 111011$
+	- $5 + (-5) = 000101 + 111011 = 000000 = 0$
+	- $3 + (-2) = 000011 + 111110 = 000001 = 1$
+- Es gibt nur eine $0$.
+- Es gibt eine negative Zahl mehr als positive Zahlen:
+	- $01111111 = 127$
+	- $10000001 = -127$
+	- $10000000 = -128$
+### Rechnen im Zweierkomplement
+- Definition der Länge notwendig.
+	- Bit erhalten Nummerierung über Exponenten.
+- Addition & Subtraktion fast problemlos.
+- Multiplikation & Division wie vorher, Vorzeichenbehandlung nötig.
+- Schiebeoperationen nach rechts: Bits an erster Stelle muss erhalten bleiben.
+- Schiebeoperationen nach links: Unproblematisch.
+## Überlauf
+- Beispiel: $127 + 1 = 01111111 + 00000001 = 10000000 = -128$
+	- Normalverhalten in vielen CPUs.
+	- Explosion der Ariane 5.
+	- Verwendung sicherer Bibliotheken.
+- CPU bricht Verarbeitung aab
