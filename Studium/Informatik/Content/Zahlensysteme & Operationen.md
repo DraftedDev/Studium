@@ -47,4 +47,13 @@ $$
 ## Dezimalbrüche
 Natürliche Zahl $\geq 0: z = a_{n}10^n + a_{n-1}10^{n-1} + \dots + a_{1} 10^1 + a_{0} 10^0$
 Erweiterung um Exponenten $< 0$ ergibt Dezimalbrüche.
-$r = a_{n} 10^n + a_{n-1} 10^{n-1}$
+
+$r = a_{n} 10^n + a_{n-1} 10^{n-1} + \dots + a_{1} 10^1 + a_{0} 10^0 + 10_{-1} + 10^{-1} + \dots + a_{-m} 10^{-m}$
+$n = \text{Anzahl Vorkommastellen}$
+$m = \text{Anzahl Nachkommastellen}$
+
+Beispiel: $123,76 = 1\cdot 10^2 + 2\cdot 10^1 + 3\cdot 10^0 + 7\cdot 10^{-1} + 6\cdot 10^{-2}$
+## Dualbrüche
+$r = a_{n}2^n + a_{n-1} 2 ^{n-1} + \dots + a_{1} 2^1 + a_{0} 2^0 + a_{-1} 2^{-1} + \dots + a_{-m} 2^{-m}$
+
+Beispiel: $11,01_{bin} = 1\cdot 2^1 + 1\cdot 2^0 + 0\cdot 2^{-1} + 1\cdot 2^{-2} = 2 + 1 + 0 + 0,25 = 3,25_{dez}$
