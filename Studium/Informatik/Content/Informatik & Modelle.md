@@ -34,6 +34,17 @@
 	- Entschlüsselung Erbgut, DNA-Analyse.
 - *Wirtschaftsinformatik*
 	- Planung, Entwicklung, Betrieb von Informationsverarbeitungssystemen für Geschäftsprozesse.
+## Perspektive (Informatiksysteme)
+- *Maschinenperspektive*
+	- Maschinen sind nur von Experten zu durchschauen (Rechner, EVA, elektronisches Fließband).
+- *Systemperspektive*
+	- Benutzer und Computer werden als gleichwertig hinsichtlich der Informationsverbeitung gesehen.
+- *Kommunikationsperspektive*
+	- Benutzer und Computer werden als gleichberechtigte Sender und Empfänger angesehen (Dialogpartner, Hilfedialog).
+- *Werkstattperspektive*
+	- Gibt den Benutzern einen Expertenstatus (Werkzeug, Editor, Compiler, Debugger, Programmierumgebung).
+- *Medienperspektive*
+	- Computer ist lediglich ein Mittel für Koordinations- und Organisationsaufgaben (Email, Wiki).
 # Modelle
 - Abbildung & Repräsentation natürlicher oder künstlicher Originale.
 - Modelle können wiederum andere Modelle darstellen.
@@ -77,10 +88,19 @@
 	- Kommunikationssysteme, die ein Subjekt zur informationellen Verarbeitung seiner Wirklichkeit verwendet.
 	- Unterscheidung zwischen internen Modellen (Perzeption, Denken).
 	- Externe Modelle (Zeichen, Zeichenkombinationen).
-## Perspektive (Informatiksysteme)
-- *Maschinenperspektive*
-	- Maschinen sind nur von Experten zu durchschauen (Rechner, EVA, elektronisches Fließband).
-- *Systemperspektive*
-	- Benutzer und Computer werden als gleichwertig hinsichtlich der Informationsverbeitung gesehen.
-- *Kommunikationsperspektive*
-	- 
+## Architekturmodelle
+- *Theoretisches* Maschinenmodell:
+	- Rechnerarchitekturen (SISD, SIMD, MIMD).
+	- Turingmaschine; Automatenmodelle.
+- *Rechenmodell:*
+	- Imperativ/prozedural; Funktional/applikativ; Logisch/deklarativ; Objektorientiert.
+- *Programmiermodell:*
+	- Kommunikationsmodell; Kooperationsmodell.
+- *Referenzmodell:*
+	- OSI-Referenzmodell; Client/Server-Modell; Farbmodell.
+- *Zeitmodell.*
+## Entwurfsmodelle
+- Systemmodell (Modellierungssprache).
+- Aufgabenmodell.
+- Datenbankmodell: Rationales Datenmodell (Entity-Relationship-Modell).
+- 
