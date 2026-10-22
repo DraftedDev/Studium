@@ -53,3 +53,26 @@ Angemessene Codierung:
 - Möglichst wenig Zeichen.
 - Unempfindlich gegenüber Störungen.
 - Leicht zu verarbeiten.
+## Wortlänge & Redundanz
+![[Pasted image 20261022090919.png|446]]
+## BCD-Codierung
+- "Binary Coded Decimal".
+- Die neun Ziffern werden in vier Bit umgewandelt.
+- I/O einfacher, weniger Fehler -> finanzmathematische Anwendungen.
+- Abwandlung: Stibitz-Code: BCD+3, Neunerkomplement durch invertieren.
+![[Pasted image 20261022091138.png|319]]
+Die Bitsequenzen 1010, 1011, 1100, 1101, 1110, 1111 werden nicht vergeben.
+Beispiel BCD: $1097_{dez} = 0001000010010111_{bcd} = 1097_{hex}$
+## ASCII
+![[Pasted image 20261022091243.png|561]]
+## Unicode
+- Ziel: Darstellung aller relevanten Zeichen (inkl. ASCII).
+- Wortlänge:
+	- Version 1.0: ~7.100 Zeichen -> 16 Bit reichen.
+	- Version 15.1: ~150.000 Zeichen -> Mehr als 16 Bit.
+- Zweistufiger Code:
+	- Jedes Zeichen erhält einen "Code Point", z.B. $A=65_{dez}; Ä=196_{dez}; ∈=8712_{dez}$
+	- Code point wird gemäß einer eigenen Codierung in Bits/Bytes dargestellt.
+	- UTF-8 (L=1-6, 4 genutzt), UTF-16 (L=1-2), UTF-32 (Wortlänge L=1), Punycode (für DNS-Namen, ASCII), ...
+- Unicode codiert abstrakte Zeichen, nicht deren Darstellung ("Glyphen").
+	- $Ä=A+^{..}$, aber $Ä=C4_{hex}, A=41_{hex}, ^{..}=308_{hex}$
