@@ -171,3 +171,5 @@ $$
 - *Spezialwert "Fehler":*
 	- Idealerweise bei $10000000$.
 	- Software muss Ergebnisse prüfen, um Fehlerort zu bestimmen.
+# Darstellung von Dualbrüchen
+$r = (a_{n} 2^0 + a_{n-1} 2^{-1} + \dots + a_{1} 2^{n+1} + a_{1} 2)\cdot 2^n$

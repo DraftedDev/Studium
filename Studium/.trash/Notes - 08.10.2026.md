@@ -28,9 +28,6 @@ John von Neumann: Entwicklung 1940er Grundlagen für Rechenlagen.
 	- Verbindungssystem
 - Programm ist eine Kette logischer Binärentscheidungen (seriell)
 - Programm abgelegt im gleichen Speicher wie Daten
-
-![[Pasted image 20261008085727.png]]
-
 ## Mooresches Gesetz
 - Nach Gordon Moore (Mitgründer von Intel)
 - Etwa alle 18 Monate verdoppelt sich die Anzahl der Transitoren eines Mikroprozessors
