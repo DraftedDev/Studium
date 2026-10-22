@@ -89,4 +89,37 @@ Beispiel BCD: $1097_{dez} = 0001000010010111_{bcd} = 1097_{hex}$
 	- Codiert bis zu $2^{31}$ Zeichen.
 - Mittlere Wortlänge bei westlichen Texten gering.
 - Beispiele: *siehe Beispiele Folie (Fehler eingeschlichen)*
-- 
+![[Pasted image 20261022100639.png|454]]
+**[UTF-8 is a Brilliant Design](https://iamvishnu.com/posts/utf8-is-brilliant-design)** studieren!!!
+## Diskretisierung
+### Problem
+- Reale Welt kennt keine Nachricht im Sinne der Informatik.
+- Mittels Sensoren können kontinuierliche, biologische Nachrichten erfassen.
+	- Kontinuierlich = Zeichenfolge beliebiger Dichte -> Nachricht ist reelle Funktion.
+	- Meist stetige Funktion, bzw. beschränkte Änderung.
+- Muss in eine diskrete, d.h. abzählbare Form überführt werden.
+- -> Form der Modellbildung
+### Abtastung
+- Sensorwerte werden zu bestimmten Stellen erfasst.
+	- Stelle meist Zeitpunkt.
+- Abtasttheorem von Shannon/Nyquist-Bedingung.
+	- Wenn $\text{Abtastrate}>2\cdot\text{Grundfrequenz}$, dann lassen sich die Sensordaten exakt rekonstruieren.
+![[Pasted image 20261022101250.png|506]]
+### Quantisierung
+- Sensorwerte sind ebenfalls reell, d.h. kontinuierlich.
+- Umwandlung in diskrete Nachrichten führt zu Fehlern.
+- In Rückwandlung ist dies als "Rauschen" erlebbar.
+- Audio/Video: AD-Wandler mit 10,12 oder 16 Bit, jedes zusätzliche Bit verringert Rauschen um die Hälfte (d.h. ca. 6 dB).
+- Technische Anwendungen meist 8 Bit.
+### Komprimierung
+- Ziel: Minimierung der mittleren Wortlänge.
+	- D.h. Minimierung Redundanz.
+	- Eindeutiges Decodieren.
+	- Meist: Aufwand Decodierung $\ll$ Aufwand Kodierung.
+- Variable Wortlänge -> Huffman Algorithmus.
+- Beispiele:
+	- Lauflängen-Codierung (Run-Length-Coding), z.B. Windows-Bitmap.
+	- Differenz-Codierung, z.B. diskretisierte Audio-Signale.
+	- LZW-Codierung, via Zeichenhäufigkeit im konkreten Dokument.
+	- Via Fourier-Transformation (JPEG, MP3).
+## Codesicherung
