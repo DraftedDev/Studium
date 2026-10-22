@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiLayoutList",
       "LiFileStack",
       "LiWashingMachine",
       "LiPenSquare",
-      "LiActivity",
-      "LiAlbum"
+      "LiActivity"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -79,5 +79,6 @@
     "iconName": "LiWashingMachine",
     "iconColor": "#7066ff"
   },
-  "Einführung KI/Assets": "LiFileStack"
+  "Einführung KI/Assets": "LiFileStack",
+  "Einführung KI/Content": "LiLayoutList"
 }

@@ -4,21 +4,41 @@
     "type": "split",
     "children": [
       {
-        "id": "6ec3503e1a4a5abd",
+        "id": "d44fb377120c7741",
         "type": "tabs",
         "children": [
           {
-            "id": "f6c9f048fca0a887",
+            "id": "e76085077f14cef0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Informatik/Notes/Notes - 22.10.2026.md",
+                "file": "Einführung KI/Content/Einführung zum Lernen.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Notes - 22.10.2026"
+              "title": "Einführung zum Lernen"
+            }
+          }
+        ]
+      },
+      {
+        "id": "93539aaa70a6ebb0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cb994e1b2dacd1db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Einführung KI/Notes/Notes - 20.10.2026.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Notes - 20.10.2026"
             }
           }
         ]
@@ -202,10 +222,16 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "f6c9f048fca0a887",
+  "active": "e76085077f14cef0",
   "lastOpenFiles": [
-    "Informatik/Assets/Pasted image 20261022104624.png",
+    "BWL/Notes/Notes - 21.10.2026.md",
+    "Marketing/Notes/Notes - 14.10.2026.md",
+    "Marketing/Notes/Notes - 21.10.2026.md",
+    "Einführung KI/Content/Einführung zum Lernen.md",
+    "Einführung KI/Notes/Notes - 20.10.2026.md",
+    "Einführung KI/Content",
     "Informatik/Notes/Notes - 22.10.2026.md",
+    "Informatik/Assets/Pasted image 20261022104624.png",
     "Informatik/Assets/Pasted image 20261022101250.png",
     "Pasted image 20261022101248.png",
     "Pasted image 20261022100645.png",
@@ -220,13 +246,9 @@
     "Informatik/Notes/Notes - 08.10.2026.md",
     "Informatik/Content/Geschichte der Computer.md",
     "Informatik/Notes/Notes - 15.10.2026.md",
-    "Marketing/Notes/Notes - 21.10.2026.md",
-    "Marketing/Notes/Notes - 14.10.2026.md",
-    "BWL/Notes/Notes - 21.10.2026.md",
     "Arbeitstechniken/Content/Zeitmanagement.md",
     "Informatik/Notes/Notes.md",
     "BWL/Notes/Notes - 14.10.2026.md",
-    "Einführung KI/Notes/Notes - 20.10.2026.md",
     "Untitled.base",
     "Einführung KI/Assets",
     "Einführung KI/Notes",
@@ -242,7 +264,6 @@
     "Mathe/Assets",
     "Mathe 1/Content/Fakultäten & Binomische Sätze.md",
     "Arbeitstechniken/Assets",
-    "Arbeitstechniken",
     "Mathe 1/Content/Folgen & Konvergenz.md",
     "Mathe 1/Content/Basics/Ungleichungen & Beträge.md",
     "Mathe 1/Content/Basics/Sinus- & Cosinussatz.md",
