@@ -123,3 +123,54 @@ Beispiel BCD: $1097_{dez} = 0001000010010111_{bcd} = 1097_{hex}$
 	- LZW-Codierung, via Zeichenhäufigkeit im konkreten Dokument.
 	- Via Fourier-Transformation (JPEG, MP3).
 ## Codesicherung
+- Codierung mit expliziter Redundanz.
+- Meist: Code zweier Zeichen sollen sich durch möglichst viele Bits unterscheiden.
+- Auch: Zwei aufeinanderfolgende Zeichen sollen sich in möglichst wenig Bits unterscheiden.
+### Hamming Distanz
+- Hamming: Distanz h: minimale paarweise Bit Distanz.
+	- h = 0: Nachrichten sind gleich ⊥
+	- h = 1: keine sichernde Redundanz
+	- h = 2: ein fehlerhaftes Bit kann erkannt werden
+	- h = 3: ein fehlerhaftes Bit kann korrigiert werden, zwei fehlerhafte Bit werden erkannt
+	- Allgemein: h-1 fehlerhafte Bits werden erkannt, (h-1)/2 fehlerhafte Bits können korrigiert werden
+- Spezialfall: Parität
+	- 7 Bit Daten, achtes Bit sorgt dafür, dass die Anzahl der 1er-Bits gerade / ungerade ist.
+	- Grund für 7 Bit bei ASCII.
+### Gray-Codes
+- Einschrittige Codes, d.h. Änderung von einem Bit führt zu benachbarten Code.
+- Verringert Fehlerauswirkung, gerade bei DA/AD-Wandlern.
+![[Pasted image 20261022104624.png|228]]
+### CRC-Codes
+- Problem: Häufig sind viele Bits hintereinander fehlerhaft.
+- Lösung 1: Bits der gesendeten Nachricht werden vor Kommunikation permutiert.
+	- Wahrscheinlichkeit sinkt.
+- Lösung 2: Zusätzliche Prüfsumme PR(N) der Nachricht N.
+	- Grob: $N_{neu}=N++PR(N)$
+	- Ggf. auch Prüfsummen alle n Bits.
+- Grundlage: Primpolynome.
+- Beispiele:
+	- CRC8, CRC16, CRC32...
+	- Bestimmte "Hash-Funktionen", wie SHA1, SHA256.
+### Verschlüsselung
+- Ziel: Jede Teilmenge der codierten Nachricht hat die gleiche Vorkommenswahrscheinlichkeit.
+	- D.h. u.a. minimale Entropie.
+	- Nicht vollständig lösbar.
+- Es gibt eine Umkehrcodierung.
+- Codierungs- und Decodierungsalgorithmus werden mittels separater Nachrichten gesteuert.
+	- "Schlüsse".
+#### Anforderungen
+- Vertraulichkeit: Einem Unbefugten soll es nicht möglich sein, ausgetauschte Nachrichten zu entschlüsseln und mitzulesen.
+- Integrität: Einem Unbefugten soll es nicht möglich sein, abgefangene Nachrichten zu verändern.
+- Authentizität: Sender und Empfänger wollen die Gewissheit über die Identität des Kommunikationspartners haben.
+- Schlüsselverwaltung: Die Art und Weise wie Schlüssel erzeugt, verwahrt, weitergegeben und wieder gelöscht werden, muss sicher sein.
+# Fazit
+- Nachrichten / Daten sind das zentrale Element der Informatik.
+- Information ist ein vager Begriff, der mit Informationsgehalt, Entropie nur teilweise beschrieben werden kann.
+- Eine Codierung ist eine spezielle Form von Nachrichtenmengen.
+- Binäre Alphabete sind von speziellem Interesse, wenn es um Verarbeitung durch Computer geht.
+- Neben anderen Codes lohnt sich das Studium von UTF-8.
+- Codierung soll möglichst „klein“ sein, wenig fehleranfällig und leicht verarbeitbar.
+- Analoge Signal müssen zu Computerverarbeitung in binäre Codierungen diskretisiert („digitalisiert“) werden.
+- Bei der Diskretisierung gibt es Fehler durch Abtastung und Quantisierung.
+- Codesicherung hilft, diese Fehler zu erkennen bzw. Auswirkungen zu verringern.
+- Verschlüsselung ist Codierung, um Vertraulichkeit, Integrität und Authentizität von Nachrichten herzustellen.
