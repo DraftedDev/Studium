@@ -76,3 +76,17 @@ Beispiel BCD: $1097_{dez} = 0001000010010111_{bcd} = 1097_{hex}$
 	- UTF-8 (L=1-6, 4 genutzt), UTF-16 (L=1-2), UTF-32 (Wortlänge L=1), Punycode (für DNS-Namen, ASCII), ...
 - Unicode codiert abstrakte Zeichen, nicht deren Darstellung ("Glyphen").
 	- $Ä=A+^{..}$, aber $Ä=C4_{hex}, A=41_{hex}, ^{..}=308_{hex}$
+## UTF-8
+- Codiert Code points mittels Byte-Sequenz:
+	- 0-127: Ein Byte, sieben Bit (Bit 7 = `0xxxxxxx`).
+	- 128-2047: Zwei Byte, fünf+sechs Bit (`110xxxxxx 10xxxxxx`).
+	- 2048-65535: Drei Byte, vier+sechs+sechs Bit (`1110xxxx 10xxxxxx 10xxxxxx`).
+	- 65536-2097151: Vier Byte, drei+sechs+sechs+sechs Bit Bit (`11110xxx 10xxxxxx 10xxxxxx 10xxxxxx`).
+- Eigenschaften:
+	- Selbstsynchronisierend: ersten beiden Bits ansehen reicht (`0x = ASCII, 11 = Start+Anzahl, 10 = Rest`).
+	- Fehlerkontrolle durch Anzahl-Bits nach 11.
+	- Vergleich zweier codierter Code Points einfach zu realisieren.
+	- Codiert bis zu $2^{31}$ Zeichen.
+- Mittlere Wortlänge bei westlichen Texten gering.
+- Beispiele: *siehe Beispiele Folie (Fehler eingeschlichen)*
+- 
