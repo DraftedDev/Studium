@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiPenBox",
       "LiPaperclip",
       "LiLayoutList",
       "LiFileStack",
-      "LiWashingMachine",
-      "LiPenSquare"
+      "LiWashingMachine"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -86,5 +86,6 @@
     "iconColor": "#850000"
   },
   "Projektmanagement/Assets": "LiFileStack",
-  "Projektmanagement/Notes": "LiPaperclip"
+  "Projektmanagement/Notes": "LiPaperclip",
+  "Projektmanagement/Tasks": "LiPenBox"
 }
