@@ -172,4 +172,44 @@ $$
 	- Idealerweise bei $10000000$.
 	- Software muss Ergebnisse prüfen, um Fehlerort zu bestimmen.
 # Darstellung von Dualbrüchen
-$r = (a_{n} 2^0 + a_{n-1} 2^{-1} + \dots + a_{1} 2^{n+1} + a_{1} 2)\cdot 2^n$
+$r = (a_{n} 2^0 + a_{n-1} 2^{-1} + \dots + a_{1} 2^{n+1} + a_{0} 2^{-n} + a_{-1} 2^{n-1} + \dots + a_{-m} 2^{-n-m})\cdot 2^n$
+- Probleme: Ableger im Speicher.
+	- $n = \text{Anzahl der Vorkommastellen}$
+	- $m = \text{Anzahl der Nachkommastellen}$
+- Definierte Länge: $n + m$ muss konstant sein.
+## Halblogarithmische Darstellung
+- Beispiel: $\text{Lichtgeschwindigkeit} = 299792458 \frac{m}{s} = 299792,458 \frac{km}{s}$
+	- $2,99792458\cdot 105 \frac{km}{s} = 2,99792458\cdot 108 \frac{m}{s} = 2,99792458\cdot 1010 \frac{cm}{s}$
+	- Genau eine Vorkommastelle, Rest Nachkomma, Skalierung über Exponenten.
+- Rundungsfehler bleiben relativ klein, können aber absolut groß werden.
+## Binäre Gleitkommazahlen
+- Auch: *Floating Point Number*; *Gleitpunktzahlen*.
+- Nach *IEEE754* genormt.
+- $r = (-1)^v\cdot 1,m\cdot 2^e$
+- Dabei ist $v$ das Vorzeichenbit; $1,m$ die binäre *Mantisse* und $e$ der Exponent.
+- $v = 0 \implies (-1)^v = 1; v = 0 \implies (-1)^v = -1$
+- $m$ ist Bitsequenz definierter Länge, interpretiert als Nachkommastellen.
+- $e$ wird als positive Zahl $c$ ("Charakteristik") gespeichert, mit $e = c - B$.
+	- $B$ ist ein konstanter Wert für die Verschiebung (*Bias*).
+	- $c$ ist Bitsequenz definierter Länge.
+- $m$ und $c$ besitzen definierter Länge (genannt $\#m$ und $\#c$).
+- Der Rest sind Konstanten: $(-1), 2, B$.
+- Nullwert bei $c = 0$ und $m = 0$ => $+0$ und $-0$.
+- Wenn $c = 0$, aber $m > 0$, gibt es alternative Darstellungen:
+	- "denormalisierte Gleitkommazahlen" => "Unterlauf".
+- Wenn $c = 2^B-1$:
+	- $m = 0; r = \pm \infty$
+	- $m > 0; r = NaN$
+![[Pasted image 20261015105051.png|445]]
+## Rechnen mit Gleitkommazahlen
+- **Addition und Subtraktion**
+	- Zuerst Charakteristik angleichen, durch Schiebeoperation; Dabei können Stellen verloren gehen.
+	- Mantissen addieren bzw. subtrahieren.
+- **Multiplikation**
+	- Exponenten addieren.
+	- Mantissen multiplizieren.
+- **Division**
+	- Exponent ergibt sich aus Differenz der Exponenten von Dividend und Divisor.
+	- Mantissen dividieren.
+- Nach jeder Operation muss Mantisse evtl. normalisiert und das Ergebnis auf Überlauf/Unterlauf geprüft werden.
+- *Assoziativ-* und *Distributivgesetze* gelten nicht uneingeschränkt.
