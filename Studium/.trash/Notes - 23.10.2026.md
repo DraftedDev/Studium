@@ -9,5 +9,6 @@ Das Lieferobjekt ist eine Sache, die während des Projekts erstellt wird (Projek
 Die Projektstruktur gibt die Ablauf- und/oder Aufbaustruktur eines Projektes hinsichtlich der zu erledigenden Aufgaben wieder. Dabei können Aufgaben hierarchisch und/oder phasenorientiert in Phasen, Teilprojekte und Arbeitspakete unterteilt werden.
 ## Projektstrukturplan
 Der Projektstrukturplan dokumentiert die Projektstruktur. Er ist meist als Baumstruktur oder Liste dargestellt und enthält als unterste Ebene die Arbeitspakete.
-- Teilprojekt: Gliedert die Gesamtaufgaben eines Projekts in eindeutige abgrenzbare Aufgaben, die nach verschiedenen Kriterion (z.B. )
+- Teilprojekt: Gliedert die Gesamtaufgaben eines Projekts in eindeutige abgrenzbare Aufgaben, die nach verschiedenen Kriterien (z.B. Phasen, Funktionen, etc.) strukturiert sind.
+- Arbeitspaket: Eine geschlossene Aufgabe mit einem eindeutigen Lieferobjekt.
 ![[Pasted image 20261023083810.png|466]]
