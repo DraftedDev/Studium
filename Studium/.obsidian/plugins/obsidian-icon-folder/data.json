@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiPaperclip",
       "LiLayoutList",
       "LiFileStack",
       "LiWashingMachine",
-      "LiPenSquare",
-      "LiActivity"
+      "LiPenSquare"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -52,7 +52,7 @@
   },
   "Marketing": {
     "iconName": "LiPaintbrush",
-    "iconColor": "#9f988e"
+    "iconColor": "#10e5b0"
   },
   "Mathe": {
     "iconName": "LiCalculator",
@@ -80,5 +80,11 @@
     "iconColor": "#7066ff"
   },
   "Einführung KI/Assets": "LiFileStack",
-  "Einführung KI/Content": "LiLayoutList"
+  "Einführung KI/Content": "LiLayoutList",
+  "Projektmanagement": {
+    "iconName": "LiActivity",
+    "iconColor": "#850000"
+  },
+  "Projektmanagement/Assets": "LiFileStack",
+  "Projektmanagement/Notes": "LiPaperclip"
 }
