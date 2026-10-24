@@ -86,6 +86,5 @@
     "iconColor": "#850000"
   },
   "Projektmanagement/Assets": "LiFileStack",
-  "Projektmanagement/Notes": "LiPaperclip",
-  "Projektmanagement/Tasks": "LiPenBox"
+  "Projektmanagement/Notes": "LiPaperclip"
 }

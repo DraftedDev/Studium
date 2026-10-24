@@ -11,14 +11,10 @@
             "id": "d144cdf2f7693253",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projektmanagement/Tasks/Untitled.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "New tab"
             }
           }
         ]
@@ -204,8 +200,8 @@
   },
   "active": "d144cdf2f7693253",
   "lastOpenFiles": [
+    "Projektmanagement/Tasks/Kapitel 3.md",
     "Informatik/Notes/Notes - 22.10.2026.md",
-    "Projektmanagement/Tasks/Untitled.md",
     "Projektmanagement/Tasks",
     "Projektmanagement/Notes/Notes - 23.10.2026.md",
     "Pasted image 20261023083810.png",
