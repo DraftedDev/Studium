@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "cb2d8a2ce4163bc1",
+        "id": "7eae4ec07ca78435",
         "type": "tabs",
         "children": [
           {
-            "id": "d144cdf2f7693253",
+            "id": "ef31b837d6e1a19b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Arbeitstechniken/Content/Zeitmanagement.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Zeitmanagement"
             }
           }
         ]
@@ -198,8 +202,14 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "d144cdf2f7693253",
+  "active": "ef31b837d6e1a19b",
   "lastOpenFiles": [
+    "Mathe/Content/Basics/Mengen & Operationen.md",
+    "Mathe/Content/Folgen & Konvergenz.md",
+    "Mathe/Content/Fakultäten & Binomische Sätze.md",
+    "Mathe/Notes/Notes.md",
+    "Arbeitstechniken/Content/Zeitmanagement.md",
+    "Mathe/Online FlowChart & Diagrams Editor - Mermaid Live Editor_files/mermaidchart-logo_sr0t.svg",
     "Projektmanagement/Tasks/Kapitel 3.md",
     "Informatik/Notes/Notes - 22.10.2026.md",
     "Projektmanagement/Tasks",
@@ -211,7 +221,6 @@
     "Informatik/Content/Zahlensysteme & Operationen.md",
     "Informatik/Notes/Notes - 15.10.2026.md",
     "Informatik/Notes/Notes - 08.10.2026.md",
-    "Mathe/Notes/Notes.md",
     "Einführung KI/Notes/Notes - 20.10.2026.md",
     "Einführung KI/Content/Einführung zum Lernen.md",
     "BWL/Notes/Notes - 21.10.2026.md",
@@ -226,10 +235,8 @@
     "Pasted image 20261022100636.png",
     "Pasted image 20261022100008.png",
     "Informatik/Assets/Pasted image 20261022091243.png",
-    "Informatik/Assets/Pasted image 20261022091138.png",
     "Informatik/Content/Informatik & Modelle.md",
     "Informatik/Content/Geschichte der Computer.md",
-    "Arbeitstechniken/Content/Zeitmanagement.md",
     "Informatik/Notes/Notes.md",
     "BWL/Notes/Notes - 14.10.2026.md",
     "Untitled.base",
@@ -243,9 +250,6 @@
     "Mathe/Tasks",
     "Arbeitstechniken/Untitled.md",
     "Mathe 1/Content/Fakultäten & Binomische Sätze.md",
-    "Mathe 1/Content/Folgen & Konvergenz.md",
-    "Mathe 1/Content/Basics/Ungleichungen & Beträge.md",
-    "Mathe 1/Content/Basics/Sinus- & Cosinussatz.md",
     "Untitled.canvas"
   ]
 }

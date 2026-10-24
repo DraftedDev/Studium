@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiChartGantt",
       "LiPenBox",
       "LiPaperclip",
       "LiLayoutList",
-      "LiFileStack",
-      "LiWashingMachine"
+      "LiFileStack"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -82,8 +82,8 @@
   "Einführung KI/Assets": "LiFileStack",
   "Einführung KI/Content": "LiLayoutList",
   "Projektmanagement": {
-    "iconName": "LiActivity",
-    "iconColor": "#850000"
+    "iconName": "LiChartGantt",
+    "iconColor": "#d274b0"
   },
   "Projektmanagement/Assets": "LiFileStack",
   "Projektmanagement/Notes": "LiPaperclip"
