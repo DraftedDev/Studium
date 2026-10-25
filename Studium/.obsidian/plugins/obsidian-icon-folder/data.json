@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiCodeSquare",
+      "LiCode2",
+      "LiFileCode",
       "LiChartGantt",
-      "LiPenBox",
-      "LiPaperclip",
-      "LiLayoutList",
-      "LiFileStack"
+      "LiPenBox"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -86,5 +86,10 @@
     "iconColor": "#d274b0"
   },
   "Projektmanagement/Assets": "LiFileStack",
-  "Projektmanagement/Notes": "LiPaperclip"
+  "Projektmanagement/Notes": "LiPaperclip",
+  "Programmierung KI/Content": "LiLayoutList",
+  "Programmierung KI": {
+    "iconName": "LiCodeSquare",
+    "iconColor": "#3894b2"
+  }
 }
