@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Einführung KI/Content/Team-Projekt/Exposé.md",
+                "file": "Arbeitstechniken/Tasks/Aufgabe A1 - Zeitplan.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Exposé"
+              "title": "Aufgabe A1 - Zeitplan"
             }
           }
         ]
@@ -204,13 +204,16 @@
   },
   "active": "fa9db00720fd0c8a",
   "lastOpenFiles": [
+    "Arbeitstechniken/Content/Zeitmanagement.md",
+    "Arbeitstechniken/Tasks/Aufgabe A1 - Zeitplan.md",
+    "Einführung KI/Tasks/Team-Projekt/Exposé.md",
+    "Einführung KI/Tasks",
+    "Arbeitstechniken/Tasks",
     "Einführung KI/Content/Einführung zum Lernen.md",
-    "Einführung KI/Content/Team-Projekt/Exposé.md",
-    "Einführung KI/Content/Team-Projekt",
+    "Einführung KI/Tasks/Team-Projekt",
     "Einführung KI/Content/Exposé -.md",
     "Programmierung KI/Content/Slicing.md",
     "Programmierung KI/Content/Formatted Strings.md",
-    "Arbeitstechniken/Content/Zeitmanagement.md",
     "Programmierung KI/Content",
     "Programmierung KI",
     "Mathe/Content/Basics/Mengen & Operationen.md",
@@ -246,10 +249,7 @@
     "Informatik/Content/Geschichte der Computer.md",
     "Informatik/Notes/Notes.md",
     "BWL/Notes/Notes - 14.10.2026.md",
-    "Untitled.base",
-    "Einführung KI/Assets",
     "Einführung KI/Untitled.md",
-    "Arbeitstechniken/Notes/Zeitmanagement.md",
     "Untitled.canvas"
   ]
 }

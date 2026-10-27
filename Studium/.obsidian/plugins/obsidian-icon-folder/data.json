@@ -91,5 +91,7 @@
   "Programmierung KI": {
     "iconName": "LiCodeSquare",
     "iconColor": "#3894b2"
-  }
+  },
+  "Einführung KI/Tasks": "LiPenBox",
+  "Arbeitstechniken/Tasks": "LiPenBox"
 }
