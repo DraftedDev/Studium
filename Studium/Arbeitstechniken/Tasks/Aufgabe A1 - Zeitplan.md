@@ -39,7 +39,23 @@
     - Anmeldung für Klausuren, Tests und Vorlesungen.
 # Wochenplan: 25.10.2026 - 31.10.2026
 
-| **Uhrzeit** | **Montag** | **Dienstag** | **Mittwoch** | **Donnerstag** | **Freitag** | **Wochenende** |
-| ----------- | ---------- | ------------ | ------------ | -------------- | ----------- | -------------- |
-|             |            |              |              |                |             |                |
+| **Uhrzeit** | **Montag**              | **Dienstag**            | **Mittwoch**           | **Donnerstag**         | **Freitag**            | **Wochenende**         |
+| ----------- | ----------------------- | ----------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- |
+| 06:00       |                         | Aufwachen & Vorbereiten |                        |                        |                        |                        |
+| 07:00       | Aufwachen & Vorbereiten | zum Tech-Campus fahren  |                        |                        |                        |                        |
+| 08:00       | Zum Tech-Campus fahren  |                         |                        |                        |                        |                        |
+| 09:00       | VL: KI Programmierung   |                         |                        |                        |                        | Aufwachen              |
+| 10:00       | --:--                   |                         |                        |                        |                        |                        |
+| 11:00       | --:--                   |                         |                        |                        |                        |                        |
+| 12:00       | --:--                   |                         |                        |                        |                        |                        |
+| 13:00       | --:--                   |                         |                        |                        |                        |                        |
+| 14:00       | Lernen                  |                         |                        |                        |                        |                        |
+| 15:00       | Optional: MGT-Crashkurs |                         |                        |                        |                        |                        |
+| 16:00       | --:--                   |                         |                        |                        |                        |                        |
+| 17:00       | --:--                   |                         |                        |                        | Abendessen Vorbereiten | Abendessen Vorbereiten |
+| 18:00       | Abendessen Vorbereiten  | Abendessen Vorbereiten  | Abendessen Vorbereiten | Abendessen Vorbereiten | Filmeabend             | Filmeabend             |
+| 19:00       | Me-Time                 | Me-Time                 | Me-Time                | Me-Time                | Filmeabend             | Filmeabend             |
+| 20:00       | Me-Time                 | Me-Time                 | Me-Time                | Me-Time                | Me-Time                | Me-Time                |
+| 21:00       | Schlafen gehen          | Schlafen gehen          | Schlafen gehen         | Schlafen gehen         | Schlafen gehen         | Schlafen gehen         |
+
 
