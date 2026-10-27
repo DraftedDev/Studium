@@ -33,7 +33,7 @@
 - **B-Aufgaben (Wichtig & Nicht dringend):**
     - Wöchentliche Nachbereitung der Vorlesungsnotizen & Eintrag von neuem Inhalt in persönliches Archiv.
     - Frühzeitiges Üben von Programmieraufgaben und Vertiefung des Stoffes vor den Testphasen.
-    - Langfristige Planung von Lern- und Projektzielen (Projekt .
+    - Langfristige Planung von Lern- und Projektzielen (u.a. Projekt Einleitung KI).
 - **C-Aufgaben (Nicht wichtig & Dringend):**
-    
-    - Sortieren von Nebensächlichkeiten, organisatorischen Mails oder das Lesen von Newslettern (zeitlich limitieren oder delegieren/ignorieren).
+    - Mails täglich lesen & bearbeiten.
+    - Anmeldung für Klausuren, Tests und Vorlesungen.
