@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programmierung KI/Content/Slicing.md",
+                "file": "Einführung KI/Content/Team-Projekt/Exposé.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Slicing"
+              "title": "Exposé"
             }
           }
         ]
@@ -204,8 +204,12 @@
   },
   "active": "fa9db00720fd0c8a",
   "lastOpenFiles": [
-    "Programmierung KI/Content/Formatted Strings.md",
+    "Einführung KI/Content/Einführung zum Lernen.md",
+    "Einführung KI/Content/Team-Projekt/Exposé.md",
+    "Einführung KI/Content/Team-Projekt",
+    "Einführung KI/Content/Exposé -.md",
     "Programmierung KI/Content/Slicing.md",
+    "Programmierung KI/Content/Formatted Strings.md",
     "Arbeitstechniken/Content/Zeitmanagement.md",
     "Programmierung KI/Content",
     "Programmierung KI",
@@ -226,7 +230,6 @@
     "Informatik/Notes/Notes - 15.10.2026.md",
     "Informatik/Notes/Notes - 08.10.2026.md",
     "Einführung KI/Notes/Notes - 20.10.2026.md",
-    "Einführung KI/Content/Einführung zum Lernen.md",
     "BWL/Notes/Notes - 21.10.2026.md",
     "Marketing/Notes/Notes - 14.10.2026.md",
     "Marketing/Notes/Notes - 21.10.2026.md",
@@ -245,11 +248,8 @@
     "BWL/Notes/Notes - 14.10.2026.md",
     "Untitled.base",
     "Einführung KI/Assets",
-    "Einführung KI/Notes",
     "Einführung KI/Untitled.md",
     "Arbeitstechniken/Notes/Zeitmanagement.md",
-    "Mathe/Content/Basics/Untitled.md",
-    "Mathe/Tasks/Hausaufgabenblatt - Woche 4.md",
     "Untitled.canvas"
   ]
 }
