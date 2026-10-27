@@ -37,3 +37,9 @@
 - **C-Aufgaben (Nicht wichtig & Dringend):**
     - Mails täglich lesen & bearbeiten.
     - Anmeldung für Klausuren, Tests und Vorlesungen.
+# Wochenplan: 25.10.2026 - 31.10.2026
+
+| **Uhrzeit** | **Montag** | **Dienstag** | **Mittwoch** | **Donnerstag** | **Freitag** | **Wochenende** |
+| ----------- | ---------- | ------------ | ------------ | -------------- | ----------- | -------------- |
+|             |            |              |              |                |             |                |
+
