@@ -38,24 +38,29 @@
     - Mails täglich lesen & bearbeiten.
     - Anmeldung für Klausuren, Tests und Vorlesungen.
 # Wochenplan: 25.10.2026 - 31.10.2026
+*(PS: Ich habe nicht viele Hobbies)*
 
-| **Uhrzeit** | **Montag**              | **Dienstag**            | **Mittwoch**           | **Donnerstag**         | **Freitag**            | **Wochenende**         |
-| ----------- | ----------------------- | ----------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- |
-| 06:00       |                         | Aufwachen & Vorbereiten |                        |                        |                        |                        |
-| 07:00       | Aufwachen & Vorbereiten | zum Tech-Campus fahren  |                        |                        |                        |                        |
-| 08:00       | Zum Tech-Campus fahren  |                         |                        |                        |                        |                        |
-| 09:00       | VL: KI Programmierung   |                         |                        |                        |                        | Aufwachen              |
-| 10:00       | --:--                   |                         |                        |                        |                        |                        |
-| 11:00       | --:--                   |                         |                        |                        |                        |                        |
-| 12:00       | --:--                   |                         |                        |                        |                        |                        |
-| 13:00       | --:--                   |                         |                        |                        |                        |                        |
-| 14:00       | Lernen                  |                         |                        |                        |                        |                        |
-| 15:00       | Optional: MGT-Crashkurs |                         |                        |                        |                        |                        |
-| 16:00       | --:--                   |                         |                        |                        |                        |                        |
-| 17:00       | --:--                   |                         |                        |                        | Abendessen Vorbereiten | Abendessen Vorbereiten |
-| 18:00       | Abendessen Vorbereiten  | Abendessen Vorbereiten  | Abendessen Vorbereiten | Abendessen Vorbereiten | Filmeabend             | Filmeabend             |
-| 19:00       | Me-Time                 | Me-Time                 | Me-Time                | Me-Time                | Filmeabend             | Filmeabend             |
-| 20:00       | Me-Time                 | Me-Time                 | Me-Time                | Me-Time                | Me-Time                | Me-Time                |
-| 21:00       | Schlafen gehen          | Schlafen gehen          | Schlafen gehen         | Schlafen gehen         | Schlafen gehen         | Schlafen gehen         |
-
-
+| **Uhrzeit** | **Montag**              | **Dienstag**                                    | **Mittwoch**                       | **Donnerstag**                   | **Freitag (kein Projektmanagement)** | **Wochenende**         |
+| ----------- | ----------------------- | ----------------------------------------------- | ---------------------------------- | -------------------------------- | ------------------------------------ | ---------------------- |
+| 06:00       | Schlafen                | Aufstehen                                       | Aufstehen                          | Aufstehen                        | Schlafen                             | Schlafen               |
+| 07:00       | Aufstehen               | Zum Tech-Campus fahren                          | Zum Bildungs-Campus fahren         | Zum Tech-Campus fahren           | Schlafen                             | Schlafen               |
+| 08:00       | Zum Tech-Campus fahren  | VL: Mathematik                                  | VL: Grundlagen BWL                 | VL: Grundlagen Informatik        | Aufstehen                            | Schlafen               |
+| 09:00       | Test: KI-Programmierung | VL: Mathematik                                  | VL: Grundlagen BWL                 | VL: Grundlagen Informatik        | Freies Lernen                        | Aufstehen              |
+| 10:00       | VL: KI-Programmierung   | Freies Lernen (Exposé Einleitung-KI schreiben)  | VL: Marketing                      | Grundlagen-Informatik            | Freies Lernen                        | Me-Time                |
+| 11:00       | VL: KI-Programmierung   | Freies Lernen (An Math-Vision-Projekt arbeiten) | VL: Marketing                      | VL: Mathematik                   | Freies Lernen                        | SUP o. Fahrrad-Tour    |
+| 12:00       | VL: KI-Programmierung   | Freies Lernen (Zeitplan Arbeitsplan schreiben)  | Freies Lernen (Mathe-Hausaufgaben) | VL: Mathematik                   | Freies Lernen                        | SUP o. Fahrrad-Tour    |
+| 13:00       | VL: KI-Programmierung   | Pause & Mitagessen                              | Freies Lernen (Mathe-Hausaufgaben) | Nach Hause fahren                | Mitagessen                           | SUP o. Fahrrad-Tour    |
+| 14:00       | Lernen                  | VL: KI-Einführung                               | Nach Hause fahren                  | Me-Time                          | Nach Hause fahren                    | Mittagessen            |
+| 15:00       | Optional: MGT-Crashkurs | VL: KI-Einführung                               | Me-Time                            | Me-Time                          | Me-Time                              | Me-Time                |
+| 16:00       | Optional: MGT-Crashkurs | VL: KI-Einführung                               | Me-Time                            | Optional: MGT-Crashkurs (Online) | Me-Time                              | Me-Time                |
+| 17:00       | Nach Hause fahren       | Nach Hause fahren                               | Me-Time                            | Optional: MGT-Crashkurs (Online) | Abendessen Vorbereiten               | Abendessen Vorbereiten |
+| 18:00       | Abendessen Vorbereiten  | Abendessen Vorbereiten                          | Abendessen Vorbereiten             | Abendessen Vorbereiten           | Filmeabend                           | Filmeabend             |
+| 19:00       | Me-Time                 | Me-Time                                         | Me-Time                            | Me-Time                          | Filmeabend                           | Filmeabend             |
+| 20:00       | Me-Time                 | Me-Time                                         | Me-Time                            | Me-Time                          | Me-Time                              | Me-Time                |
+| 21:00       | Schlafen gehen          | Schlafen gehen                                  | Schlafen gehen                     | Schlafen gehen                   | Schlafen gehen                       | Schlafen gehen         |
+#  Meine Toolbox
+- **[Obsidian](https://obsidian.md) (Notizen):** Für Notizen in anderen Fächern & allgemeine Infos.
+- **[Papier](https://de.wikipedia.org/wiki/Papier):** Für Notizen in Mathematik.
+- **[Obsidian](https://obsidian.md) (Archiv):** Notizen als eigene Kapitel in mein [Archiv](https://github.com/DraftedDev/Studium) eintragen.
+- **[Hapitica](https://habitica.com/):** Für kleine Tasks, Dailies und Gewohnheiten-Kontrolle.
+- **[Google Calendar](https://calendar.google.com):** Für wichtigere Termine in der Zukunft.
