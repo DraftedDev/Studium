@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "87d1091a667a359f",
+        "id": "87c0ed42a5442313",
         "type": "tabs",
         "children": [
           {
-            "id": "cc47d0b40264752b",
+            "id": "4ab4daaa5c7ffe33",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -202,11 +202,13 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "cc47d0b40264752b",
+  "active": "4ab4daaa5c7ffe33",
   "lastOpenFiles": [
-    "Pasted image 20261028081846.png",
-    "Einführung KI/Notes/Notes - 27.10.2026.md",
+    "BWL/Assets/Pasted image 20261028081846.png",
     "BWL/Notes/Notes - 28.10.2026.md",
+    "BWL/Assets/Pasted image 20261028090711.png",
+    "BWL/Assets/Pasted image 20261028090638.png",
+    "Einführung KI/Notes/Notes - 27.10.2026.md",
     "Einführung KI/Assets/Pasted image 20261027152139.png",
     "Einführung KI/Assets/Pasted image 20261027152110.png",
     "Einführung KI/Assets/Pasted image 20261027150737.png",
@@ -231,12 +233,10 @@
     "Mathe/Content/Folgen & Konvergenz.md",
     "Mathe/Content/Fakultäten & Binomische Sätze.md",
     "Mathe/Notes/Notes.md",
-    "Mathe/Online FlowChart & Diagrams Editor - Mermaid Live Editor_files/mermaidchart-logo_sr0t.svg",
     "Projektmanagement/Tasks/Kapitel 3.md",
     "Informatik/Notes/Notes - 22.10.2026.md",
     "Projektmanagement/Tasks",
     "Projektmanagement/Notes/Notes - 23.10.2026.md",
-    "Pasted image 20261023083810.png",
     "Projektmanagement/Notes",
     "Projektmanagement/Assets",
     "Projektmanagement",
@@ -248,7 +248,6 @@
     "Marketing/Notes/Notes - 14.10.2026.md",
     "Marketing/Notes/Notes - 21.10.2026.md",
     "Einführung KI/Content",
-    "Informatik/Assets/Pasted image 20261022104624.png",
     "Informatik/Content/Informatik & Modelle.md",
     "Untitled.canvas"
   ]
