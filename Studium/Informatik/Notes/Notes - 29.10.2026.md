@@ -39,19 +39,30 @@
 - Meist: langsam.
 - Häufig: eigener Prozess, der per DMA auf Speicherwerk zugreift.
 ![[Pasted image 20261029092440.png|460]]
-### Operationsprinzip
+## Operationsprinzip
 Kleinste Dateneinheit ist ein _Wort_, ein beliebiges Bitmuster definierter Länge. Ein Wort kann folgendes kodieren:
 - Einen Maschinenbefehl.
 - Ein Datum / Wert zum Verarbeiten.
 - Die Adresse eines Speicherplatzes.
 Dem Wort kann nicht angesehen werden, welche Bedeutung es hat → abhängig vom Zustand der Maschine.
-### Befehlsbearbeitung
+## Befehlsbearbeitung
 ![[Pasted image 20261029092606.png|493]]
-### Beobachtung
+## Beobachtung
 - Gemeinsamer Speicher für Daten und Programm.
 - Daten sind Programme sind Daten.
 - Programme sind durch andere Programme änderbar.
 - Programme und Daten werden über die gleichen Verbindungen übertragen.
 - Serielle Abarbeitung.
-### Harvard-Architektur
+## Harvard-Architektur
 ![[Pasted image 20261029092733.png|600]]
+# Desktop-Architektur
+![[Pasted image 20261029095219.png|570]]
+## CPU
+- Häufig "amd64", d.h. Intel 4004 -> 8008 -> 8080 -> 8086 -> 80386 -> AMD Operation
+	- Intel Core i3, i5, i7, i9 (Gen 14); AMD Ryzen.
+	- Ether CISC, etwas RISC.
+	- Wintel.
+- Aufstrebend: "ARM": "Acorn RISC Machines" -> "Advanced RISC Machines".
+	- Apple M1-M5; Qualcomm.
+	- RISC.
+	- Keine eigene Fertigung, nur Lizenzen und IP-Cores.
