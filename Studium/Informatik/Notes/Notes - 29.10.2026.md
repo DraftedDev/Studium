@@ -96,7 +96,7 @@ Dem Wort kann nicht angesehen werden, welche Bedeutung es hat → abhängig vom 
 - Maus, Tastatur, Monitor, Mikrofon, Kamera, Scanner, Audio, LAN, WLAN.
 - Häufig USB ("Universal Serial Bus"):
 	- USB 3.2: Durchsatz 20 GiBit/s = 667 MB/s.
-	- USB 4 vereinigt USB 3.2 mit Thunderbold 3.
+	- USB 4 vereinigt USB 3.2 mit Thunderbolt 3.
 - HDMI, DIsplayPort für Monitor.
 - Thunderbolt für Monitor und externen Sekundärspeicher.
 - LAN: Durchsatz 1-10 GiBit/s.
@@ -142,4 +142,92 @@ Dem Wort kann nicht angesehen werden, welche Bedeutung es hat → abhängig vom 
 - Ohne Pipeline: 5 Takte pro Befehl.
 - Mit Pipeline: Ein Befehl pro Takt (ideal).
 - Probleme:
-	- 
+	- Steuerkonflikte, insbesondere bedingte Sprünge.
+		- Mit der Ausführung begonnene Befehle abgebrochen werden.
+		- Pseudo-Lösung: Sprungvorhersage, spekulative Ausführung.
+	- Datenkonflikte:
+		- Datum wird vom ersten Befehl berechnet (Ende Takt 3), aber von nächsten Befehl schon in Takt 2 benötigt.
+		- Pseudo-Lösung: Vorziehen anderer Befehle.
+	- Strukturkonflikt:
+		- Gleichzeitiger Zugriff auf Speicher.
+	- Teil-Lösung: Pipeline verlängern.
+### Very Long Instruction Word
+- Unterbringen mehrerer Befehle in einem Speicherwort.
+- Parallelisierung / Konfliktlösung durch Erstellen des Maschinencodes auf höherer Ebene.
+- Beispiel:
+    - 128 Bit: $3 \cdot 41$ Bit für Befehlscodes, 5 Bit für Sonderfälle
+    - Speicherwort wird gelesen und dann an drei Einheiten zum Dekodieren, Ausführen, Speicher, Schreiben weitergegeben.
+    - Wenn alle drei Einheiten fertig, dann wiederholen.
+- Probleme:
+	- Begrenzte Parallelität.
+	- Wenn keine Parallelität möglich: 87 Bit verschwendet.
+		- Höherer Hauptspeicherverbrauch.
+		- Verschwendung Bandbreite Hauptspeicher.
+	- Strukturkonflikt, z.B. Hauptspeicher.
+		- Lösung: Pipelining.
+## Vektorprozessoren
+- Parallelität in Daten ausnutzen: SIMD.
+- Beispiel: Addition zweier mathematischen Vektoren der Länge N:
+	- $A \to [a_{0} \dots a_{N}], B \to [b_{0} \dots b_{N}]$
+- Früher: Spezielle Computer, etwa für Wettervorhersage.
+- Heute: MMX-, SSE-, AVX-Erweiterung bei amd64.
+	- Bis zu 32 Register mit je bis zu 512 Bit, 3-Address.
+- Heute: GPU, z.B. mit 12 Kernen.
+	- Jeder Kern hat 16-64-fache Parallelität (je nach Operation).
+- Heute: NPU, mit grob 20.000 Recheneinheiten.
+## Mehrere Befehlssequenzen
+- Etwa 2003 ist Taktrate an physikalische Grenze gestoßen.
+	- CPU sehr viel schneller als Hauptspeicher, d.h. Daten können nicht schnell genug nachgeladen werden.
+	- Ab ca. 3 GHz steigt Stromverbrauch stark an (Leckströme).
+	- Bei 3 GHz kommt das Licht im Vakuum ungefähr 10 cm weit, d.h. in Halbleitern eher 2-5 cm.
+	- Lösung: Erhöhung der Parallelität durch mehrfache Hardware.
+	- Varianten:
+		- Simultanes Multithreading.
+		- Multiprozessor.
+		- Multicomputer.
+![[Pasted image 20261029104545.png|521]]
+## Multiprozessor/Multi-Core
+- Genügend viele CPU-Kerne.
+- Eigene Steuer- und Rechenwerke.
+- Kommunikation über gemeinsamen Speicher.
+![[Pasted image 20261029104637.png|523]]
+### Probleme
+- Problem 1: Zwei Prozessoren schreiben/lesen gleichen Speicher.
+	- Synchronisation nötig.
+	- Zugriffsgeschwindigkeit sinkt.
+- Problem 2: Endliche Bandbreite des Bussystems.
+	- Beschränkungen Anzahl CPU-Kerne.
+- Problem 3: Gleiche Taktrate nötig.
+	- Stromverbrauch.
+	- Selbst unsynchronisierter Zugriff auf Speicher dauert länger.
+## Non-Uniform-Memory-Access
+- Prozessor erhält privaten Speicher.
+- Je nach Speicher muss Prozessor anders arbeiten.
+![[Pasted image 20261029104923.png|437]]
+## Begrenzung der möglichen Parallelität
+- Nach Gene Amdahl (Computerarchitekt, Großrechner).
+- Der maximale Speed-Up durch Parallelisierung ist durch den Anteil des Codes bestimmt, der nicht parallelisierbar ist.
+- Grob: Umgekehrt proportional zum Anteile des sequentiellen Anteils.
+	- 50% -> Faktor 2, 10% -> Faktor 10, 1% -> Faktor 100 maximal erreichbar.
+![[Pasted image 20261029105214.png|519]]
+## Speicherhierarchie
+![[Pasted image 20261029105330.png|514]]
+### Herausforderungen
+- Software ist meist größer als ein KiB.
+	- Das Lesen der Befehle aus dem Hauptspeicher verlangsamt CPU um Faktor 100.
+- Zu bearbeitenden Daten sind umfangreicher.
+	- Entsprechend verlangsamt der Datentransfer die CPU erheblich.
+- Lösungsansatz:
+	- Lokalitätsprinzip:
+		- Zugriff auf Daten bleiben meist auf lokale Umgebung beschränkt.
+	- Nutzen von Speicher der etwas langsamer als CPU-Register ist.
+	- -> Kostet weniger & benötigt weniger Platz.
+## Cache
+- Speichert Daten oder Programmteile, die in geringem Zeitlichen Abstand mehrfach verwendet wird.
+- Wird nahe CPU-kern abgelegt -> geringere Zugriffszeiten.
+- Steuerwerk probiert es zunächst im Cache (1-50 Takte), dann im Hauptspeicher.
+- Wenn nicht im Cache: Nachladen aus dem Hauptspeicher.
+- Problem: Was wird aus dem Cache entfernt (-> Cache Strategien).
+	- Ungelöst, nur Heuristiken.
+- Problem: Wie wird das Schreiben in den Hauptspeicher behandelt?
+	- *Write-Through*_
