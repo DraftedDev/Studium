@@ -1,9 +1,9 @@
-# Formulierung der Herausforderung
-Mit dem Zeitalter der Künstlichen Intelligenz rückt die Moral und Ethik hinter Datensammlung um so mehr in den Vordergrund.
+# Formulierung der Herausforderungen
+Mit der Evolution von Künstlicher Intelligenz rücken die ethischen, rechtlichen und gesellschaftlichen Probleme der massenhaften Datenerfassung um so stärker in den Fokus.
+Dabei entstehen mehrere Herausforderungen, wenn es um die Behandlung der Daten geht:
 
-Dabei entstehen mehrere Herausforderungen:
-- Welche Daten sollten vor Massendatensammlern und KI-Modelltraining geschützt werden?
-- Wie sollten frei lizenzierte Werke behandelt werden? 
-- Wo ist die Grenze zwischen legalem und illegalem Nutzen von Daten zur Modelltrainierung?
+- **Problem der „Data Commons“ (Consent in Crisis):** Der öffentliche Datenpool („Data Commons“) schrumpft mit der Zeit immer mehr. Urheber errichten technische Barrieren, um ihre Daten zu schützen und die, in der Vergangenheit von Google, eingeführte `robots.txt`-Datei, erweist sich dabei als unzureichend gegen Web-Crawler, da sie lediglich freiwillige Regeln aufstellt.
 
-Schon Googles `robots.txt` hat versucht Web-Crawlern und automatisierten Datensammlern entgegenzuwirken, jedoch sind diese Restriktionen bis jetzt lediglich Richtlinien und keine Behörde oder Organisation versucht diese tatsächlich auszuführen.
+- **Frage der Einwilligung:** Persönliche Daten, sensible Informationen, sowie kreative Werke werden ohne Zustimmung oder Einwilligung gesammelt, um kommerzielle KI-Modelle zu trainieren. Urheber werden dabei selten kompensiert oder wissen überhaupt nicht von der Datensammlung.
+
+- **Rechtliche Grauzonen:** Die Grenze zwischen legaler und illegaler Nutzung verschwimmt immer mehr. Insbesondere der Umgang mit frei lizenzierten Werken ist ungeklärt: CC-Lizenzen wurden ursprünglich für die menschliche Nutzung geschaffen, nicht jedoch für die profitgetriebene Sammlung durch kommerzielle KI-Konzerne.
