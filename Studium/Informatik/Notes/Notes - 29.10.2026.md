@@ -230,4 +230,64 @@ Dem Wort kann nicht angesehen werden, welche Bedeutung es hat → abhängig vom 
 - Problem: Was wird aus dem Cache entfernt (-> Cache Strategien).
 	- Ungelöst, nur Heuristiken.
 - Problem: Wie wird das Schreiben in den Hauptspeicher behandelt?
-	- *Write-Through*_
+	- *Write-Through:* In Cache und Hauptspeicher schreiben -> Cache stimmt mit Hauptspeicher überein, aber hohe Dauer.
+	- *Write-Back:* Nur in Cache schreiben, erst bei Ersetzung in den Hauptspeicher -> problematische Konsistenz.
+	- *Write-Around:* Nur in Hauptspeicher, Cache als ungültig markieren -> problematische Dauer und Konsistenz.
+## Cache (2)
+- Früher: Ein Cache reicht.
+- Heute: Drei Caches.
+- Level 1: Zwei Caches, getrennt nach Daten und Programme, jeweils 32 KiB, Latenz 1-4 Takte.
+- Level 2: Ein gemeinsamer Cache, 256 KiB, Latenz 10-20 Takte.
+- Level 3: Ein Cache für alle CPU-Kerne, 8 MiB, Latenz 20-50 Takte.
+## Andere Caches
+- Inhalt aus Sekundärspeichern werden im Hauptspeicher gecached.
+	- -> Betriebssystem.
+- Ergebnisse lang-wertige Berechnungen werden zwischengespeichert.
+	- -> Anwendung.
+		- Idee ist immer: Geringere Zeit mit mehr Speicher erkaufen.
+### Herausforderungen
+- Wie bilde ich den Hauptspeicher auf den Cache ab?
+- Wo platziere ich Inhalte im Cache?
+- Wie ersetze ich Inhalte?
+- Welche Form der Konsistenz und Kohärenz stelle ich sicher?
+- Was passiert bei Verletzung des Lokalitätsprinzip?
+## Weiterer Speicher
+![[Pasted image 20261029110857.png|527]]
+## Verbindungsstruktur
+### Motivation
+- Komponenten in CPU-Kern, CPU, Computer müssen kommunizieren.
+- Kommunikation beeinflusst Systemleistung erheblich.
+- Herausforderung:
+	- Viele Komponente kommunizieren miteinander.
+	- Rechenwerke, CPU-Kerne, Computer, Cluster.
+## Bus
+- Gemeinsamer Übertragungsweg für mehrere Komponente.
+- Nur ein Teilnehmer zur Zeit darf Bus nutzen.
+- Zuteilungsverfahren häufig durch Steuerwerk kontrolliert.
+![[Pasted image 20261029111125.png|532]]
+### Parallele Busse
+- ISA: 98 parallele Leitungen (20 für Adressen; 16 für Daten, Rest für Steuerung, Strom, Takt).
+- PCI: 60 parallele Leitungen (32 für Adressen & Daten), 96 Leitungen (64 Daten/Adressen).
+- Takt: 33/55 MHz (üblich), bis zu 533 MHz.
+- Probleme:
+	- Laufzeitunderschiede von Leitungen.
+	- Leitungen beeinflussen sich (Strom erzeugt Magnetfeld).
+	- Physisch weniger Robust.
+	- Längenbegrenzung.
+### Serielle Busse
+- Datenübertragung bitweise.
+- Im Extremfall werden zwei Leitungen benötigt: Daten und Masse.
+    - Takt wird aus der Kodierung der Daten gewonnen.
+    - Erstes Ethernet: 10 MBit/s.
+- In der Praxis: 8 Leitungen, auch zur Echokompensation.
+    - Z.B. Gigabit-Ethernet.
+#### Universal Serial Bus
+- Kein echter serieller **Bus**,
+- Eher ein hierarchischer *Baum* mit serieller Übertragung.
+- Stromversorgung, Echtzeit-Datenstrom, Plug-and-Play
+- USB 1: 1,5 MBit/s, USB 4.2: 80 MBit/s
+![[Pasted image 20261029111519.png|508]]
+### Weitere Verbindungsstrukturen
+- Punkt-zu-Punkt (PICe, SATA).
+- Kreuzschienenverteiler (Matrix-Aufbau, teilweise unabhängige Übertragungen).
+- Vermittlungsnetze (siehe LE Rechnernetze).
