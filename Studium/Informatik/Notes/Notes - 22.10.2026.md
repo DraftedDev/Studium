@@ -1,6 +1,6 @@
 # Nachrichten & Kodierung
 ## Nachricht
-Eine Nachricht kann als Folge von Zeichen aufgefasst werden, die von einem Sender in irgendeiner Form einen Empfänger übertragen werden.
+Eine Nachricht kann als Folge von Zeichen aufgefasst werden, die von einem Sender in irgendeiner Form an einen Empfänger übertragen werden.
 ![[Pasted image 20261022083452.png]]
 ## Definition Nachricht
 => Eine _Nachricht_ ist eine aus den _Zeichen eines Alphabets_ gebildete Zeichenfolge.
