@@ -81,7 +81,7 @@ Beispiel BCD: $1097_{dez} = 0001000010010111_{bcd} = 1097_{hex}$
 	- 0-127: Ein Byte, sieben Bit (Bit 7 = `0xxxxxxx`).
 	- 128-2047: Zwei Byte, fünf+sechs Bit (`110xxxxxx 10xxxxxx`).
 	- 2048-65535: Drei Byte, vier+sechs+sechs Bit (`1110xxxx 10xxxxxx 10xxxxxx`).
-	- 65536-2097151: Vier Byte, drei+sechs+sechs+sechs Bit Bit (`11110xxx 10xxxxxx 10xxxxxx 10xxxxxx`).
+	- 65536-2097151: Vier Byte, drei+sechs+sechs+sechs Bit (`11110xxx 10xxxxxx 10xxxxxx 10xxxxxx`).
 - Eigenschaften:
 	- Selbstsynchronisierend: ersten beiden Bits ansehen reicht (`0x = ASCII, 11 = Start+Anzahl, 10 = Rest`).
 	- Fehlerkontrolle durch Anzahl-Bits nach 11.

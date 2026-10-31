@@ -95,4 +95,46 @@ Sender *übersetzt* Information in Nachricht
 | 4       | 0100    | 0111        | 9       | 1001    | 1100        |
 - Bitsequenzen $1010$, $1011$, $1100$, $1101$, $1110$, $1111$ werden nicht vergeben.
 - Beispiel BCD: $1097_{dez} = 0001000010010111 = 1097_{hex}$
+## ASCII
+- Codierung von Buchstaben, Ziffern, Sonder- und Steuerzeichen.
+- Wortlänge = 7 Bit; 1 Bit Redundanz (z.B. Paritätsbit).
+- Steuerzeichen: 0-31, 127 ($00_{hex} \to 1F_{hex},7F_{hex}$).
+- Ziffern: 48-57 ($30_{hex} \to 39_{hex} \to BCD$).
+- Großbuchstaben: 65-90 ($41_{hex} \to 5A_{hex}$).
+- Kleinbuchstaben: 97-122 ($61_{hex} \to 7A_{hex}$ -> 1 Bit Unterschied zum Großbuchstaben).
+- Rest: Sonderzeichen, wie Leerzeichen ($32_{dez} = 20_{hex}$).
+- Keine Umlaute o.ä.
+## Unicode
+- **Ziel:** Darstellung aller relevanten Zeichen (inkl. ASCII).
+- Wortlänge:
+	- Version 1.0: ~7.100 Zeichen -> 16 Bit reichen.
+	- Version 15.1: ~150.000 Zeichen -> Mehr als 16 Bit.
+- Zweistufiger Code:
+	- Jedes Zeichen erhält einen "Code Point", z.B. $A = 65_{dez}; Ä = 196_{dez}; \in = 8712_{dez}$.
+	- Code point wird gemäß einer eigenen Codierung in Bits/Bytes dargestellt.
+	- UTF-8 ($L=1-6$, 4 genutzt), UTF-16 ($L=1-2$), UTF-32 (Wortlänge $L=1$), Punycode (für DNS-Namen, ASCII), ...
+- Unicode codiert abstrakte Zeichen, nicht deren Darstellung ("Glyphen"):
+	- $Ä = A + ^{\dots}$, aber $Ä = C4_{hex}, A = 41_{hex}, ^{\dots} = 308_{hex}$.
+## UTF-8
+- Codiert Code Points mittels Byte-Sequenz:
+	- 0-127: Ein Byte, sieben Bit (Bit 7 = `0xxxxxx`).
+	- 128-2047: Zwei Byte, fünf+sechs Bit (`110xxxxx 10xxxxxx`).
+	- 2048-65535: Drei Byte, vier+sechs+sechs Bit (`1110xxxx 10xxxxxx 10xxxxxx`).
+	- 65536-2097151: Vier Byte, drei+sechs+sechs+sechs Bit (`11110xxx 10xxxxxx 10xxxxxx 10xxxxxx`).
+- Eigenschaften:
+	- Selbstsynchronisierend: ersten beiden Bits ansehen reicht ($0x = \text{ASCII}, 11 = \text{Start+Anzahl}, 10 = \text{Rest}$).
+	- Fehlerkontrolle durch Anzahl-Bits nach 11.
+	- Vergleich zweier codierter Code Points einfach zu realisieren.
+	- Codiert bis zu $2^{31}$ Zeichen.
+- Mittlere Wortlänge bei westlichen Texten gering.
+# Diskretisierung
+## Problem
+- Reale Welt kennt keine Nachricht im Sinne der Informatik.
+- Mittels Sensoren können kontinuierliche, biologische Nachrichten erfasst werden.
+	- Kontinuierlich = Zeichenfolge beliebiger Dichte -> Nachricht ist reelle Funktion.
+	- Meist stetige Funktion, bzw. beschränkte Änderung.
+- Muss in eine diskrete, d.h. abzählbare Form überführt werden.
+- -> Form Der Modellbildung.
+## Abtastung
+- Sensorwerte werden zu bestimmten Stellen erfasst (Stellen meist Zeitpunkte).
 - 
