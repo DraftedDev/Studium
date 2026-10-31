@@ -96,27 +96,27 @@ Sender *übersetzt* Information in Nachricht
 - Bitsequenzen $1010$, $1011$, $1100$, $1101$, $1110$, $1111$ werden nicht vergeben.
 - Beispiel BCD: $1097_{dez} = 0001000010010111 = 1097_{hex}$
 ## ASCII
-- Codierung von Buchstaben, Ziffern, Sonder- und Steuerzeichen.
-- Wortlänge = 7 Bit; 1 Bit Redundanz (z.B. Paritätsbit).
+- Codierung von *Buchstaben*, *Ziffern*, *Sonder-* und *Steuerzeichen*.
+- *Wortlänge = 7 Bit*; 1 Bit Redundanz (z.B. Paritätsbit).
 - Steuerzeichen: 0-31, 127 ($00_{hex} \to 1F_{hex},7F_{hex}$).
 - Ziffern: 48-57 ($30_{hex} \to 39_{hex} \to BCD$).
 - Großbuchstaben: 65-90 ($41_{hex} \to 5A_{hex}$).
 - Kleinbuchstaben: 97-122 ($61_{hex} \to 7A_{hex}$ -> 1 Bit Unterschied zum Großbuchstaben).
 - Rest: Sonderzeichen, wie Leerzeichen ($32_{dez} = 20_{hex}$).
-- Keine Umlaute o.ä.
+- *Keine Umlaute* o.ä.
 ## Unicode
 - **Ziel:** Darstellung aller relevanten Zeichen (inkl. ASCII).
 - Wortlänge:
 	- Version 1.0: ~7.100 Zeichen -> 16 Bit reichen.
 	- Version 15.1: ~150.000 Zeichen -> Mehr als 16 Bit.
 - Zweistufiger Code:
-	- Jedes Zeichen erhält einen "Code Point", z.B. $A = 65_{dez}; Ä = 196_{dez}; \in = 8712_{dez}$.
-	- Code point wird gemäß einer eigenen Codierung in Bits/Bytes dargestellt.
+	- Jedes Zeichen erhält einen *"Code Point"*, z.B. $A = 65_{dez}; Ä = 196_{dez}; \in = 8712_{dez}$.
+	- Code Point wird gemäß einer eigenen Codierung in Bits/Bytes dargestellt.
 	- UTF-8 ($L=1-6$, 4 genutzt), UTF-16 ($L=1-2$), UTF-32 (Wortlänge $L=1$), Punycode (für DNS-Namen, ASCII), ...
-- Unicode codiert abstrakte Zeichen, nicht deren Darstellung ("Glyphen"):
+- Unicode codiert abstrakte Zeichen:
 	- $Ä = A + ^{\dots}$, aber $Ä = C4_{hex}, A = 41_{hex}, ^{\dots} = 308_{hex}$.
 ## UTF-8
-- Codiert Code Points mittels Byte-Sequenz:
+- Codiert Code Points mittels *Byte-Sequenz*:
 	- 0-127: Ein Byte, sieben Bit (Bit 7 = `0xxxxxx`).
 	- 128-2047: Zwei Byte, fünf+sechs Bit (`110xxxxx 10xxxxxx`).
 	- 2048-65535: Drei Byte, vier+sechs+sechs Bit (`1110xxxx 10xxxxxx 10xxxxxx`).
@@ -127,14 +127,62 @@ Sender *übersetzt* Information in Nachricht
 	- Vergleich zweier codierter Code Points einfach zu realisieren.
 	- Codiert bis zu $2^{31}$ Zeichen.
 - Mittlere Wortlänge bei westlichen Texten gering.
-# Diskretisierung
-## Problem
+- => [UTF-8 is a Brilliant Design](https://iamvishnu.com/posts/utf8-is-brilliant-design).
+## Diskretisierung
+### Problem
 - Reale Welt kennt keine Nachricht im Sinne der Informatik.
-- Mittels Sensoren können kontinuierliche, biologische Nachrichten erfasst werden.
-	- Kontinuierlich = Zeichenfolge beliebiger Dichte -> Nachricht ist reelle Funktion.
-	- Meist stetige Funktion, bzw. beschränkte Änderung.
+- Mittels *Sensoren* können kontinuierliche, biologische Nachrichten erfasst werden.
+	- *Kontinuierlich* = Zeichenfolge beliebiger Dichte -> Nachricht ist reelle Funktion.
+	- Meist *stetige* Funktion, bzw. beschränkte Änderung.
 - Muss in eine diskrete, d.h. abzählbare Form überführt werden.
-- -> Form Der Modellbildung.
-## Abtastung
+- -> Form Der *Modellbildung*.
+### Abtastung
 - Sensorwerte werden zu bestimmten Stellen erfasst (Stellen meist Zeitpunkte).
-- 
+- *Abtasttheorem* von Shannon/Nyquist-Bedingung:
+	- Wenn $\text{Abtastrate} > 2 \cdot \text{Grundfrequenz}$, dann lassen sich die Sensordaten *exakt* rekonstruieren.
+	![[Pasted image 20261022101250.png|506]]
+### Quantisierung
+- Sensorwerte sind ebenfalls *reell*, d.h. kontinuierlich.
+- Umwandlung in diskrete Nachrichten führt zu Fehlern.
+	- => *Rauschen*.
+- Audio/Video: AD-Wandler mit 10, 12 oder 16 Bit, jedes zusätzliche Bit *verringert Rauschen um die Hälfte* (d.h. ca. 6 dB).
+- Technische Anwendungen meist *8 Bit*.
+### Komprimierung
+- **Ziel:** Minimierung der *mittleren Wortlänge*.
+	- D.h. Minimierung Redundanz.
+	- Eindeutige Decodierung.
+	- Meist: Aufwand Decodierung $\ll$ Aufwand Kodierung.
+- *Variable* Wortlänge -> *Huffman* Algorithmus.
+- Beispiele:
+	- *Lauflängen-Codierung* (Run-Length-Coding), z.B. Windows Bitmap.
+	- *Differenz-Codierung*, z.B. diskretisierte Audio-Signale.
+	- *LZW-Codierung*, via Zeichenhäufigkeit im konkreten Dokument.
+	- Via *Fourier-Transformation* (JPEG, MP3).
+## Codesicherung
+- Codierung mit *expliziter Redundanz*.
+- *Meist:* Code zweier Zeichen sollen sich durch möglichst viele Bits unterscheiden.
+- *Auch:* Zwei aufeinanderfolgende Zeichen sollen sich in möglichst wenig Bits unterscheiden.
+### Hamming-Distanz
+- Hamming Distanz $h$: minimale paarweise Bit Distanz.
+	- $h = 1$: Nachrichten sind gleich ⊥.
+	- $h = 1$: Keine sichernde Redundanz.
+	- $h = 2$: *Ein* fehlerhaftes Bit kann *erkannt* werden.
+	- $h = 3$: *Ein* fehlerhaftes Bit kann *korrigiert* werden, *zwei* fehlerhafte Bit werden *erkannt*.
+	- Allgemein: $h-1$ fehlerhafte Bits  Bits werden erkannt, $(h-1) : 2$ fehlerhafte Bits können korrigiert werden.
+- Spezialfall: *Parität*.
+	- 7 Bit Daten, achtes Bit sorgt dafür, dass die Anzahl der 1er-Bits gerade/ungerade ist.
+	- Grund für 7 Bit bei ASCII.
+### Gray-Codes
+- Einschrittige Codes, d.h. Änderung von einem Bit führt zu benachbartem Code.
+- Verringert Fehlerauswirkung, gerade bei DA/AD-Wandlern.
+
+| **Hex** | **Bin** | **Gray** | **Hex** | **Bin** | **Gray** |
+| ------- | ------- | -------- | ------- | ------- | -------- |
+| `0`     | `0000`  | `0000`   | `8`     | `1000`  | `1100`   |
+| `1`     | `0001`  | `0001`   | `9`     | `1001`  | `1101`   |
+| `2`     | `0010`  | `0011`   | `A`     | `1010`  | `1111`   |
+| `3`     | `0011`  | `0010`   | `B`     | `1011`  | `1110`   |
+| `4`     | `0100`  | `0110`   | `C`     | `1100`  | `1010`   |
+| `5`     | `0101`  | `0111`   | `D`     | `1101`  | `1011`   |
+| `6`     | `0110`  | `0101`   | `E`     | `1110`  | `1001`   |
+| `7`     | `0111`  | `0100`   | `F`     | `1111`  | `1000`   |

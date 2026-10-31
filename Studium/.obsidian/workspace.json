@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2f4f31448af86b89",
+        "id": "7c8f8ef7ac340a48",
         "type": "tabs",
         "children": [
           {
-            "id": "b902b2146c3c818f",
+            "id": "abea0ee765278f0f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "id": "7c8f8ef7ac340a48",
+        "id": "b9ea4bdcdf3650bc",
         "type": "tabs",
         "children": [
           {
-            "id": "abea0ee765278f0f",
+            "id": "3f20bf28118673d7",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -222,17 +222,17 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "b902b2146c3c818f",
+  "active": "abea0ee765278f0f",
   "lastOpenFiles": [
     "Informatik/Notes/Notes - 22.10.2026.md",
+    "Informatik/Notes/Notes - 29.10.2026.md",
+    "Informatik/Content/Zahlensysteme & Operationen.md",
     "Informatik/Content/Nachrichten & Kodierung.md",
     "Mathe/Content/Basics/Mengen & Operationen.md",
     "Informatik/Content/Informatik & Modelle.md",
-    "Informatik/Content/Zahlensysteme & Operationen.md",
     "Informatik/Assets/Pasted image 20261029111519.png",
     "Informatik/Assets/Pasted image 20261029111125.png",
     "Informatik/Assets/Pasted image 20261029110857.png",
-    "Informatik/Notes/Notes - 29.10.2026.md",
     "Informatik/Assets/Pasted image 20261029105330.png",
     "Informatik/Assets/Pasted image 20261029105214.png",
     "Informatik/Assets/Pasted image 20261029104923.png",
