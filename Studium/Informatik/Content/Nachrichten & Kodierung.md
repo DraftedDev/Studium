@@ -88,11 +88,11 @@ Sender *übersetzt* Information in Nachricht
 
 | **Dez** | **BCD** | **Stibitz** | **Dez** | **BCD** | **Stibitz** |
 | ------- | ------- | ----------- | ------- | ------- | ----------- |
-| 0       | 0000    | 0011        | 5       | 0101    | 1000        |
-| 1       | 0001    | 0100        | 6       | 0110    | 1001        |
-| 2       | 0010    | 0101        | 7       | 0111    | 1010        |
-| 3       | 0011    | 0110        | 8       | 1000    | 1011        |
-| 4       | 0100    | 0111        | 9       | 1001    | 1100        |
+| 0       | `0000`  | `0011`      | 5       | `0101`  | `1000`      |
+| 1       | `0001`  | `0100`      | 6       | `0110`  | `1001`      |
+| 2       | `0010`  | `0101`      | 7       | `0111`  | `1010`      |
+| 3       | `0011`  | `0110`      | 8       | `1000`  | `1011`      |
+| 4       | `0100`  | `0111`      | 9       | `1001`  | `1100`      |
 - Bitsequenzen $1010$, $1011$, $1100$, $1101$, $1110$, $1111$ werden nicht vergeben.
 - Beispiel BCD: $1097_{dez} = 0001000010010111 = 1097_{hex}$
 ## ASCII
@@ -173,8 +173,8 @@ Sender *übersetzt* Information in Nachricht
 	- 7 Bit Daten, achtes Bit sorgt dafür, dass die Anzahl der 1er-Bits gerade/ungerade ist.
 	- Grund für 7 Bit bei ASCII.
 ### Gray-Codes
-- Einschrittige Codes, d.h. Änderung von einem Bit führt zu benachbartem Code.
-- Verringert Fehlerauswirkung, gerade bei DA/AD-Wandlern.
+- *Einschrittige* Codes, d.h. Änderung von einem Bit führt zu benachbartem Code.
+- *Verringert Fehlerauswirkung*, gerade bei DA/AD-Wandlern.
 
 | **Hex** | **Bin** | **Gray** | **Hex** | **Bin** | **Gray** |
 | ------- | ------- | -------- | ------- | ------- | -------- |
@@ -186,3 +186,23 @@ Sender *übersetzt* Information in Nachricht
 | `5`     | `0101`  | `0111`   | `D`     | `1101`  | `1011`   |
 | `6`     | `0110`  | `0101`   | `E`     | `1110`  | `1001`   |
 | `7`     | `0111`  | `0100`   | `F`     | `1111`  | `1000`   |
+### CRC-Codes
+- **Problem:** Häufig sind viele Bits hintereinander fehlerhaft.
+- *Lösung 1:* Bits der gesendeten Nachricht werden vor Kommunikation permutiert.
+	- Fehlrwahrscheinlichkeit sinkt.
+- *Lösung 2:* Zusätzliche Prüfsumme $PR(N)$ der Nachricht $N$.
+	- Grob: $N_{neu} = N + PR(N)$
+	- Ggf. auch Prüfsummen aller $n$ Bits.
+- *Grundlage:* Prim-Polynome.
+- Beispiele: CRC8, CRC16, CRC32, SHA1, SHA256.
+## Verschlüsselung
+- **Ziel:** Jede Teilmenge der codierten Nachricht hat die gleiche Vorkommenswahrscheinlichkeit.
+	- D.h. u.a. minimale Entropie.
+	- Nicht vollständig lösbar.
+- Es gibt eine Umkehrcodierung.
+- Codierungs- und Decodierungsalgorithmus werden mittels separater Nachrichten gesteuert: "Schlüssel".
+### Anforderung
+- *Vertraulichkeit:* Unbefugte dürfen Nachricht nicht entschlüsseln & mitlesen.
+- *Integrität:* Unbefugte dürfen abgefangene Nachrichten nicht verändern.
+- *Authentizität:* Sender und Empfänger wollen Gewissheit über die Identität des Partners haben.
+- *Schlüsselverwaltung:* Art & Weise wie Schlüssel erzeugt, verwahrt, weitergegeben und gelöscht werden, muss sicher sein.
