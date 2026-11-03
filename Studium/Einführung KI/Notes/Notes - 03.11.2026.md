@@ -22,4 +22,6 @@ möglichen Eingabe-Ausgabe-Paare vorliegen. Damit ist automatisch eine gewisse
 Unsicherheit bei der Vorhersage verbunden. Harte Computation ist hier nicht möglich.
 ```
 # Inferenz
-![[Pasted image 20261103151106.png]]
+![[Pasted image 20261103151222.png]]
+![[Pasted image 20261103151242.png]]
+![[Pasted image 20261103151324.png]]
