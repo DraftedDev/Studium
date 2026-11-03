@@ -4,7 +4,7 @@
 
 ## DE - German
 
-Ich nutze diese Repository, um my Studienunterlagen zu managen und sicher zu speichern.
+Ich nutze diese Repository, um meine Studienunterlagen zu managen und sicher zu speichern.
 Ihr könnt die Dokumente ruhig anschauen oder gleich copy-pasten falls ihr wollt.
 
 Viel Spaß!
