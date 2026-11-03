@@ -1,5 +1,0 @@
-views:
-  - type: table
-    name: View
-  - type: kanban
-    name: View 2

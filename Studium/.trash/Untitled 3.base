@@ -1,9 +1,0 @@
-views:
-  - type: kanban
-    name: View
-    rowHeight: medium
-    cardSize: 270
-    image: file.file
-    imageFit: contain
-    imageAspectRatio: 0.75
-    markers: none

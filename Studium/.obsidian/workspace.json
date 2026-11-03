@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "dbdc770f5dea4e8a",
+        "id": "b689ce97502ac44e",
         "type": "tabs",
         "children": [
           {
-            "id": "a3a5e30e7d2f92c6",
+            "id": "2d350fbd12aba7b3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Einführung KI/Notes/Notes - 03.11.2026.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Notes - 03.11.2026"
+              "title": "New tab"
             }
           }
         ]
@@ -183,8 +179,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 277.09375,
-    "collapsed": true
+    "width": 277.09375
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -202,7 +197,7 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "a3a5e30e7d2f92c6",
+  "active": "2d350fbd12aba7b3",
   "lastOpenFiles": [
     "Einführung KI/Notes/Notes - 27.10.2026.md",
     "Einführung KI/Notes/Notes - 03.11.2026.md",
