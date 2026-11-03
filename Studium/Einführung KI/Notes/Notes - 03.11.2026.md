@@ -35,3 +35,7 @@ bestimmten definierten Strukturen und zur Organisation des Wissens. Diese Sachve
 führen dazu, die Verarbeitung von Wissen zu automatisieren und Anwendungen mit
 spezifischem Wissen bzw. mit weniger Benutzerinteraktion zu erstellen.
 ```
+![[Pasted image 20261103161831.png]]
+# Turtle & SPARQL
+- Turtle-Syntax zur Speicherung der RDF-Abbildungen (Terse RDF Triple Language).
+- SPARQL dient hauptsächlich auch zur semantischen Abfrage von Daten (SPARQL Protocol and RDF Query Language).
