@@ -25,3 +25,13 @@ Unsicherheit bei der Vorhersage verbunden. Harte Computation ist hier nicht mög
 ![[Pasted image 20261103151222.png]]
 ![[Pasted image 20261103151242.png]]
 ![[Pasted image 20261103151324.png]]
+# Ontologie
+```
+Man versteht unter einer Ontologie ein formal aufgebautes, strukturiertes Modell im Bereich
+des Wissensmanagements, das zur semantischen Vernetzung von Daten dient. Dies spielt
+insbesondere bei Experten- oder Multiagentensystemen eine große Rolle.
+Ontologien dienen der Integration von Informationen im Rahmen der Bereitstellung von
+bestimmten definierten Strukturen und zur Organisation des Wissens. Diese Sachverhalte
+führen dazu, die Verarbeitung von Wissen zu automatisieren und Anwendungen mit
+spezifischem Wissen bzw. mit weniger Benutzerinteraktion zu erstellen.
+```
