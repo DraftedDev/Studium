@@ -11,10 +11,14 @@
             "id": "2d350fbd12aba7b3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Einführung KI/Notes/Notes - 03.11.2026.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Notes - 03.11.2026"
             }
           }
         ]
@@ -179,7 +183,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 277.09375
+    "width": 277.09375,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,8 +202,10 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "ad1498db2f8997a5",
+  "active": "2d350fbd12aba7b3",
   "lastOpenFiles": [
+    "Pasted image 20261103151106.png",
+    "Einführung KI/Notes/Notes - 03.11.2026.md",
     "Einführung KI/Notes/Notes - 27.10.2026.md",
     "Einführung KI/Notes/Notes - 03.11.2026.md",
     "Allgemein/Noten.md",
@@ -239,11 +246,9 @@
     "Mathe/Notes/Notes.md",
     "Projektmanagement/Tasks/Kapitel 3.md",
     "Projektmanagement/Tasks",
-    "Projektmanagement/Notes/Notes - 23.10.2026.md",
     "Projektmanagement/Notes",
     "Projektmanagement/Assets",
     "Projektmanagement",
-    "Informatik/Notes/Notes - 15.10.2026.md",
     "Einführung KI/Content",
     "Untitled.canvas"
   ]
