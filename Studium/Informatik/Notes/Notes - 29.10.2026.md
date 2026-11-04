@@ -21,7 +21,7 @@
 - Meist: Akkumulator als Register für einen Operanden und das Ergebnis.
 - Ein-Address-Maschine: Ein Akkumulator (implizit), häufiges Zwischenspeichern nötig.
 - Zwei-Address-Maschine: Viele Akkumulatoren.
-- Drei-Address-Maschine: Eingang und Aufgang beliebig.
+- Drei-Address-Maschine: Eingang und Ausgang beliebig.
 ### Speicherwerk
 - Enthält Befehle in Maschinensprache.
 - Dauerhaft gespeicherte Befehle werden im ROM abgelegt.
