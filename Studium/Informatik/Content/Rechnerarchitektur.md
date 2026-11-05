@@ -124,4 +124,33 @@ graph TB
 ## Sekundärspeicher
 - Festplatte; SSD.
 - Wegen Durchsatzmaximierung direkt Angeschlossen (SATA; PCIe; ...).
-- Große Festplatt
+- *Große Festplatte:* > 4 TB; Latenz ca. 2-5 ms; Durchsatz: 150 MB/s; Preis 25€/TB -> 150€/TB.
+- *Große SSD:* 512 GB - 4 TB; Latenz ca. 250 us; Durchsatz 500 MB/s; Preis 70€/TB -> 150€/TB.
+## Sonstige Peripherie
+- Maus; Tastatur; Monitor; Mikrofon; Kamera; Scanner; Audio; LAN; WLAN.
+- USB, HDMI, DisplayPort; Thunderbolt; etc.
+# Klassifikation nach Flynn
+## Single Instruction Single Data
+- Jeweils *ein* Befehls- und Datenstrom.
+- Von Neumann Architektur.
+- Verbesserungen:
+	- 64 Bit Wortbreite, d.h. Verarbeitung von 8 Byte pro Befehl.
+	- *Pipelining:* Aufteilung von Befehlen, die mit Hilfe eines Fließbands ausgeführt werden.
+	- *Skalar (mit Pipelining):* Pro Takt einen Befehl starten.
+	- *Super-Skalar:* Mehr als einen Befehl pro Task starten & ausführen.
+- *Probleme:* Insbesondere bedingte Sprünge leeren die Pipeline.
+## Single Instruction Multiple Data
+- *Ein Befehlsstrom*; *Viele Datenströme*, auf denen Befehle gleichzeitig angewendet werden.
+- *Array-* und *Vektorrechner*.
+## Multiple Instruction Single Data
+- Nur für *Spezialstanwendungen*.
+- Datum wird x-Mal gelesen, die Kopien anders bearbeitet und das Ergebnis zusammengefügt.
+- Datum eher klein: binärlogische Operationen -> direkt in Hardware realisieren.
+- Datum eher sehr groß -> passen selten in CPU.
+## Multiple Instruction Multiple Data
+- *Viele Datenströme* werden durch *viele Befehlsströme* verarbeitet.
+- Multithreading:
+	- Thread = Befehlsstrom.
+	- Mehrere Steuer- und Rechenwerksteile in einem CPU-Kern.
+	- Teilen sich ggf. aufwendige Rechenwerke, z.B. Gleitkommaberechnung.
+# Parallelität im CPU
