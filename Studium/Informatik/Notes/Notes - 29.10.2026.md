@@ -291,3 +291,13 @@ Dem Wort kann nicht angesehen werden, welche Bedeutung es hat → abhängig vom 
 - Punkt-zu-Punkt (PICe, SATA).
 - Kreuzschienenverteiler (Matrix-Aufbau, teilweise unabhängige Übertragungen).
 - Vermittlungsnetze (siehe LE Rechnernetze).
+# Mikrocontroller
+- Meist eingebettete Systeme.
+- Einfache Steueraufgaben.
+- 1-4 "Chips", einfach integrierbar.
+- CPU (meist: 8 oder 16 Bit).
+- Dazu: RAM, (EEP)ROM, I/O-Ports, Serielle Schnittstelle, (DA-Wandler, AD-Wandler).
+- Beispiele:
+	- Zilog Z180 (1985): Z80 CPU, max 1 MiB RAM/ROM extern, DMA-Controller, 2x Serial I/O (duplex).
+	- Intel 8051 (1980): 8080 CPU, 128 KiB RAM, 4 KiB ROM, 4x8 Bit I/O-Ports, Serial I/O (duplex).
+![[Pasted image 20261105080736.png|591]]
