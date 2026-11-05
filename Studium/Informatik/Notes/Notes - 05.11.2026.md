@@ -119,4 +119,80 @@
 - *Stern- und Baumstruktur* besitzen zentrale Knoten (z.B. Home-Router).
 - (Teil-) Vermaschte Netze für hohe Ausfallsicherheit.
 - Achtung: physische vs logische Ebene.
-![[Pasted image 20261105101117.png]]
+![[Pasted image 20261105101117.png|543]]
+# Sicherungsschicht
+## Aufgabe
+- Steuerung & Überwachung der Datenübertragung auf Abschnitten zwischen Knoten des Netzes.
+- Knoten müssen sich gegenseitig direkt über ein Übertragungsmedium erreichen können.
+- Wer darf auf das gemeinsame Übertragungsmedium zugreifen.
+	- Opt. Teilschichten: *Media Access Control* (MAC) & *Link Control* (LLC).
+- Erkennung von Übertragungsfehlern (-> Codesicherung).
+- *Ziel:* Daten werden sicher zwischen zwei benachbarten Knoten übertragen.
+- -> Abhängig von der Größe des Netzes, d.h. Knotenabstand.
+## Nahbereich: PAN & WPAN
+- (Wireless) Personal Area Network.
+	- Z.B. Peripheriegeräte mit Smartphone oder Laptop verbinden.
+- Bluetooth: bis 10 m, preiswerte Hardware, geringer Stromverbrauch, Multimediadaten, Master-Slave.
+- Bluetooth Low Energy (BLE): 40–200 m, geringerer Stromverbrauch, 1–2 MBit/s, sporadische Kommunikation.
+- RFID (Radio Frequency Identification): sendet nur eine Identifikation (Ursprung) Freund/Feind-Erkennung), Heute: Strom per Magnetfeld.
+- NFC (Near Field Communication): 10 cm, bis ca. 400 KiBit/s, Strom per Magnetfeld.
+## Lokaler Bereich: LAN & WLAN
+- (Wireless) Local Area Network.
+- *Ethernet:*
+	- Datenpakete mit 64 bis ca. 1500 Byte.
+	- Ursprünglich Bussystem mit 10 MBit/s und Koaxial-Kabel.
+	- Heute: > 10 GBit/s und Twisted Pair in Stern Topologie (meistens Switch, sonst Hub).
+- *WLAN / WiFi:*
+	- Datenfunk, Frequenzband 2.6 GHz, 5 GHz, 6 GHz.
+	- Access Point (AP) ist ein spezieller Router.
+	- Kommunikation verschlüsselt.
+## Zugriff auf gemeinsame Medien
+- „Man muss sich absprechen, wer wann kommunizieren darf. Dazu müsste man kommunizieren können.“.
+- CSMA-Verfahren: *Carrier Sense, Multiple Access*.
+### CSMA/CD
+- Collision Detection.
+- CS = Hören, ob Medium frei ist.
+- CD = Wenn Medien frei -> aber zugleich hören.
+- Kollisionserkennung wenn andere / ungültige Daten gelesen werden.
+- Nur Vollduplex.
+### CSMA/CA
+- Collision Avoidance.
+- CS = Hören, ob Medium frei ist.
+- CA = Wenn Medium frei -> Zufallszeit warten, hören -> Senden.
+- Funk meistens Halbduplex.
+## Regionalbereich: Internetzugang
+- Viele Technologien, häufig historisch gewachsen.
+- Analoge Telefonverbindung (Audiomodulation, 56.6 KBit/s); ISDN (128 KBit/s -> 2 MBit/s).
+- *DSL (Digital Subscriber Line):* Telefonleitung mit 1-35 MHz Bandbreite -> Splitter.
+- *Kabelanschluss:* grob DSL über Fernsehkabel.
+- *Glasfaser:* Backbone-Technologie "to the Home".
+- *Mobil:* 2G, 3G, LTE (4G), 5G.
+	- 2G grob Analogtelefon.
+	- Ab 3G IP-basiert: jeweils "geschicktes" Multiplexing.
+	- Ab 5G mit Techniken von WLAN, z.B. MIMO.
+- Satelliteninternet: Richtfunk.
+- Gemeinsames Zugangsprotokoll: PPP "simuliert" Ethernet-Pakete mit MAC-Addressen.
+## Global: WAN
+- Wide-Area-Network.
+- Meist: Glasfaserbündel, hochwertige Lichtwellenleiter.
+- Oder: Geostationäre Satelliten, breitbandiger Richtfunk.
+- Datenübertragungsraten > 1 TBit/s.
+# Netzwerkschicht
+## Aufgabe
+- Übermitteln von Datenpaketen zwischen zwei beliebigen, indirekt verbundenen Knoten.
+	- Überbrücken unterschiedlicher Transportmedium.
+- Jedes Datenpaket kann eine eigene Route nehmen.
+- Benachbarte Knoten müssen Informationen über möglichen Routen austauschen.
+- "End-zu-End" zwischen Rechnerknoten.
+- Auch: Vermittlungsschicht.
+## Weitervermittlung
+- Sicherungsschicht stellt Übertragung zwischen zwei Geräten in einem konkreten Medium sicher.
+	- D.h. in einem lokalen Netz.
+- Wie können Nachrichten zwischen mehreren Netzen übertragen werden.
+	- "zwischen" - lat. "inter" -> Internet.
+- *Lösungsansatz:*
+	- Knoten bekommen global eindeutige Adressen.
+	- Nachrichten werden in endliche Datenpakete aufgeteilt.
+	- Pakete werden unabhängig in Richtung Zieladresse weitergeleitet.
+- Paket soll einen Weg (Route) zum Ziel nehmen.
+- Bestimmte Knoten können mehrere Adressen haben, wenn sie mit mehreren lokalen Netzen verbunden sind.
