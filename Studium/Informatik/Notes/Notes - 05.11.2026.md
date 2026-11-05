@@ -334,4 +334,25 @@
 - Beispiele:
 	- Authentifizierung, Autorisierung.
 	- Ausführung von Operationen auf anderen Computern.
-	- Koordination von Opera
+	- Koordination von Operationen.
+	- Sicherer Transfer von Daten.
+## Definierte Dienste
+- FTAM (File Transfer, Access and Manager).
+- VT (Virtual Terminal).
+- MOTIS (Message Oriented Text Interchange Standard).
+- CMIP (Common Management Information Protocol).
+- JTM (Job Transfer and Manipulation).
+- MMS (Manufacturing Messaging Specification).
+- RDA (Remote Database Access).
+- DTP (Distributed Transaction Processing).
+## Anwendungsschicht im Internet
+- Hypertext Transfer Protocol (HTTP): Teil des Web.
+- Telnet, Secure Shell: Einloggen in andere Computer.
+- File Transfer Protocol (FTP), Trivial File Transfer Protocol (TFTP): Dateitransfer.
+- Simple Mail Transfer Protocol (SMTP): Mailversand.
+- Internet Message Access Protocol (IMAP): Abruf von Mails.
+- Domain Name System (DNS): Namensdienst, insb. für IP-Adressen.
+- Bootstrap Protocol (BOOTP): Initiieren von Systemen ohne Sekundärspeicher.
+- Simple Network Management Protocol (SNMP): Management der IT-Infrastruktur.
+- MQTT: Übertragen von Telemetriedaten, z.B. IoT.
+- Network Time Protocol (NTP): Synchronisation von Echtzeituhren.
