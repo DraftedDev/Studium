@@ -80,4 +80,43 @@
 	- -> Integration Arpanet in "Internet".
 - Implementierung in UNIX/C -> portabel.
 - Nutzung an Hochschulen -> Usenet.
-- 
+## ISO/OSI Modell Heute
+- Modell hat sich nicht technisch durchgesetzt.
+	- Es gibt Ausnahmen, z.B. ASN.1 aus Darstellungsschicht zur Kodierung von Zertifikaten.
+- TCP/IP war schon implementiert, als Arbeit an OSI-Modell begonnen hat.
+### Referenzmodell
+- Nutzung als Modell, um andere Modelle zu vergleichen.
+- Aufteilung in Schichten ist meist sinnvoll.
+- Entkopplung vom Komponenten (-> Softwaretechnik).
+- Half, Internetprotokolle in die Welt der ITU zu integrieren.
+	- Kommunikationsnetze auf Schicht 1 (oder: 0) gehören meist Telekommunikationsunternehmen.
+# Bitübertragunsschicht
+## Aufgabe
+- Zugang zum Übertragungsmedium.
+![[Pasted image 20261105095427.png|472]]
+## Übertragungsmedien
+- *Twisted Pair:* zwei oder mehr verdrillte isolierte Kupferadern.
+- *Koaxial-Kabel:* Eine Ader in der Mitte, Isolator, leitende Abschirmung.
+- *Lichtwellenleiter:* Glasfaser, Laserdiode als Sender, Photodiode als Empfänger.
+- *Funk im freien Raum:* Signal wird auf Trägerfrequenz moduliert.
+	- Amplituden-, Frequenz-, Phasenmodulation.
+- Modulation funktioniert auch bei Twisted Pair und Koaxial Kabel.
+## Leitungscodierung
+- Wie soll $\{0, 1\}^*$ über eine Leitung übertragen werden?
+- *Idee:* 1 = High-Pegel = 3 V; 0 = Low Pegel = -3 V -> Im Mittel 0 V.
+![[Pasted image 20261105100010.png|521]]
+## Multiplexing
+- Gemeinsame Nutzung eines Übertragungsmedium.
+	- Beispiel: WLAN.
+	- *Raummultiplex:* (eigentlich: Kanäle) -> MIMO bei WLAN.
+	- *Zeitmultiplex:* Aufteilung in exklusive, disjunkte Zeitintervalle ("Zeitschlitze").
+	- *Frequenzmultiplex:* Nutzung unterschiedlicher Frequenzen.
+	- *Codemultiplex:* Nutzung von Alphabet mit Länge $2^n$ statt Binärcode.
+## Netztopologien
+- Kanäle werden über Knoten zu Netzen zusammengeschaltet.
+- *Liniennetze* sind häufig Busse, Leitungsausfall problematisch.
+- *Ringnetze* eher auf regionaler, globaler Ebene.
+- *Stern- und Baumstruktur* besitzen zentrale Knoten (z.B. Home-Router).
+- (Teil-) Vermaschte Netze für hohe Ausfallsicherheit.
+- Achtung: physische vs logische Ebene.
+![[Pasted image 20261105101117.png]]
