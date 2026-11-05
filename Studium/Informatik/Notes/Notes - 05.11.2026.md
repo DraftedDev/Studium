@@ -46,3 +46,38 @@
 - *Semantik* beschreibt die Bedeutung von Nachrichten.
 - *Pragmatik* beschreibt die Einsatzszenarien von Nachrichten.
 - *Synchronisation* beschreibt das zeitliche Verhalten beim Übertragen von Nachrichten.
+# ISO/OSI Referenzmodell
+## Allgemeines
+- Ein Modell zur Datenkommunikation in offenen Systemen.
+- ISO-Norm 7498 für Open System Interconnection (OSI).
+- *Ziel:* Kommunikation über unterschiedlichste technische Systeme hinweg zu beschreiben, inkl. Weiterentwicklung.
+- Sieben logische Schichten ("Layer").
+	- Jede Schicht stellt Dienste für bestimme Aufgaben zur Verfügung.
+	- Unabhängig von anderen Schichten.
+	- Schicht N unterstützt Schicht N+1.
+	- Schicht N nutzt Schicht N-1.
+- Nicht jede Schicht muss in jeder Kommunikationsanwendung verwendet werden.
+## Schichten
+1. *Physical Layer (Bitübertragunsschicht):* Codierung und Übermitteln von Bitströmen.
+2. *Link Layer (Sicherungsschicht):* Steuerung Datenübertragung, Fehlererkennung.
+3. *Network Layer (Netzwerkschicht):* Routing von Datenpaketen.
+4. *Transport Layer (Transportschicht):* End-zu-End-Steuerung.
+5. *Session Layer (Sitzungsschicht):* (Prozess-) Synchronisation.
+6. *Presentation Layer (Darstellungsschicht):* Übersetzung von Datenformaten.
+7. *Application Layer (Anwendungsschicht):* allg. Dienste, Anwendungen, Netzwerkmanagement.
+## Protokolle & mehr
+- Für jede Schicht wurden eigene Protokolle und sonstige Datenformate spezifiziert und standardisiert.
+- Standardisierung durch Internationale Fernmeldeunion (ITU).
+    - 1980er, teilweise 1990er.
+    - knapp 200 Staaten, damals ca. 400 Organisationen (heute: ca. 1000).
+    - Sehr offiziell (gegr. 1865, jetzt Teil UN): top → down.
+## Arpanete & Nachfolger
+- Separate Aktivität für ein dezentrales Computernetz (ab 1968).
+	- Advanced Research Projects Agency Network.
+	- Konzept der Paketvermittlung/Routin.
+- Ab 1971: E-Mail, Telnet, FTP, TCP.
+- 1981: Spezifikation von IPv4 ("Internet Protocol", Routing), ICMP (Management), TCP.
+	- -> Integration Arpanet in "Internet".
+- Implementierung in UNIX/C -> portabel.
+- Nutzung an Hochschulen -> Usenet.
+- 
