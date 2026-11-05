@@ -196,3 +196,142 @@
 	- Pakete werden unabhängig in Richtung Zieladresse weitergeleitet.
 - Paket soll einen Weg (Route) zum Ziel nehmen.
 - Bestimmte Knoten können mehrere Adressen haben, wenn sie mit mehreren lokalen Netzen verbunden sind.
+
+=> „Lokales Netz“ bezieht sich nicht auf LAN oder WLAN der Sicherungsschicht. Es ist ein Begriff in der Sprache der Netzwerk- / Vermittlungsschicht und bezeichnet alle Netze der Sicherungsschicht.
+
+## Datenpaket
+- Nachricht mit beschränkter Länge.
+	- Praxis: ca. 1500 Byte (wg. Ethernet), aber auch mehr (z.B. Glasfaser, Jumbo Frames).
+- Enthält die eigentliche zu übermittelnde Nachricht.
+- Enthält Informationen zu Sender- & Empfängeradressen.
+- Enthält Verwaltungsdaten, z.B. wie lange es unterwegs ist.
+- Netzwerkschicht teilt zu große Pakete auf und fasst zusammengehörige kleine Pakete zusammen.
+## Ermittlung des Paketwegs
+- Jeder Knoten besitzt eine Tabelle, auf der Ziele und mögliche Wege verzeichnet sind: *Routingtabelle*.
+- *Arten von Tabelleneinträgen:*
+	- *Direkt verbundene Netze:* alle Knoten im gleichen lokalen Netz.
+	- *Statische Wege:* Vom Administrator vorgegeben, um bestimmte Wege zu erzwingen.
+	- *Dynamisch ermittelte Wege:* Informationen über weiter entfernt liegende Knoten (-> Routingalgorithmen & Protokolle).
+## Netzwerkschnittstelle
+- Ein Knoten kann in mehr als einem lokalen Netz liegen.
+	- Pro Netzwerk ein eigener Zugang.
+	- Netzwerkadresse bezieht sich nicht auf Knoten, sondern die Netzwerkschnittstelle.
+- Zwei Netzwerkschnittstellen können im gleichen lokalen Netz liegen.
+	- Sinnvoll z.B. bei WAN: Zwei Computer sind durch unterschiedlich verlaufende Lichtwellenleiter verbunden.
+## Routingalgorithmen
+- Zur Ermittlung der Routingtabelle.
+- Im "Backbone" besonders relevant.
+	- "Backbone" verknüpft lokale Netze (und ist selbst ein lokales Netz).
+	- Bei Internet-Providern, WAN, MAN (Metropolitan Area Network), große Unternehmensnetze.
+- Datenpaket hat Feld "Time To Live".
+- Beispielalgorithmen:
+	- Flooding/Broadcasting, Hot Potato.
+	- Backward Learning.
+	- Link-State Routing.
+## Netzwerkschicht im Internet
+- Internet Protocol (IP).
+- Adressen:
+	- IPv4: 32 Bit, d.h. $2^{32} \approx 4.3 \cdot 10^9$ Adressen.
+	- IPv6: 128 Bit, d.h. $2^{128} \approx 3.4 \cdot 10^{38}$ Adressen.
+	- Routing über Teiladressen.
+- Spezielle Adressen, z.B. für eigener Rechner.
+- Reservierte IPv4-Adressen für private Netze.
+	- Z.B. 192.168.0.0 bis 192.168.255.255.
+	- *Network Address Translation (NAT)* als Notlösung für IPv4.
+- Adresszuweisung statisch oder dynamisch.
+# Transportschicht
+## Aufgabe
+- Aufbau von logischen Verbindungen zwischen zwei Anwendungen.
+- Datenpakete in einen Datenstrom umwandeln -> Paketreihenfolge.
+	- ggf. verlorene Pakete nachsenden, doppelt empfangene Pakete ignorieren.
+- Sicherstellung der Dienstgüte (*Quality of Service*).
+	- Angleichung: Sende- und Empfangsraten.
+- "End-zu-End" zwischen zwei Anwendungen.
+## Logische Verbindungen
+- Werden zur Sicherstellung der Dienstgüte benötigt.
+    - Kommunikationspartner „verabreden“ benötigte Qualität
+- Einer der Partner initiiert Verbindungsaufbau.
+- Der andere Partner wartet auf Wünsche zum Verbindungsaufbau.
+- Eigene Adresse benötigt, da abhängig von der Anwendung.
+    - Nicht vom Computer, nicht von der Netzwerkschnittstelle.
+## Verbindungsaufbau
+- Wichtig: Datenpakete können verloren gehen.
+- Ablauf (*Three Way Handshake*)
+    1. A sendet B Datenpaket mit Aufbauwunsch.
+    2. B sendet A Bestätigung des Wunsches.
+    3. A sendet B Quittung.
+- Was kann passieren?
+    - Erstes Paket geht verloren → A wartet und wiederholt.
+    - Zweites Paket geht verloren → A wartet und wiederholt, B ignoriert und bestätigt erneut.
+    - Drittes Paket geht verloren → B wartet und wiederholt, A ignoriert dies.
+- Weitere Herausforderungen.
+	- C sendet Pakete im Namen von A oder B -> Sequenznummern.
+	- A ist "böse" und antwortet nach dem ersten Paket nicht mehr -> SYN Floodin.
+- Verbesserung: Mit dem dritten Paket kann A schon Daten senden.
+![[Pasted image 20261105110013.png|363]]
+## Paketreihenfolge
+- Routing (Netzwerkschichten) kann bewirken, dass Datenpakete in unterschiedlicher Reihenfolge ankommen.
+- Jedes Paket bekommt Sequenznummer.
+## Doppelte Pakete
+- Empfänger merkt sich, welche Sequenznummern schon empfangen wurden.
+- Trifft Paket mit empfangener Nummer ein → ignorieren.
+- Ist nicht trivial umzusetzen, wenn Anzahl Nummern sehr begrenzt ist.
+## Verlorene Pakete
+- Fehlende Sequenznummer, wie bei falscher Reihenfolge.
+- Es wird gewartet:
+	- Nach Ablauf der Zeit, wird Paketverlust angenommen.
+	- Schwierig: Wenn nach Ablauf der Zeit das Paket noch ankommt.
+- Wie lange muss der Sender Pakete bereit halten?
+- Lösung:
+	- Empfänger sendet *Quittungen*.
+	- "Bis zur Sequenznummer SEQ wurden alle Pakete empfangen".
+	- Wenn Sender Quittung nicht innerhalb bestimmter Zeit empfangen hat, Wiederholung Datenpaket(e).
+	- Wenn zu viele Quittungen fehlen → Annahme Stau in Route.
+## Sende- VS. Empfangsrate
+- Z.B. großer Server mit 10 GBit/s sendet an altes Mobiltelefon mit 100 KBit/s.
+- Zwischenspeicher, um kleine Schwankungen auszugleichen.
+	- Werden sowieso für Quittungen & Co benötigt.
+- Lösung:
+	- Empfänger teilt Sender mit, wie viele Datenpakete gesendet werden dürfen.
+	- Wenn Datenpakete quittiert -> Datenpakete senden.
+	- Zu Beginn wird eine Anzahl ausgehandelt (-> Verbindungsaufbau).
+	- Später kann die Zahl durch Empfänger geändert werden.
+- -> Sliding Windows.
+## Transportschicht im Internet
+- *Transmission Control Protocol (TCP):*
+	- Anwendungen werden über Port adressiert (2 Byte).
+	- Jede Verbindung wird über IP-Adressen und Port beider Partner identifiziert.
+	- Eine Anwendung kann mehrere Ports nutzen.
+- *User Datagram Protocol (UDP):*
+	- De facto IP-Pakete mit Portnummern.
+	- Für bestimmte Anwendungen sind Verbindungen überflüssig.
+# Sitzungsschicht
+## Aufgabe
+- Synchronisation zwischen zwei Anwendungen.
+	- Z.B. nach Abbruch der logischen Verbindung.
+	- ... von Daten.
+	- ... von internen Zuständen.
+- Damit nach einem Abbruch nicht von vorne begonnen werden muss.
+- Simplex, Halbduplex oder Vollduplex.
+## Sitzungsschicht im Internet
+- De facto nicht vorhanden.
+- Muss von den Anwendungen selbst geregelt werden.
+# Darstellungsschicht
+## Aufgabe
+- Kommunikationspartner können jeweils eigene Datencodierung verwenden.
+	- Wichtig bei heterogenen Systemen.
+- Datenkompression & Verschlüsselung.
+- -> Kommunikationspartner "verstehen" sich auf syntaktischer Ebene.
+## Darstellungsschicht im Internet
+- De facto nicht vorhandne.
+- Muss von den Anwendungen selbst geregelt werden.
+- Verschlüsselung auf Ebene TCP (Transportschicht):
+	- SSL (veraltet) oder TLS.
+	- Programmierschnittstelle (fast) gleich wie TCP.
+# Anwendungsschicht
+## Aufgabe
+- Unterstützt Anwendungen bei ihren Aufgaben.
+- Beispiele:
+	- Authentifizierung, Autorisierung.
+	- Ausführung von Operationen auf anderen Computern.
+	- Koordination von Opera
