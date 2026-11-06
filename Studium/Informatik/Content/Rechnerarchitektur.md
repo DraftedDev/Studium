@@ -298,3 +298,58 @@ graph TB
 - Wie *ersetze* ich Inhalte?
 - Welche Form der *Konsistenz* und *Kohärenz* stelle ich sicher?
 - Was passiert bei *Verletzung des Lokalitätsprinzip*?
+### Weiterer Speicher
+
+|                 | **CPU-Takte** | **Zeit**   | **Größe**  | **Preis**                   |
+| --------------- | ------------- | ---------- | ---------- | --------------------------- |
+| *CPU-Register*  | 1-2           | 1 ns       | einige KiB | €€€€€€€€€€€€€€€€€€€€€€€€€€€ |
+| *Hauptspeicher* | 100-300       | 30 ns      | GiB        | €€€€€€€€€                   |
+| *SSD*           | 350.000       | ca. 250 us | TB         | €€€                         |
+| *HDD*           |               | 2-5 ms     | 10 TB      | €€                          |
+| *Optisch*       |               | 150 ms     | 50 B       | €                           |
+| *Band*          |               | 20-600 s   | 100 TB     | €                           |
+# Verbindungsstruktur
+## Motivation
+- Komponenten in CPU-Kern, CPU, Computer müssen *kommunizieren*.
+- Kommunikation *beeinflusst Systemleistung* erheblich.
+- *Herausforderung:* Viele Komponente kommunizieren.
+## Bus
+- Gemeinsamer Übertragungsweg für mehrere Komponente.
+- Nur ein Teilnehmer zur Zeit darf Bus nutzen.
+- Zuteilungsverfahren häufig durch Steuerwerk kontrolliert.
+### Parallele Busse
+- *ISA:* 98 parallele Leitungen (20 für Adressen, 16 für Daten, Rest für Steuerung, Strom, Takt).
+- *PCI:* 60 parallele Leitungen (32 für Adressen & Daten), 96 Leitungen (64 Daten/Adressen).
+- *Takt:* 33/55 MHz (üblich), bis zu 533 MHz.
+- *Probleme:*
+	- *Laufzeitunterschiede* von Leitungen.
+	- Leitungen beeinflussen sich durch *Magnetfelder*.
+	- Physisch weniger Robust.
+	- Längenbegrenzung.
+### Serielle Busse
+- Datenübertragung *bitweise*.
+- Im Extremfall werden *zwei Leitungen benötigt*: Daten und Masse.
+	- *Takt* wird aus der *Kodierung* der Daten gewonnen.
+	- Erstes Ethernet mit 10 MBit/s.
+- In der Praxis: 8 Leitungen, auch zur Echokompensation (z.B. Gigabit-Ethernet).
+### Universal Serial Bus
+- Kein echter serieller Bus => Hierarchischer *Baum* mit *serieller* Übertragung.
+- Stromversorgung, Echtzeit-Datenstrom, Plug-and-Play.
+- USB 1: 1.5 MBit/s; USB 4.2: 80 MBit/s.
+```mermaid
+graph LR
+    subgraph Rechner ["Rechner"]
+        Root["Root-Hub"]
+    end
+
+    Root --- Tastatur["Tastatur"]
+    Root --- Hub["Hub"]
+    Root --- Maus["Maus"]
+
+    Hub --- Drucker["Drucker"]
+    Hub --- Kamera["Kamera"]
+```
+### Weitere Verbindungsstrukturen
+- Punkt-zu-Punkt (PCIe, SATA).
+- Kreuzschienenverteiler (Matrix-Aufbau, teilweise unabhängige Übertragungen).
+- Vermittlungsnetze
