@@ -235,3 +235,66 @@ graph TD
 ## Non-Uniform-Memory-Access
 - Prozessor erhält privaten Speicher.
 - Je nach Speicher muss Prozessor anders arbeiten.
+```mermaid
+graph TB
+    subgraph Prozessoren ["Prozessoren & Privater Speicher"]
+        PS1["Privater Speicher"] --- P1["Prozessor"]
+        PS2["Privater Speicher"] --- P2["Prozessor"]
+        Dots["..."]
+        PS3["Privater Speicher"] --- P3["Prozessor"]
+    end
+
+    Bus["Daten-, Adress- und Steuerbus"]
+
+    P1 <==> Bus
+    P2 <==> Bus
+    P3 <==> Bus
+
+    subgraph Gemeinsame Ressourcen ["Gemeinsame Ressourcen"]
+        GS["Gemeinsamer Speicher"]
+        GIO["Gemeinsames I/O"]
+    end
+
+    Bus <==> GS
+    Bus <==> GIO
+```
+## Begrenzung der möglichen Parallelität
+- Nach Gene Amdahl.
+- Der maximale Speed-Up durch Parallelisierung ist durch den Anteil des *Codes* bestimmt, der nicht parallelisierbar ist.
+- Grob: *Umgekehrt proportional* zum Anteil des *sequentiellen Anteils*.
+## Speicherhierarchie
+
+|                 | **CPU-Takte** | **Zeit**   | **Größe**  | **Preis**          |
+| --------------- | ------------- | ---------- | ---------- | ------------------ |
+| *CPU-Register*  | 1-2           | 1 ns       | einige KiB | €€€€€€€€€€€€€€€€€€ |
+| *Hauptspeicher* | 100-300       | 30 ns      | GiB        | €€€€€€€€€          |
+| *SSD*           | 350.000       | ca. 250 us | TB         | €€€                |
+### Herausforderungen
+- Software ist meist größer als ein KiB.
+	- Das Lesen der Befehle aus dem Hauptspeicher verlangsamt CPU um *Faktor 100*.
+- Zu bearbeitenden Daten sind umfangreicher.
+	- Entsprechend verlangsamt der Datentransfer die CPU erheblich.
+- *Lösungsansatz:* Zugriff auf Daten bleiben meist auf lokale Umgebung beschränkt.
+- Nutzung von Speicher der *etwas langsamer* als CPU-Register ist => Kostet weniger & benötigt weniger Platz.
+## Caching
+- Cache speichert Daten, die in geringem zeitlichen Abstand mehrfach verwendet wird.
+- Wird *nahe CPU-Kern* abgelegt -> geringere Zugriffszeiten.
+- Steuerwerk probiert es zunächst im Cache (1-50 Takte), dann im Hauptspeicher.
+- Wenn nicht im Cache: *Nachladen* aus dem Hauptspeicher.
+- *Problem:* Was wird aus dem Cache entfernt?
+- *Problem:* Wie wird das Schreiben in den Hauptspeicher behandelt?
+	- *Write-Through:* In Cache und Hauptspeicher schreiben -> Cache stimmt mit Hauptspeicher überein, aber hohe Dauer.
+	- *Write-Back:* Nur in Cache schreiben, erst bei Ersetzung in den Hauptspeicher -> problematische Konsistenz.
+	- *Write-Around:* Nur in Hauptspeicher, Cache als ungültig markieren -> problematische Dauer & Konsistenz.
+- *Level 1 Cache:* Zwei Caches getrennt nach Daten und Programme, jeweils 32 KiB, Latenz 1-4 Takte.
+- *Level 2 Cache:* Ein gemeinsamer Cache, 256 KiB, Latenz 10-20 Takte.
+- *Level 3 Cache:* Ein Cache für alle CPU-Kerne, 8 MiB, Latenz 20-50 Takte.
+### Andere Caches
+- Inhalt aus *Sekundärspeichern* werden im Hauptspeicher gecached -> *Betriebssystem*.
+- Ergebnisse lang-wertiger Berechnungen werden *zwischengespeichert* -> *Anwendung*.
+### Herausforderungen
+- *Wie bilde* ich den Hauptspeicher auf den Cache ab?
+- *Wo platziere* ich Inhalte im Cache?
+- Wie *ersetze* ich Inhalte?
+- Welche Form der *Konsistenz* und *Kohärenz* stelle ich sicher?
+- Was passiert bei *Verletzung des Lokalitätsprinzip*?
