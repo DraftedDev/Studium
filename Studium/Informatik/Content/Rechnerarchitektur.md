@@ -190,3 +190,48 @@ graph TB
 	- Bis zu 32 Register mit je bis zu 512 Bit, 3-Address.
 - Heute: *NPU*, mit grob 20.000 Recheneinheiten.
 ## Mehrere Befehlssequenzen
+- Etwa 2003 ist Taktrate an physikalische Grenze gestoßen.
+	- CPU sehr viel *schneller als Hauptspeicher*, d.h. Daten können nicht schnell genug geladen werden.
+	- Ab ca. 3 GHz steigt Stromverbrauch stark an.
+	- *Lösung:* Erhöhung der Parallelität:
+	- *Varianten:*
+		- Simultanes Multithreading.
+		- Multiprozessor.
+			- Genügend viele CPU-Kerne.
+			- *Eigene* Steuer- und Rechenwerke.
+			- Kommunikation über *gemeinsamen* Speicher.
+		- Multicomputer.
+```mermaid
+graph TD
+    subgraph SMT ["Simultanes Multithreading"]
+        CPU1["<b>CPU (Kern)</b><br>Threads"]
+    end
+
+    subgraph MP ["Multiprozessor (gemeinsamer Speicher)"]
+        CPU_A["CPU (Kern)"]
+        Mem["Gemeinsamer Speicher"]
+        CPU_B["CPU (Kern)"]
+        
+        CPU_A <==> Mem
+        Mem <==> CPU_B
+    end
+
+    subgraph MC ["Multicomputer (Nachrichtenaustausch)"]
+        CPU_C1["CPU (Kern)"] --- Priv1["Privater Speicher"]
+        CPU_C2["CPU (Kern)"] --- Priv2["Privater Speicher"]
+        
+        CPU_C1 <==>|"Verbindungsstruktur"| CPU_C2
+    end
+```
+### Probleme
+- Zwei Prozessoren schreiben/lesen gleichen Speicher:
+	- *Synchronisation* nötig.
+	- Zugriffsgeschwindigkeit sinkt.
+- *Endliche Bandbreite* des Bussystems.
+	- Beschränkungen Anzahl CPU-Kerne.
+- *Gleiche Taktrate* nötig.
+	- Stromverbrauch.
+	- Selbst unsynchronisierter Zugriff auf Speicher dauert länger.
+## Non-Uniform-Memory-Access
+- Prozessor erhält privaten Speicher.
+- Je nach Speicher muss Prozessor anders arbeiten.
