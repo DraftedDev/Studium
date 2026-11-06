@@ -154,3 +154,39 @@ graph TB
 	- Mehrere Steuer- und Rechenwerksteile in einem CPU-Kern.
 	- Teilen sich ggf. aufwendige Rechenwerke, z.B. Gleitkommaberechnung.
 # Parallelität im CPU
+## Pipelining
+- Aktivitäten/Takten zur Ausführung von Befehlen (RISC):
+	1. Befehl aus dem Speicher holen, *Befehlszähler* erhöhen.
+	2. Befehl *dekodieren*, relevante Operanden laden.
+	3. Befehl *ausführen*.
+	4. *Speicherzugriff:* Lesen & Schreiben.
+	5. *Ergebnis* in Register schreiben, ggf. in Hauptspeicher.
+- *Ohne Pipeline:* 5 Takte pro Befehl.
+- *Mit Pipeline:* Ein Befehl pro Takt (ideal).
+- Probleme:
+	- *Steuerkonflikte*, insbesondere bedingte Sprünge.
+		- Mit der Ausführung begonnene Befehle können *nicht abgebrochen* werden.
+		- *Pseudo-Lösung:* Sprungvorhersage, spekulative Ausführung.
+	- *Datenkonflikte:*
+		- Datum wird vom ersten Befehl berechnet (Ende Takt 3), aber vom nächsten Befehl schon in Takt 2 benötigt.
+		- *Pseudo-Lösung:* Vorziehen anderer Befehle.
+	- *Strukturkonflikte:*
+		- Gleichzeitiger Zugriff auf Speicher.
+	- *Teil-Lösung:* Pipeline verlängern.
+## Very Long Instruction Word
+- Unterbringen *mehrerer* Befehle in *einem* Speicherwort.
+- Parallelisierung/Konfliktlösung durch Erstellen des Maschinencodes auf höherer Ebene.
+- Beispiel:
+	- 128 Bit: $3 \cdot 41$ Bit für Befehlscodes, 5 Bit für Sonderfälle.
+	- Speicherwort wird gelesen und dann an drei Einheiten zum *Dekodieren*, *Ausführen*, *Speichern* & *Schreiben* weitergegeben.
+- Probleme:
+	- *Begrenzte Parallelität.*
+	- Wenn keine Parallelität möglich: *87 Bit verschwendet*.
+	- *Strukturkonflikt*, z.B. Hauptspeicher (Lösung: Pipelining).
+## Vektorprozessoren
+- Parallelität in Daten ausnutzen: *SIMD*.
+- Früher: Spezielle Computer, etwa für Wettervorhersage.
+- Heute: *MMX-*, *SSE-*, *AVX-*Erweiterungen bei amd64.
+	- Bis zu 32 Register mit je bis zu 512 Bit, 3-Address.
+- Heute: *NPU*, mit grob 20.000 Recheneinheiten.
+## Mehrere Befehlssequenzen
