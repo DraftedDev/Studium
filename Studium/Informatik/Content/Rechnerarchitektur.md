@@ -350,6 +350,11 @@ graph LR
     Hub --- Kamera["Kamera"]
 ```
 ### Weitere Verbindungsstrukturen
-- Punkt-zu-Punkt (PCIe, SATA).
-- Kreuzschienenverteiler (Matrix-Aufbau, teilweise unabhängige Übertragungen).
-- Vermittlungsnetze
+- *Punkt-zu-Punkt* (PCIe, SATA).
+- *Kreuzschienenverteiler* (Matrix-Aufbau, teilweise unabhängige Übertragungen).
+- *Vermittlungsnetze.*
+# Mikrocontroller
+- Meist *eingebettete* Systeme; *Einfach* Steueraufgaben.
+- 1-4 "Chips", einfach integrierbar.
+- CPU (meist: *8* oder *16* Bit).
+- Dazu: RAM, (EEP)ROM, I/O-Ports, Serielle Schnittstelle (DA-Wandler, AD-Wandler).
