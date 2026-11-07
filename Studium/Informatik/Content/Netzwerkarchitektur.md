@@ -6,7 +6,7 @@
 # Charakteristiken
 - Datenvolumen, Bandbreite, Übertragungsrate, Latenz.
 - Echtzeit, Synchron, Asynchron, Reichweite.
-- Simplex (Einweg), Halbduplex (Mehrweg, aber nicht gleichzeitig), Vollduplex (Mehrweg, gleichzeitig), Dual Simplex (zwei Simplex Leitungen).
+- *Simplex* (Einweg), *Halbduplex* (Mehrweg, aber nicht gleichzeitig), *Vollduplex* (Mehrweg, gleichzeitig), *Dual Simplex* (zwei Simplex Leitungen).
 # Begriffe
 ## Rechnernetz
 => Ein Rechnernetz ist eine *Menge von Knoten*, die jeweils über *ein oder mehrere Übertragungsmedium* kommunizieren können.
@@ -22,5 +22,19 @@
 ## Reichweite & Latenz
 - Signale werden mit zunehmender Entfernung schwächer => Störungen nehmen zu.
 - Lichtgeschwindigkeit begrenzt Nachrichten: Benötigen *Mindestlaufzeit*.
-- Zwischenknoten verzögern Mindestlaufzeiten.
-- Selbst bei Glasfaser oder Funkt 
+- Zwischenknoten *verzögern* Mindestlaufzeiten.
+- *Laufzeit* äquivalent zu *Latenz*.
+## Protokoll
+- Regelung der Kommunikation:
+	- Wer darf wann was wie senden?
+	- Wer muss wann wie auf eine empfange Nachricht reagieren?
+=> Ein Kommunikationsprotokoll ist eine Menge von *Regeln*, welche die *Syntax*, die *Semantik*, die *Pragmatik* und die *Synchronisation* der Kommunikation bestimmt.
+- *Syntax:* Beschreibt den Aufbau von Nachrichten.
+- *Semantik:* Beschreibt die Bedeutung von Nachrichten.
+- *Pragmatik:* Beschreibt die Einsatzszenarien von Nachrichten.
+- *Synchronisation:* Beschreibt das zeitliche Verhalten bei der Übertragung von Nachrichten.
+# ISO/OSI Referenzmodell
+- Modell zur Datenkommunikation in offenen Systemen.
+- *ISO-Norm 7498* für *Open System Interconnection* (OSI).
+- *Ziel:* Kommunikation über unterschiedlichste technische Systeme hinweg zum beschreiben.
+- 
