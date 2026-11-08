@@ -92,4 +92,56 @@
 	- *Codemultiplex:* Nutzung von Alphabet mit Länge $2^n$ statt Binärcode.
 ### Netztopologien
 - Kanäle werden über *Knoten* zu *Netzen* zusammengeschalten.
+- *Liniennetze* sind häufig Busse, Leitungsausfall problematisch.
+- *Ringnetze* eher auf regionaler, globaler Ebene.
+- *Stern-* und *Baumstruktur* besitzen zentrale Knoten (z.B. Home-Router).
+- Vermaschte Netze für Hohe Ausfallsicherheit.
+## Sicherungsschicht
+- *Steuerung* & *Überwachung* der Datenübertragung auf Abschnitte zwischen Knoten des Netzes.
+- Knoten müssen sich *gegenseitig direkt* über ein Übertragungsmedium erreichen können.
+- Wer darf auf das gemeinsame Übertragungsmedium zugreifen?
+	- *Teilschichten:* Media Access Control (MAC) & Linkt Control (LLC).
+-> Abhängig von der Größe des Netzes, d.h. *Knotenabstand*.
+### Nahbereich: PAN & WPAN
+- *(Wireless) Personal Area Network.*
+- *Bluetooth:* Bis 10 m, preiswerte Hardware, geringer Stromverbrauch, Multimediadaten, Master-Slave.
+- *Bluetooth Low Energy:* 40-200 m, geringerer Stromverbrauch, 1-2 MBit/s.
+- *Radion Frequency Identification (RFID):* Sendet nur eine Identifikation (Ursprung), Freund/Feind-Erkennung.
+- *Near Field Communication (NFC):* 10 cm, bis ca 400 KiBits/s.
+### Lokaler Bereich: LAN & WLAN.
+- *(Wireless) Local Area Network.*
+- *Ethernet:*
+	- Datenpakete mit 64 bis ca. 1500 Byte.
+	- *Ursprünglich* Bussystem mit 10 MBit/s und Koaxial-Kabel.
+	- *Heute:* > 10 GBit/s & Twisted Pair in Stern Topologie (Switch, Hub).
+- *WLAN / WiFi:*
+	- Datenfunk, Frequenzband 2.6 GHz, 5 GHz, 6 GHz.
+	- *Access Point* (AP) als spezieller Router.
+	- Kommunikation *verschlüsselt*.
+### Zugriff auf gemeinsame Mediem
+- CMSA-Verfahren: *Carrier Sense*, *Multiple Access*.
+#### CSMA/CD
+- *Collision Detection.*
+- *CS* => Hören, ob Medium frei ist.
+- *CD* => Kollisionserkennung bei mehreren Sendern.
+- Nur *Vollduplex*.
+#### CSMA/CA
+- *Collision Avoidance.*
+- *CS* => Hören, ob Medium frei ist.
+- *CA* => Wenn Medium nicht frei => Zufallszeit warten, hören => Senden.
+- Funkt meistens *Halbduplex*.
+### Regionalbereich: Internetzugang
+- *Analoge Telefonverbindung* (Audiomodulation, 56.6 KBit/s); ISDN (128 KBit/s -> 2 MBit/s).
+- *Digital Subscribe Line (DSL):* Telefonleitung mit 1-35 MHz Bandbreite.
+- *Kabelanschluss:* grob DSL über Fernsehkabel.
+- *Glasfaser:* Backbone-Technologie zu Hause.
+- *Mobil:* 2G (Analogtelefon), 3G (IP-basiert), LTE (4G), 5G (modernes WLAN mit MIMO).
+- Satelitteninternet: Richtfunk.
+- Gemeinsames Zugangsprotokoll: PPP "simuliert" Ethernet Pakete mit MAC-Addressen.
+### Global: WAN
+- *Wide Area Network.*
+- *Glasfaserbündel*, hochwertige Lichtwellenleiter.
+- *Geostationäre Satelliten*, breitbandiger Richtfunk.
+- Datenübertragungsraten > 1 TBit/s.
+## Netzwerkschicht
 - 
