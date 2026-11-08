@@ -144,4 +144,22 @@
 - *Geostationäre Satelliten*, breitbandiger Richtfunk.
 - Datenübertragungsraten > 1 TBit/s.
 ## Netzwerkschicht
-- 
+- *Übermittlung* von Datenpaketen zwischen *zwei* beliebigen, *indirekt* verbundenen, Knoten.
+- Jedes Datenpaket kann *eigene* Route haben.
+- "End-zu-End" zwischen Knoten.
+- Auch: Vermittlungsschicht.
+### Weitervermittlung
+- Wie können Nachrichten zwischen *mehreren* Netzen übertragen werden?
+- *Lösungsansatz:*
+	- Knoten bekommen global *eindeutige* Adressen.
+	- Nachrichten werden in *endliche* Datenpakete aufgeteilt.
+	- Pakete werden *unabhängig* in Richtung Zieladresse weitergeleitet.
+- Paket soll einen Weg (Route) zum Ziel nehmen.
+- Knoten können *mehrere* Adressen haben, wenn sie mit mehreren lokalen Netzen verbunden sind.
+=> Lokales Netz bezieht sich *nicht* auf LAN oder WLAN der Sicherungsschicht. Es ist ein Begriff in der Sprache der *Netzwerk-/Vermittlungsschicht* und bezeichnet *alle* Netze der Sicherungsschicht.
+### Datenpaket
+- Nachricht mit *beschränkter* Länge (Praxis: *1500 Bytes*, aber auch mehr in Glasfaser oder Jumbo Frames).
+- Enthält die *eigentliche Nachricht*.
+- Enthält *Sender-* und *Empfängeradressen*.
+- Enthält *Verwaltungsdaten*, z.B. wie lange es unterwegs ist.
+- Netzwerkschicht teilt zu große Pakete auf und fasst zusammengehörige kleine Pakete zusammen.
