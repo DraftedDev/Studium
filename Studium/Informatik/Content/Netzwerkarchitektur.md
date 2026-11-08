@@ -190,4 +190,54 @@
 - Adressen:
 	- *IPv4:* 32 Bit, d.h. $2^{32} \approx 4.3 \cdot 10^9$ Adressen.
 	- *IPv6:* 128 Bit, d.h. $2^{128} \approx 3.4 \cdot 10^{38}$ Adressen.
-- Spezielle 
+- *Spezielle Adressen*, z.B. für eigene Rechner.
+- Reservierte IPv4-Adressen für private Netze.
+	- *192.168..0.0* bis *192.168.255.255*.
+	- *Network Address Translation* (NAT) als Notlösung für IPv4.
+- Adresszuweisung *statisch* oder *dynamisch*.
+## Transportschicht
+- Aufbau von *logischen* Verbindungen zwischen zwei Anwendungen.
+- Datenpakete in einen Datenstrom umwandeln -> *Paketreihenfolge*.
+	- ggf. verlorene Pakete nachsenden, doppelt empfangene Pakete ignorieren.
+- Sicherstellung der Dienstgüter (*Quality of Service*).
+	- Angleichung: *Sende-* und *Empfangsraten*.
+- *"End-zu-End"* zwischen zwei Anwendungen.
+### Logische Verbindungen
+- Einer der Partner *initiiert* Verbindungsaufbau.
+- Der andere Partner wartet auf *Wünsche* zum Verbindungsaufbau.
+### Verbindungsaufbau
+- *Wichtig:* Datenpakete können verloren gehen.
+- Ablauf (*Three Way Handshake*):
+	1. *A* sendet *B* Datenpaket zum Aufbauwunsch.
+	2. *B* sendet *A* Bestätigung des Wunsches.
+	3. *A* sendet *B* Quitting.
+- Was kann passieren?
+	- *Erstes* Paket geht *verloren* -> A wartet und *wiederholt*.
+	- *Zweites* Paket geht *verloren* -> A wartet und wiederholt, B *ignoriert* und bestätigt erneut.
+	- *Drittes* Paket geht *verloren* -> B wartet und *wiederholt*, A *ignoriert* dies.
+- Weitere Probleme:
+	- *C* sendet Pakete im Namen von *A* oder *B* -> Sequenznumern.
+	- *A* ist böse und antwortet nach dem ersten Paket nicht mehr -> *SYN Flooding*.
+- Verbesserung: Mit dem *dritten* Paket kann *A* schon Daten senden.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant A as A
+    participant B as B
+
+    A->>B: SYN, seq=x
+    B->>A: SYN-ACK, ack=x+1, seq=y
+    Note over A,B: ACK + [data]
+    A->>B: ACK, ack=y+1, seq=x+1
+    A->>B: [data]
+```
+### Paketreihenfolge
+- Routing kann bewirken, dass Datenpakete in *unterschiedlicher* Reihenfolge ankommen.
+- Jedes Paket bekommt *Sequenznummer*.
+### Doppelte Pakete
+- Empfänger *merkt sich*, welche Sequenznummern schon empfangen wurden.
+- Trifft Paket mit empfangener Nummer ein -> *ignorieren*.
+- Nicht trivial umzusetzen, wenn Anzahl Nummern sehr *begrenzt* ist.
+### Verlorene Pakete
+- *Fehlende* Sequenznummer, wie bei falscher Reihenfolge.
