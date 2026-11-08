@@ -162,4 +162,32 @@
 - Enthält die *eigentliche Nachricht*.
 - Enthält *Sender-* und *Empfängeradressen*.
 - Enthält *Verwaltungsdaten*, z.B. wie lange es unterwegs ist.
-- Netzwerkschicht teilt zu große Pakete auf und fasst zusammengehörige kleine Pakete zusammen.
+- Netzwerkschicht teilt *zu große* Pakete auf und fasst zusammengehörige kleine Pakete *zusammen*.
+### Ermittlung des Paketwegs
+- Jeder Knoten besitzt eine Tabelle, auf der Ziele und mögliche Wege verzeichnet sind: *Routingtabelle*.
+- Arten von *Tabelleneinträgen*:
+	- *Direkt verbundene Netze:* alle Knoten im gleichen lokalen Netz.
+	- *Statische Wege:* Vom Administrator vorgegeben, um bestimmte Wege zu erzwingen.
+	- *Dynamisch ermittelte Wege:* Informationen über weiter entfernte Knoten.
+### Netzwerkschnittstelle
+- Ein Knoten kann in *mehr* als einem lokalen Netz liegen.
+	- Pro Netzwerk ein *eigener* Zugang.
+	- Netzwerkadresse bezieht sich nicht auf Knoten, sondern auf *Netzwerkschnittstelle*.
+- *Zwei* Netzwerkschnittstellen können im *gleichen* lokalen Netz liegen.
+	- Sinnvoll, z.B. bei WAN: Zwei Computer sind durch *unterschiedlich* verlaufende *Lichtwellenleiter* verbunden.
+### Routingalgorithmen
+- Zur Ermittlung der *Routingtabelle*.
+- Im *"Backbone"* besonders relevant.
+	- Backbone verknüpft *lokale Netze* (selbst ein lokales Netz).
+	- Bei *Internet Providern*, WAN, MAN, etc.
+- Datenpaket hat Feld "Time To Live".
+- *Beispielalgorithmen:*
+	- Flooding/Broadcasting, Hot Potato.
+	- Backward Learning.
+	- Link-State Routing.
+### Netzwerkschicht im Internet
+- *Internet Protocol* (IP).
+- Adressen:
+	- *IPv4:* 32 Bit, d.h. $2^{32} \approx 4.3 \cdot 10^9$ Adressen.
+	- *IPv6:* 128 Bit, d.h. $2^{128} \approx 3.4 \cdot 10^{38}$ Adressen.
+- Spezielle 
