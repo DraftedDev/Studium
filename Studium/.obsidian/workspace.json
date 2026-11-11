@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b5716d87803822c8",
+        "id": "e967ba53adf84af5",
         "type": "tabs",
         "children": [
           {
-            "id": "3181d393bb1cb9fd",
+            "id": "f36f8aeefea07a22",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BWL/Notes/Notes - 10-28-2026.md",
+                "file": "Marketing/Notes/Notes - 11-11-2026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Notes - 10-28-2026"
+              "title": "Notes - 11-11-2026"
             }
           }
         ]
@@ -213,8 +213,13 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "3181d393bb1cb9fd",
+  "active": "f36f8aeefea07a22",
   "lastOpenFiles": [
+    "Marketing/Notes/Notes - 10-21-2026.md",
+    "Marketing/Notes/Notes - 11-11-2026.md",
+    "Marketing/Assets/Pasted image 20261111100214.png",
+    "Marketing/Notes/Notes - 10-14-2026.md",
+    "BWL/Notes/Notes - 10-28-2026.md",
     "Informatik/Content/Netzwerkarchitektur.md",
     "Informatik/Notes/Notes - 11-05-2026.md",
     "Informatik/Notes/Notes - 10-29-2026.md",
@@ -223,14 +228,11 @@
     "Excalidraw",
     "Informatik/Notes/Notes - 10-22-2026.md",
     "Arbeitstechniken/Notes/Zeitmanagement.md",
-    "BWL/Notes/Notes - 10-28-2026.md",
     "BWL/Notes/Notes - 10-21-2026.md",
     "BWL/Notes/Notes - 10-14-2026.md",
     "Einführung KI/Notes/Notes - 10-27-2026.md",
     "Einführung KI/Notes/Notes - 10-20-2026.md",
     "Einführung KI/Notes/Notes - 11-03-2026.md",
-    "Marketing/Notes/Notes - 10-21-2026.md",
-    "Marketing/Notes/Notes - 10-14-2026.md",
     "Informatik/Assets/Pasted image 20261105110013.png",
     "Informatik/Assets/Pasted image 20261105101117.png",
     "Informatik/Assets/Pasted image 20261105100010.png",
@@ -245,13 +247,10 @@
     "BWL/Assets/Pasted image 20261104123842.png",
     "BWL/Assets/Pasted image 20261104123819.png",
     "BWL/Assets/Pasted image 20261104123757.png",
-    "Einführung KI/Assets/Pasted image 20261103161831.png",
     "Allgemein/Noten.md",
     "file:/home/mp/Documents/Obsidian/R.md",
     "Mathe/Content/Basics/Mengen & Operationen.md",
     "Einführung KI/Tasks/Team-Projekt/Exposé.md",
-    "Arbeitstechniken/Tasks/Aufgabe A1 - Zeitplan.md",
-    "Arbeitstechniken/Content/Zeitmanagement.md",
     "Einführung KI/Tasks",
     "Arbeitstechniken/Tasks",
     "Einführung KI/Tasks/Team-Projekt",
