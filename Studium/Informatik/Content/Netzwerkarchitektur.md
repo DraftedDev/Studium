@@ -241,3 +241,59 @@ sequenceDiagram
 - Nicht trivial umzusetzen, wenn Anzahl Nummern sehr *begrenzt* ist.
 ### Verlorene Pakete
 - *Fehlende* Sequenznummer, wie bei falscher Reihenfolge.
+- Es wird *gewartet*:
+	- Nach Ablauf der Zeit, wird *Paketverlust* angenommen.
+	- Schwierig: Wenn nach Ablauf der Zeit das Paket noch ankommt.
+- Lösung:
+	- Empfänger sendet *Quittungen*.
+	- "Bis zur Sequenznummer SEQ wurden alle Pakete empfangen."
+	- Wenn Sender Quittung nicht innerhalb bestimmter Zeit empfangen hat -> *Wiederholung* des Datenpakets.
+	- Wenn zu viele Quittungen fehlen -> Annahme *Stau* in Route.
+### Sende- vs Empfangsrate
+- *Beispiel:* Großer Server mit 10 GBit/s sendet an altes Mobiltelefon mit 100 KBit/s.
+- *Zwischenspeicher*, um kleine Schwankungen auszugleichen.
+- *Lösung:*
+	- Empfänger teilt Sender mit, *wie viele* Datenpakete gesendet werden dürfen.
+	- Wenn Datenpakete quittiert -> Datenpakete senden.
+	- -> Sliding Windows.
+### Transportschicht im Internet
+- *Transmission Control Protocol* (TCP):
+	- Anwendungen werden über *Port adressiert* (2 Byte).
+	- Jede Verbindung wird über IP-Adressen und Port *beider* Partner identifiziert.
+	- Eine Anwendung kann *mehrere* Ports nutzen.
+- *User Datagram Protocol* (UDP):
+	- De facto IP-Pakete mit Portnummern.
+	- Für bestimme Anwendungen sind Verbindungen überflüssig.
+## Sitzungsschicht
+- *Synchronisation* zwischen Anwendungen.
+	- z.B. nach *Abbruch* der logischen Verbindung.
+- Damit nach einem Abbruch nicht *von vorne* begonnen werden muss.
+- *Simplex*, *Halbduplex* oder *Vollduplex*.
+### Sitzungsschicht im Internet
+- De facto nicht vorhanden.
+- Muss von *Anwendungen* geregelt werden.
+## Darstellungsschicht
+- Kommunikationspartner können jeweils eigene Datencodierung verwenden.
+	- Wichtig bei *heterogenen* Systemen.
+- *Datenkompression* & *Verschlüsselung*.
+- Kommunikationspartner verstehen sich auf *syntaktischer* Ebene.
+### Darstellungsschicht im Internet
+- De facto nicht vorhanden.
+- Muss von den *Anwendungen* selbst geregelt werden.
+- Verschlüsselung auf Ebene TCP (Transportschicht):
+	- *SSL* (veraltet) oder *TLS*.
+	- Programmierschnittstelle (fast) gleich wie TCP.
+## Anwendungsschicht
+- *Unterstützt* Anwendungen bei ihren Aufgaben.
+- *Beispiele:*
+	- Authentifizierung, Autorisierung.
+	- Koordination von Operationen.
+	- Sicherer Transfer von Daten.
+### Definierte Dienste
+- FTAM (File Transfer, Access and Manager).
+- VT (Virtual Terminal).
+- MOTIS (Message Oriented Text Interchange Standard).
+### Anwendungsschicht im Internet
+- *Hypertext Transfer Protocol* (HTTP): Teil des Web.
+- *Telnet*, *Secure Shell*: Einloggen in andere Computer.
+- *File Transfer Protocol* (FTP): Datentransfer.
