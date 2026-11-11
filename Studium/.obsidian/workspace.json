@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Informatik/Content/Nachrichten & Kodierung.md",
+                "file": "Mathe/Content/Fakultäten & Binomische Sätze.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Nachrichten & Kodierung"
+              "title": "Fakultäten & Binomische Sätze"
             }
           }
         ]
@@ -213,9 +213,16 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "ad1498db2f8997a5",
+  "active": "f36f8aeefea07a22",
   "lastOpenFiles": [
+    "Mathe/Content/Folgen & Konvergenz.md",
+    "Mathe/Content/Basics/Mengen & Operationen.md",
+    "Mathe/Content/Basics/Potenzregeln.md",
+    "Mathe/Content/Basics/Sinus- & Cosinussatz.md",
+    "Mathe/Content/Basics/Ungleichungen & Beträge.md",
+    "Mathe/Content/Fakultäten & Binomische Sätze.md",
     "Informatik/Content/Netzwerkarchitektur.md",
+    "Informatik/Content/Nachrichten & Kodierung.md",
     "Informatik/Content/Rechnerarchitektur.md",
     "Marketing/Assets/Pasted image 20261111110513.png",
     "Marketing/Notes/Notes - 11-11-2026.md",
@@ -244,13 +251,7 @@
     "Informatik/Assets/Pasted image 20261105080736.png",
     "Informatik/Content/Zahlensysteme & Operationen.md",
     "Informatik/Content/Geschichte der Computer.md",
-    "Informatik/Content/Nachrichten & Kodierung.md",
     "Informatik/Content/Informatik & Modelle.md",
-    "Mathe/Notes/Notes.md",
-    "Allgemein/Noten.md",
-    "file:/home/mp/Documents/Obsidian/R.md",
-    "Mathe/Content/Basics/Mengen & Operationen.md",
-    "Einführung KI/Tasks/Team-Projekt/Exposé.md",
     "Einführung KI/Tasks",
     "Arbeitstechniken/Tasks",
     "Einführung KI/Tasks/Team-Projekt",
