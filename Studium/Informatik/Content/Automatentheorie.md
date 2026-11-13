@@ -117,3 +117,6 @@ graph LR
 - Sei $A = (Q,\Sigma,\delta,q_{s},F)$ ein Automat.
 - Die akzeptierte Sprache des Automaten $A$ wird als $L(A)$ bezeichnet.
 - $L(A)=\{m \in \Sigma^* \quad | \quad \delta_{|m|}(m) \in F\}$
+- Automaten erkennen, ob ein Wort $w \in \Sigma^*$ zur Sprache $L$ des Automaten gehört.
+- Mithilfe eines *Ausgabealphabets* können Zeichenfolgen in andere übersetzt werden.
+- 
