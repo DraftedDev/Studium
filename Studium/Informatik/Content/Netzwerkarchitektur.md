@@ -296,4 +296,29 @@ sequenceDiagram
 ### Anwendungsschicht im Internet
 - *Hypertext Transfer Protocol* (HTTP): Teil des Web.
 - *Telnet*, *Secure Shell*: Einloggen in andere Computer.
-- *File Transfer Protocol* (FTP): Datentransfer.
+- *pFile Transfer Protocol* (FTP): Datentransfer.
+# Charakteristiken
+## Verbindungsorientierte Kommunikation
+- Vor der *eigentlichen* Kommunikation wird eine *logische* Verbindung aufgebaut.
+- Parameter werden *ausgehandelt*.
+- Verbindung als *Kontext* der Kommunikation.
+- Kommunikation ist immer *1:1*, also zwei Partner.
+## Verbindungslose Kommunikation
+- Daten werden *spontan* übertragen.
+- *Qualität:* Best Effort.
+- Kontext muss ggf. *explizit* in Daten kodiert werden.
+- *Kommunikationsmuster:* 1:1, 1:N (*multicast*), 1:unbeschränkt (*broadcast*).
+- *Paketvermittlung* statt *Leitungsvermittlung*:
+	- Bandbreite wird *nicht reserviert*.
+	- Kann nach Bedarf *frei genutzt* werden.
+## Beispiele
+
+| **Schicht** | **Verbindung**                   | **Verbindungslos**          |
+| ----------- | -------------------------------- | --------------------------- |
+| *1*         | n/a                              | n/a                         |
+| *2*         | Computer <-> Hub                 | WLAN                        |
+| *3*         | X.25 -> Datex-L                  | IP, Datex-P                 |
+| *4*         | TCP                              | UDP                         |
+| *5*         | Password Authentication Protocol | Apple Talk Session Protocol |
+| *6*         | n/a                              | n/a                         |
+| *7*         | HTTP, SMTP, IMAP                 | HTTP3, DNS, DHCP            |
