@@ -99,4 +99,21 @@ graph LR
 - Jede Nachricht aus zwei Zeichen.
 - Wenn $Y=\{0,1,2\}$ und $g(d)=0$, $g(f)=2$, $g(a)=g(b)=g(c)=\epsilon$.
 	- Ausgabe der Summe der beiden Ziffern.
-##
+## Fangzustand
+- Ist der Automat im Endzustand, dann hat er eine Nachricht erfolgreich gelesen.
+- *Problem:* Fehler-Erkennung:
+	- *Lösung:* Separater Zustand, analog Endzustand.
+	- *Lösung:* Zustand in dem der Automat gefangen bleibt.
+=> *Ein Fangzustand $x$ ist ein Zustand aus $Q$, für den gilt: $\delta(x,\sigma) = x$ für alle $\sigma \in \mathbb{Z}$*.
+## Erkennung von Nachrichten
+- Sei $m=\{m_{0},m_{1},\dots,m_{n-1}\}$ eine Nachricht der Länge $n$ aus $\Sigma^*$, d.h. $m_{i} \in \Sigma$ für alle ($0 \leq i \leq n$).
+	- $|m|=n$ bezeichnet die Länge einer *beliebigen* Nachricht $m$.
+- Sei $A=(Q,\Sigma,q_{s},F)$ ein Automat mit *Anfangszustand* $q_{s}$ und einer *Menge* $F$ von *Endzuständen*.
+- Sei $\delta(m)=\delta(\delta_{i-1}(m),m_{i})$ für $0<i<n$ und $\delta_{0}(m)=\delta(q_{s},m_{0})$
+- Wenn $\delta_{n}(m) \in F$ ist, dann hat der Automat $A$ die Nachricht $m$ *akzeptiert*.
+	- $\delta_{n}(m)=\delta_{|m|}(m)$
+## Akzeptierte Sprachen
+- Eine Sprache ist eine Teilmenge von $\Sigma^*$.
+- Sei $A = (Q,\Sigma,\delta,q_{s},F)$ ein Automat.
+- Die akzeptierte Sprache des Automaten $A$ wird als $L(A)$ bezeichnet.
+- $L(A)=\{m \in \Sigma^* \quad | \quad \delta_{|m|}(m) \in F\}$
