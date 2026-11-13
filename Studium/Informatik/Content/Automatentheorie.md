@@ -119,4 +119,14 @@ graph LR
 - $L(A)=\{m \in \Sigma^* \quad | \quad \delta_{|m|}(m) \in F\}$
 - Automaten erkennen, ob ein Wort $w \in \Sigma^*$ zur Sprache $L$ des Automaten gehört.
 - Mithilfe eines *Ausgabealphabets* können Zeichenfolgen in andere übersetzt werden.
+# Komplexere Sprachen
+- Endliche Automaten können nur *"einfache"* Sprachen erkennen.
+- Komplexe Sprachen benötigen einen beliebig großen Zwischenspeicher.
+## Stapelspeicher
+- Auch: *Kellerspeicher* oder englisch *Stack*.
+- Operation `push` legt ein Element *auf* den Stapel.
+- Operation `pop` *nimmt* das oberste Element vom Stapel.
+- Stapel kann beliebig hoch, d.h. beliebig viele Element enthalten.
+## Kellerautomaten
+- Erweiterung der endlichen Automaten um einen *Kellerspeicher*.
 - 
