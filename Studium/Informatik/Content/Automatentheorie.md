@@ -55,4 +55,4 @@ graph LR
 => Ein Automat ist endlich, wenn die Menge der *Zustände*, der *Eingabezeichen* und der *Ausgabezeichen* *endlich* ist.
 ## Nichtdeterministischer Automat
 - Ein Automat ist nichtdeterministisch, wenn:
-	- $\delta$
+	- $\delta $
