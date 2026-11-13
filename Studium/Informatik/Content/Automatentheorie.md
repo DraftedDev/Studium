@@ -92,4 +92,11 @@ graph LR
 -> Jede Nachricht, die beliebig viele $0$ hat und dann mit einer $1$ endet.
 ### Beispiel 2
 - $\Sigma=\{0,1\}$
-- $Q=\{a,b,c,d,e,\}$
+- $Q=\{a,b,c,d,e,f\}; \quad z_{s}=a; \quad E=\{d,e,f\}$
+- $\delta(a,0)=b; \quad \delta(a,1)=c$
+- $\delta(b,0)=d; \quad \delta(b,1)=e$
+- $\delta(c,0)=e; \quad \delta(c,1)=f$
+- Jede Nachricht aus zwei Zeichen.
+- Wenn $Y=\{0,1,2\}$ und $g(d)=0$, $g(f)=2$, $g(a)=g(b)=g(c)=\epsilon$.
+	- Ausgabe der Summe der beiden Ziffern.
+##
