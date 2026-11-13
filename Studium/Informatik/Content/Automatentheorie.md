@@ -54,5 +54,23 @@ graph LR
 ## Endlicher Automat
 => Ein Automat ist endlich, wenn die Menge der *Zustände*, der *Eingabezeichen* und der *Ausgabezeichen* *endlich* ist.
 ## Nichtdeterministischer Automat
-- Ein Automat ist nichtdeterministisch, wenn:
-	- $\delta $
+- Ein Automat ist *nichtdeterministisch*, wenn:
+	- $\delta \subseteq (Q \times \Sigma \times Q)$ eine *Relation* ist bzw:
+		- $\delta: Q \times \Sigma \to \mathbb{P}(Q)$ eine Funktion in die Menge aller *Teilmengen* von $Q$ ist.
+	- $q \subseteq (Q \times \Sigma \times Y)$ eine *Relation* ist, bzw.
+		- $g: Q \times \Sigma \to \mathbb{P}(Y)$ eine Funktion in die Menge aller *Teilmengen* von $Y$ ist.
+- Automat darf *frei* aus den möglichen *Folgezuständen* und *Ausgangszeichen* wählen.
+	- *Alternativ:* Automat durchläuft alle Folgezustände *parallel*.
+- Jeder *deterministischer* Automat ist trivial ein *nichtdeterministischer* Automat.
+- Jeder *nichtdeterministischer* Automat kann in einen deterministischen transformiert werden.
+- *NEA* = nichtdeterministischer, endlicher Automat.
+- *DEA* = deterministischer, endlicher Automat.
+## Eingabe
+- Bei *nichtdeterministischen* Automaten möchte man manchmal Zustandsänderung *ohne* Eingabe.
+- Wie bei der Ausgabe: $\epsilon$ "empty".
+## Anfang & Ende
+- Mit welchem Zustand *beginnt* ein DEA/NEA?
+- *Wann* hört ein Automat auf?
+- *Deterministischer* Automat mit Anfang und Ende ist ein Tupel $(Q,\Sigma,\delta,Y,g,q_{s},F)$ wobei:
+	- $q_{s}$ der Anfangszustand ist.
+	- $F$ eine Teilmenge von $Q$ die Menge der Endzustände ist.
