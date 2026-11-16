@@ -129,4 +129,23 @@ graph LR
 - Stapel kann beliebig hoch, d.h. beliebig viele Element enthalten.
 ## Kellerautomaten
 - Erweiterung der endlichen Automaten um einen *Kellerspeicher*.
-- 
+- Zustandsänderung nur durch Zustand, Eingabe und oberstes Kellerelement.
+- Falls Keller leer => *spezielles* Zeichen wird gesendet.
+- Definiert als $(Q,\Sigma,\Gamma,\delta,q_{s},\#)$:
+	- $Q = \{q_{0},q_{1},\dots\}$ eine endliche Menge von Zuständen.
+	- $\Sigma=\{\sigma_{0},\sigma_{1},\dots\}$ ein Eingabealphabet.
+	- $\Gamma=\{\gamma_{0},\gamma_{1},\dots\}$ ein Kelleralphabet.
+	- $q_{s} \in Q$ ein Startzustand.
+	- $\# \in \Gamma$ das unterste Kellersymbol.
+	- $\delta: Q \times (\Sigma \cup \{\epsilon\}) \times \Gamma \to \mathbb{P}(Q \times \Gamma^*)$ eine Übergangsfunktion, wobei nur auf endliche Teilmengen von $Q \times \Gamma^*$ abgebildet wird.
+### Kellersprachen
+- Alle Sprachen, die von *endlichen* Automaten erkannt werden.
+- Beispiel:
+	- Sei $\Sigma=\{a,b\}$. Erstelle einen Automaten, der die Sprache `a..ab..b` erkennt, wobei die Folgen `a..a` und `b..b` gleich lang sein müssen.
+		-> Für jedes `a` wird ein `x` im Keller gespeichert. Sobald `b` erkannt wird, muss solange vom Keller gelesen werden, bis `#` erkannt wird.
+## Turing-Maschine
+Eine *deterministische* Turing-Maschine besteht aus:
+- Einem endlichen *Eingabealphabet* $\Sigma$.
+- Einem endlichen *Bandalphabet* $\Gamma$ mit $\Sigma \subseteq \Gamma$.
+- Einem unbegrenzten *Schreib-/Leseband*, das initial mit Werten von $\Gamma$ beschrieben ist.
+- Einem längs des Bandes nach *links* (L) und *rechts* (R) um jeweils einen Schritt beweglichen Schreib-/Lesekopf.
