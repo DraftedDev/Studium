@@ -187,4 +187,4 @@ Eine *deterministische* Turing-Maschine besteht aus:
 	- $u \to v$ Bedeutet: Ersetze eine Wortfolge $u$ durch eine Wortfolge $v$.
 ### Syntax & Sprache
 - **Syntax:** Die Gesamtheit der auf die Menge der Wörter $(V \cup \Sigma)^*$ wirkenden *Ableitungsregeln* heißt *Syntax*.
-- **Sprache:** Die aus dem Startsymbol $S$ in endlich vielen
+- **Sprache:** Die aus dem Startsymbol $S$ in *endlich* vielen Schritten ableitbaren, nur aus *terminalen* Zeichen bestehenden Wörtern bilden die Sprache $L(G)$ einer *Grammatik* $G$.
