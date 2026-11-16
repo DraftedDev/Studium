@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "15b335824bd08e27",
+        "id": "b97f6d9e72ea81c8",
         "type": "tabs",
         "children": [
           {
-            "id": "e6f5a1db5f17f276",
+            "id": "27b4345a78918548",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mathe/Content/Basics/Reelle Funktionen.md",
+                "file": "Mathe/Content/Basics/Trigonometrische Funktionen.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Reelle Funktionen"
+              "title": "Trigonometrische Funktionen"
             }
           }
         ]
@@ -213,10 +213,12 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "ad1498db2f8997a5",
+  "active": "27b4345a78918548",
   "lastOpenFiles": [
-    "Mathe/Assets/Reelle Funktionen-1794828640726.webp",
+    "Mathe/Assets/Trigonometrische Funktionen-1794832297806.webp",
+    "Mathe/Content/Basics/Trigonometrische Funktionen.md",
     "Mathe/Content/Basics/Reelle Funktionen.md",
+    "Mathe/Assets/Reelle Funktionen-1794828640726.webp",
     "Mathe/Content/Fakultäten & Binomische Sätze.md",
     "Mathe/Content/Folgen & Konvergenz.md",
     "2026-11-16.md",
@@ -247,11 +249,9 @@
     "Excalidraw",
     "Informatik/Assets/Pasted image 20261112101741.png",
     "Informatik/Assets/Pasted image 20261105080736.png",
-    "Informatik/Assets/Pasted image 20261029111519.png",
     "Mathe/Content/Basics/Potenzregeln.md",
     "Mathe/Content/Basics/Sinus- & Cosinussatz.md",
     "Marketing/Notes/Notes - 10-21-2026.md",
-    "Marketing/Notes/Notes - 10-14-2026.md",
     "Einführung KI/Tasks",
     "Arbeitstechniken/Tasks",
     "Einführung KI/Tasks/Team-Projekt",

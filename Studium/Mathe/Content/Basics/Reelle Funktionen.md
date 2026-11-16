@@ -60,4 +60,18 @@ $$
 - $a>1: \quad W_{f}=(0,\infty)$ s.m.w. => $f^{-1}$ existiert.
 - $a=1: \quad W_{f}=\{1\}$ => $f^{-1}$ existiert *nicht*.
 - $0<a<1: \quad W_{f}=(0,\infty)$ s.m.f. => $f^{-1}$ existiert.
-- 
+### Definition
+Die Umkehrfunktion von $f: \mathbb{R} \to (0, \infty), \quad f(x)=a^x, \quad a>0, \quad a \neq 1$ heißt:
+=> $\log_{a}(0,\infty) \to \mathbb{R}$ => "Logarithmus zur Basis $a$".
+=> $a^{\log_{a}(x)}=x, \quad \log_{a}(a^x)=x$
+### $e$-Funktion
+$a = e$ Eulerzahl: $e^x$ "Exponentialfunktion".
+$\log_{e}(x)=\ln(x)$: "natürlicher Logarithmus".
+### Rechenregeln
+$$
+e^{x+y} = e^x \cdot e^y; \quad (e^x)^y = e^{x \cdot y}; \quad e^{-x} = \frac{1}{e^x}; \quad e^0 = 1 \\ \\
+\ln(x \cdot y) = \ln(x) + \ln(y); \quad \ln(x^y) = y \cdot \ln(x); \quad -\ln(x) = \ln\left( \frac{1}{x} \right); \quad \ln(0) = 1
+$$
+$$
+\log_{a}(x) = \frac{\ln(x)}{\ln(a)}
+$$
