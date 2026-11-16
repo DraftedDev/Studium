@@ -37,5 +37,27 @@ $$
 	=> Es gilt $f^{-1}: [0,\infty]\to[0,\infty]$
 ### Definition
 => Die Umkehrfunktion von $f:[0,\infty]\to[0,\infty]$, $f(x)=x^n$, $n \geq 1$ heißt n-te Wurzel $f^{-1}(x)=\sqrt[n]{x}=x^{\frac{1}{n}}$.
-
-=> -> <= <
+### Satz
+=> $x^n=a, \quad a \in \mathbb{R}, \quad x \in \mathbb{R}$
+$$
+\text{n gerade } \implies \begin{cases}
+\mathbb{L} = \{\sqrt[n]{ a }, -\sqrt[n]{ a }\}, \quad a \geq 0 \\
+\mathbb{L} = \varnothing, \quad a < 0
+\end{cases} \\
+\text{n gerade } \implies \begin{cases}
+\mathbb{L} = \{\sqrt[n]{ a }\}, \quad a \geq 0 \\
+\mathbb{L} = \{-\sqrt[n]{ -a }\}, \quad a < 0
+\end{cases}
+$$
+## Exponentialfunktion / Logarithmus
+$$
+a > 0, \quad n \in \mathbb{Z}, \quad m \in \mathbb{N}_{>0} \\
+\implies a^{\frac{n}{m}} = \sqrt[m]{ a^n }
+$$
+### Definition
+=> $b \in \mathbb{R}, \quad a > 0$. Wähle Folge $(b_{n})^\infty_{n=0}, \quad b_{n} \in \mathbb{Q}, \quad \lim_{n \to \infty}(b_{n}=b)$, setze $a^b = \lim_{n\to\infty}(a^{b_{n}})$.
+### Eigenschaften $a^x$
+- $a>1: \quad W_{f}=(0,\infty)$ s.m.w. => $f^{-1}$ existiert.
+- $a=1: \quad W_{f}=\{1\}$ => $f^{-1}$ existiert *nicht*.
+- $0<a<1: \quad W_{f}=(0,\infty)$ s.m.f. => $f^{-1}$ existiert.
+- 
