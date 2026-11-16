@@ -148,4 +148,21 @@ Eine *deterministische* Turing-Maschine besteht aus:
 - Einem endlichen *Eingabealphabet* $\Sigma$.
 - Einem endlichen *Bandalphabet* $\Gamma$ mit $\Sigma \subseteq \Gamma$.
 - Einem unbegrenzten *Schreib-/Leseband*, das initial mit Werten von $\Gamma$ beschrieben ist.
-- Einem längs des Bandes nach *links* (L) und *rechts* (R) um jeweils einen Schritt beweglichen Schreib-/Lesekopf.
+- Einem längs des Bandes nach *links* (L) und *rechts* (R) um jeweils einen Schritt beweglichen *Schreib-/Lesekopf*.
+- Einer *endlichen* Menge von Zuständen $Q$ mit einem *Anfangszustand* und mindestens einem *Endzustand* (Haltezustand).
+- Einer Zustandsübergangsfunktion $\delta: Q \times \Gamma \to Q \times \Gamma \{L,R\}$.
+- **Bemerkung:**
+	- Wir verzichten auf unterschiedliche Eingabe- und Bandalphabete.
+	- Man kann sich auf $\Sigma=\{0,1\}$ beschränken.
+	- *Konfiguration* = Anordnung der Zeichen auf dem Band + Kopfposition.
+### Berechenbarkeit
+=> Eine Funktion $y = f(x)$ mit $x,y \in \Sigma^*$ heißt *Turing-berechenbar*, wenn es eine Turing-Maschine mit Folgen von *Zustandsänderungen* gilt.
+- Wenn die Funktion nur *partiell* ist, dann muss die Turing-Maschine *nicht anhalten*.
+	- Beispiel: $\log(x)$ mit $x = 0$.
+	- *These:* jede mathematische Funktion ist Turing-berechenbar.
+		=> **Church-Turing-These:** *"Die Klasse der Turing-berechenbaren Funktionen stimmt mit der Klasse der intuitiv berechenbaren Funktionen überein".*
+### Simulation
+- Die *Konfiguration* einer Turing-Maschine lässt sich als *Zahl* darstellen.
+	- Zustände, aktueller Zustand, Bandinhalte und Position des Kopfes.
+	- Analog den Stellen in einer *Dezimalzahl*.
+- Jede einzelne *Zustandsübergang* überführt eine Konfiguration in die nächste.
