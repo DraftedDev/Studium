@@ -35,3 +35,10 @@ Eine Folge $(a_{k})^\infty_{k=0}$ ist bestimmt divergent nach $\pm \infty$, wenn
 ### Unbestimmte Divergenz
 Einige Folge $(a_{k})^\infty_{k=0}$ ist unbestimmt divergent, wenn $\lim_{ n \to \infty } a_{n}$ sich weder gegen einen festen Grenzwert, noch gegen $\pm \infty$ bewegt.
 - **Bsp:** $a_{n} = (-1)^n = \{1;-1;1;-1;1;-1;1\}$
+# Monotonie
+=> Folge $(a_{n})_{n=0}^\infty = a_{0},a_{1},a_{2},\dots$
+=> $n_{1}<n_{2}$
+- **Monoton Wachsend:** $a_{n_{1}} \leq a_{n_{2}}$
+- **Streng Monoton Wachsend:** $a_{n_{1}}<a_{n_{2}}$
+- **Monoton Fallend:** $a_{n_{1}} \geq a_{n_{2}}$
+- **Streng Monoton Fallend:** $a_{n_{1}} > a_{n_{2}}$
