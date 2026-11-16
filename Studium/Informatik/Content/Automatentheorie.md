@@ -165,4 +165,26 @@ Eine *deterministische* Turing-Maschine besteht aus:
 - Die *Konfiguration* einer Turing-Maschine lässt sich als *Zahl* darstellen.
 	- Zustände, aktueller Zustand, Bandinhalte und Position des Kopfes.
 	- Analog den Stellen in einer *Dezimalzahl*.
-- Jede einzelne *Zustandsübergang* überführt eine Konfiguration in die nächste.
+- Jede einzelne *Zustandsübergang* überführt eine *Konfiguration* in die nächste.
+- Wenn man die *Konfiguration* auf dem Band einer *anderen* Turing-Maschine speichert, dann kann diese die ursprüngliche *simulieren*.
+=> Möglichkeit einer *universellen* Turing-Maschine, die *alle* anderen Turing-Maschinen simulieren kann.
+### Brainfuck
+- Praktische Anwendung einer Turing-Maschine.
+- Implementiert Turing-Maschine mit 8 Befehlen.
+## Formale Sprachen
+- Eine Teilmenge $L \subseteq \Sigma^*$ heißt *formale Sprache* über einem *endlichen* Alphabet $\Sigma$.
+- $\Sigma^*$ bezeichnet man als *Kleenesche Hülle* des Alphabets.
+	- D.h. eine Menge aller Wörter beliebiger Länge.
+- Soll das leere Wort $\epsilon$ nicht enthalten sein: *transitive Hülle* $\Sigma^+$.
+### Grammatik
+- Eine Grammatik $G$ besteht aus:
+	- Einem *endlichen* Alphabet $\Sigma$ von *Terminalsymbolen*.
+	- Einer *endlichen* Menge $V$ von *Nichtterminalsymbolen* mit $V \cap \Sigma = \emptyset$.
+	- Einem *Startsymbol* $S \in V$.
+	- Einer endlichen Menge $P$ von Produktionen $u \to v$ mit:
+		- $u \in (V \cup \Sigma)^* V(V \cup \Sigma)^*$
+		- $v \in (V \cup \Sigma)$
+	- $u \to v$ Bedeutet: Ersetze eine Wortfolge $u$ durch eine Wortfolge $v$.
+### Syntax & Sprache
+- **Syntax:** Die Gesamtheit der auf die Menge der Wörter $(V \cup \Sigma)^*$ wirkenden *Ableitungsregeln* heißt *Syntax*.
+- **Sprache:** Die aus dem Startsymbol $S$ in endlich vielen
