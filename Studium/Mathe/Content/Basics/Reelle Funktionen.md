@@ -17,4 +17,25 @@ H(x) = \begin{cases}
 \end{cases}, \quad D=\mathbb{R}
 $$
 # Verkettung
+- $\mathbb{R} \stackrel{f}{\longrightarrow} \mathbb{R} \stackrel{g}{\longrightarrow} \mathbb{R}$
+- $x \to f(x) \to g(f(x)) \implies \text{(gof)}$
+# Umkehrfunktion
+- Gegeben $y=f(x)$, suche $f^{-1}(x)$ mit: 
+	- => $(fof^{-1})(x)=x$ 
+	- => $(f^{-1}of)(x)=x$
+- **Algorithmus:**
+	- Tausche $x \leftrightarrow y$ => $y=f(x) \longrightarrow x=f(y)$
+	- Löse $x=f(y)$ nach $y$ auf.
+- **Graphisch:**
+![[Reelle Funktionen-1794828640726.webp|416]]
+## Satz
+=> $f^{-1}(x)$ existiert auf $D_{f}$, falls es zu jedem $y \in W_{f}$ genau ein $x \in D_{f}$ gibt mit $y=f(x)$. D.h. es gilt ein 1:1-Zusammenhang zwischen $D_{f}$ und $W_{f}$. Der Graph $f^{-1}$ wird durch Spiegelung an $y=x$ erhalten.
+# Spezielle Funktionen
+## Potenzfunktionen
+=> $f(x)=x^n, \quad n \in N_{>0}$
+- s.m.w. auf $D_{f}=[0,\infty], \quad W_{f}=[0,\infty]$
+	=> Es gilt $f^{-1}: [0,\infty]\to[0,\infty]$
+### Definition
+=> Die Umkehrfunktion von $f:[0,\infty]\to[0,\infty]$, $f(x)=x^n$, $n \geq 1$ heißt n-te Wurzel $f^{-1}(x)=\sqrt[n]{x}=x^{\frac{1}{n}}$.
 
+=> -> <= <
