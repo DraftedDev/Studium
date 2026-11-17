@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b97f6d9e72ea81c8",
+        "id": "2eb6258aae109c25",
         "type": "tabs",
         "children": [
           {
-            "id": "27b4345a78918548",
+            "id": "0b7c49c82bac9464",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Mathe/Content/Basics/Trigonometrische Funktionen.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Trigonometrische Funktionen"
+              "title": "New tab"
             }
           }
         ]
@@ -213,10 +209,10 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "27b4345a78918548",
+  "active": "0b7c49c82bac9464",
   "lastOpenFiles": [
-    "Mathe/Assets/Trigonometrische Funktionen-1794832297806.webp",
     "Mathe/Content/Basics/Trigonometrische Funktionen.md",
+    "Mathe/Assets/Trigonometrische Funktionen-1794832297806.webp",
     "Mathe/Content/Basics/Reelle Funktionen.md",
     "Mathe/Assets/Reelle Funktionen-1794828640726.webp",
     "Mathe/Content/Fakultäten & Binomische Sätze.md",
@@ -248,7 +244,6 @@
     "Marketing/Notes/Notes - 11-11-2026.md",
     "Excalidraw",
     "Informatik/Assets/Pasted image 20261112101741.png",
-    "Informatik/Assets/Pasted image 20261105080736.png",
     "Mathe/Content/Basics/Potenzregeln.md",
     "Mathe/Content/Basics/Sinus- & Cosinussatz.md",
     "Marketing/Notes/Notes - 10-21-2026.md",
