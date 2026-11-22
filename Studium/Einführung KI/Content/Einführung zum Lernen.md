@@ -14,8 +14,9 @@
 ## Inverse Deduktion/Induktion
 Schlussfolgerung (Reasoning) durch ermitteln einer neuen Regel aus einer alten Regel.
 
-| **Erste Prämisse (Obersatz)**   | Alle *Menschen* sind | *sterblich* |
+| **Kategorie**                   | **Statement**        | **Keyword** |
 | ------------------------------- | -------------------- | ----------- |
+| **Erste Prämisse (Obersatz)**   | Alle *Menschen* sind | *sterblich* |
 | **Zweite Prämisse (Untersatz)** | Alle *Griechen* sind | *Menschen*  |
 | **Schlussfolgerung**            | Alle *Griechen* sind | *sterblich* |
 # Neuronen & Verbindungen

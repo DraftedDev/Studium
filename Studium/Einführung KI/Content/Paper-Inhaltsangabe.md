@@ -1,0 +1,4 @@
+- Deckblatt, Verzeichnisse & Team.
+- **Block A:**
+	- 1.1 Einleitung & Fragestellung (1,5 Seiten):
+		- Leitfrage: Was bedeutet "im Internet stehen"
