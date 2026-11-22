@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Einführung KI/Content/Paper-Inhaltsangabe.md",
+                "file": "Einführung KI/Content/Hausarbeit.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Paper-Inhaltsangabe"
+              "title": "Hausarbeit"
             }
           }
         ]
@@ -194,8 +194,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 277.09375,
-    "collapsed": true
+    "width": 277.09375
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -217,7 +216,7 @@
   "active": "0b7c49c82bac9464",
   "lastOpenFiles": [
     "Einführung KI/Content/Einführung zum Lernen.md",
-    "Einführung KI/Content/Paper-Inhaltsangabe.md",
+    "Einführung KI/Content/Hausarbeit.md",
     "Einführung KI/Notes/Notes - 11-17-2026.md",
     "Informatik/Notes/Notes - 11-19-2026.md",
     "Informatik/Notes/Notes - 11-12-2026.md",
