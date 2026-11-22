@@ -11,10 +11,14 @@
             "id": "0194c82be06a8bf3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Einführung KI/Tasks/Team-Projekt/Hausarbeit.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Hausarbeit"
             }
           }
         ]
@@ -208,12 +212,13 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "ad1498db2f8997a5",
+  "active": "0194c82be06a8bf3",
   "lastOpenFiles": [
+    "Einführung KI/Tasks/Team-Projekt/Exposé.md",
     "Excalidraw/Drawing 2026-11-22 18.59.05.excalidraw.md",
     "Excalidraw",
     "Excalidraw/Drawing 2026-11-22 18.58.43.excalidraw.md",
-    "Einführung KI/Tasks/Hausarbeit.md",
+    "Einführung KI/Tasks/Team-Projekt/Hausarbeit.md",
     "Einführung KI/Content/Einführung zum Lernen.md",
     "Einführung KI/Notes/Notes - 11-17-2026.md",
     "Informatik/Notes/Notes - 11-19-2026.md",
@@ -246,7 +251,6 @@
     "Informatik/Content/Informatik & Modelle.md",
     "Informatik/Content/Geschichte der Computer.md",
     "Mathe/Content/Basics/Mengen & Operationen.md",
-    "Informatik/Notes/Notes - 11-05-2026.md",
     "Einführung KI/Tasks",
     "Arbeitstechniken/Tasks",
     "Einführung KI/Tasks/Team-Projekt",

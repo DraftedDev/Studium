@@ -15,7 +15,7 @@
 		- *Vom Regelwerk zur statistischen Masse:* Übergang von symbolischen/regelbasierte Ansätzen zu datenhungrigen statistischen/probalistischen Verfahren (u.a. IBM-Spracherkennung, Penn Treebank, Enron-Korpus). Reduktion von Sprache & Bedeutung auf statistische Muster.
 		- *Biometrische & visuelle Archive als Vorläufer:* Vom FERET-Datensatz (mit Einwilligung) zu NIST Special Database 32 (Polizei-Mugshots ohne Einwilligung).
 		- *"Shift from Image to Infrastructure":* Wie persönliche Bilder, soziale Interaktionen & sensible Kontexte entkontextualisiert & zu scheinbar neutraler "Ground Truth" erklärt werden.
-	- **1.3 Web-Scraping, ImageNet & Ende von Consent (2 Seiten):
+	- **1.3 Web-Scraping, ImageNet & Ende von Consent (2 Seiten):**
 		- *Das Internet als natürliche Ressource:* Massenhaftes Scraping von Suchmaschinen, sozialen Netzwerken & Plattformen ohne Wissen oder Einwilligung der Betroffenen sowie verknüpft mit unterbezahlter Crowdwork (Amazon Mechanical Turk).
 		- *Fallbeispiele fehlender Einwilligung & Re-Identifikation:* DukeMTMC (unbemerkte Campus-Aufnahme & Weiternutzung), NYC Taxi-Datensatz (Deanonymisierung & "predictive privacy harms"), sowie Royal Free NHS/DeepMind (Datenschutzvertoß trotz öffentlicher/institutioneller Zwecke).
 		- *Metaphern der Extraktion & "Ethics at Arm's Length":* Rhetorik von "Data is the new oil" und Datenkapitalismus (Fourcade & Healvy, Sadowski). Warum technische/mathematische Distanz und fehlende Ethikprüfung (IRBs) schädliche Datennutzung begünstigen.
@@ -36,7 +36,7 @@
 		- *Ungleiche Blockierquoten:* Im $HEAD_{C4}$ (April 2024) trifft die Blockierung durch robots.txt OpenAI mit 25,9% der Tokens deutlich stärker als Anthropic & Common Crawl (je 13,3%), Google Extended (9,8%), Cohere (4,9%), Meta (4,1%), Internet Archive (3,2%) & Google Search (1,0%).
 		- *Bedingte Wahrscheinlichkeiten:* Ist mindestens ein AI-Anbieter blockiert, wird OpenAI in 91,5% der Fälle mitgesperrt, Common Crawl & Anthropic in 52,2% - während Internet Archive (32,3%) & Google Search (17,1%) häufiger ausgenommen bleiben (Unterscheidung KI-Training, Suche, Archivierung).
 		- *Nicht anerkannte / fiktive User-Agents:* Auftreten nicht offiziell bestätigter Agenten wie `anthropic-ai` oder `Claude-Web` (FALSE ANTHROPIC, in 4,5% der Websites blockiert, während der offizielle `ClaudeBot` teils fehlt) als Beleg für Fragmentierung & Überforderung von Domain-Betreibern.
-	- **2.4 Widersprüche zwischen robots.txt & Terms of Service sowie Protokollkritik (2 Seiten):
+	- **2.4 Widersprüche zwischen robots.txt & Terms of Service sowie Protokollkritik (2 Seiten):**
 		- *Technische vs. rechtliche Ebene:* Der Robots Exclusion Protocol (REP / robots.txt RFC 9309) ist maschinenlesbar, aber nicht rechtsverbindlich & von 1995. Terms of Service sind rechtliche Vereinbarung mit feineren Klauseln (Non-Complete, No-Re-Distribution, Non-Commercial), werden aber von Crawlern oft nicht automatisch gelesen.
 		- *Diskrepanzen & Kollisionen:* Häufige Inkosistenzen, etwa anti-crawling/anti-AI-ToS ohne robots.txt (35,1%), restriktive robots.txt ohne ToS (20,3%) oder Nicht-Kommerzklauseln mit robots.txt-Sperren, die unbeabsichtigt auch Forschung/nicht-kommerzielle Crawls treffen.
 		- *Umgehung & Ruf nach neuen Standard:* Vorwürfe, wonach Anbieter robots.txt-Opt-outs für Trainingsdaten umgehen, indem sie Inhalte zur Inferenz-/Retrieval-Zeit abrufen (z.B. ChatGPT-User vs. GPTBot oder unregistrierte Retrieval-Crawler). Forderung nach standardisierten, maschinenlesbaren Nutzungs-/Zwecksignalen statt bloßer Agenten-Listen.
