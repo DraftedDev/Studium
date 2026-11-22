@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d9b637677d9b2ac0",
+        "id": "7b87590829b1fe46",
         "type": "tabs",
         "children": [
           {
-            "id": "bcc1c4213ba59ef6",
+            "id": "0194c82be06a8bf3",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -208,8 +208,11 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "78998ea77df97dbc",
+  "active": "ad1498db2f8997a5",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-11-22 18.59.05.excalidraw.md",
+    "Excalidraw",
+    "Excalidraw/Drawing 2026-11-22 18.58.43.excalidraw.md",
     "Einführung KI/Tasks/Hausarbeit.md",
     "Einführung KI/Content/Einführung zum Lernen.md",
     "Einführung KI/Notes/Notes - 11-17-2026.md",
@@ -244,9 +247,6 @@
     "Informatik/Content/Geschichte der Computer.md",
     "Mathe/Content/Basics/Mengen & Operationen.md",
     "Informatik/Notes/Notes - 11-05-2026.md",
-    "Informatik/Content/Netzwerkarchitektur.md",
-    "Informatik/Notes/Notes - 10-29-2026.md",
-    "Excalidraw",
     "Einführung KI/Tasks",
     "Arbeitstechniken/Tasks",
     "Einführung KI/Tasks/Team-Projekt",
