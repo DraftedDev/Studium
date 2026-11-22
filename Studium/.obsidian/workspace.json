@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "2eb6258aae109c25",
+        "id": "d9b637677d9b2ac0",
         "type": "tabs",
         "children": [
           {
-            "id": "0b7c49c82bac9464",
+            "id": "bcc1c4213ba59ef6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Einführung KI/Content/Hausarbeit.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Hausarbeit"
+              "title": "New tab"
             }
           }
         ]
@@ -93,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 292.63584899902344,
-    "collapsed": true
+    "width": 292.63584899902344
   },
   "right": {
     "id": "7a3ad9e6d4410e2a",
@@ -194,8 +189,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 277.09375,
-    "collapsed": true
+    "width": 277.09375
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -214,10 +208,10 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "0b7c49c82bac9464",
+  "active": "78998ea77df97dbc",
   "lastOpenFiles": [
+    "Einführung KI/Tasks/Hausarbeit.md",
     "Einführung KI/Content/Einführung zum Lernen.md",
-    "Einführung KI/Content/Hausarbeit.md",
     "Einführung KI/Notes/Notes - 11-17-2026.md",
     "Informatik/Notes/Notes - 11-19-2026.md",
     "Informatik/Notes/Notes - 11-12-2026.md",
