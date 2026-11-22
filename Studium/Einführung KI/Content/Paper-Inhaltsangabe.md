@@ -1,4 +1,12 @@
 - Deckblatt, Verzeichnisse & Team.
 - **Block A:**
-	- 1.1 Einleitung & Fragestellung (1,5 Seiten):
-		- Leitfrage: Was bedeutet "im Internet stehen"
+	- **1.1 Einleitung & Fragestellung (1,5 Seiten):**
+		- Leitfrage: Was bedeutet "im Internet stehen" rechtlich, ethisch & technisch? "Data Commons" mit frei verfügbaren Daten in der Theorie VS. Praxis.
+		- Krawfords kartografische Perspektive (*Atlas of AI*): KI ist weder künstlich, noch intelligent, sondern eine material-, energie-, arbeits- & datenintensive Industrie ("Megamachine").
+		- Analogie (Mythe) zum menschlichen Geist.
+	- **1.2 Historische Datengier & "Image of Infrastructure" (ca. 2 Seiten):**
+		- Vom Regelwerk zur statistischen Masse: Übergang von symbolischen/regelbasierte Ansätzen zu datenhungrigen statistischen/probalistischen Verfahren (u.a. IBM-Spracherkennung, Penn Treebank, Enron-Korpus). Reduktion von Sprache & Bedeutung auf statistische Muster.
+		- Biometrische & visuelle Archive als Vorläufer: Vom FERET-Datensatz (mit Einwilligung) zu NIST Special Database 32 (Polizei-Mugshots ohne Einwilligung).
+		- "Shift from Image to Infrastructure": Wie persönliche Bilder, soziale Interaktionen & sensible Kontexte entkontextualisiert & zu scheinbar neutraler "Ground Truth" erklärt werden.
+	- **1.3 Web-Scraping, ImageNet & Ende von Consent (ca 2 Seiten):
+		- Das Internet als natürliche Ressource:
