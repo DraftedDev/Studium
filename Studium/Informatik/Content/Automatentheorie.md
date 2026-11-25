@@ -188,3 +188,32 @@ Eine *deterministische* Turing-Maschine besteht aus:
 ### Syntax & Sprache
 - **Syntax:** Die Gesamtheit der auf die Menge der Wörter $(V \cup \Sigma)^*$ wirkenden *Ableitungsregeln* heißt *Syntax*.
 - **Sprache:** Die aus dem Startsymbol $S$ in *endlich* vielen Schritten ableitbaren, nur aus *terminalen* Zeichen bestehenden Wörtern bilden die Sprache $L(G)$ einer *Grammatik* $G$.
+### Chomsky-Hierarchie
+
+| **Typ** | **Name**        | **Einschränkung**                                                                   |
+| ------- | --------------- | ----------------------------------------------------------------------------------- |
+| 0       | allgemein       | Keine                                                                               |
+| 1       | kontextsensitiv | $xAy \to xuy$ mit $x,y \in (V \cup \Sigma)^*, A \in V, u \in (V \cup \Sigma)^*$     |
+| 2       | kontextfrei     | $A \to u$ mit $A \in V, u \in (V \cup \Sigma)^+$                                    |
+| 3       | regulär         | $A \to u$ oder entweder $A \to uB$ oder $A \to Bu$ mit $A, B \in V, u \in \Sigma^+$ |
+
+| **Typ** | **Name**        | **Automat**                                                                                                                      |
+| ------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| 0       | allgemein       | Turing-Maschine                                                                                                                  |
+| 1       | kontextsensitiv | Linear beschränkte Turing Maschine, d.h. man nutzt das Band nur auf einem von der Länge des Eingabewortes beschränkten Abschnitt |
+| 2       | kontextfrei     | Nichtdeterministischer Kellerautomat                                                                                             |
+| 3       | regulär         | Endliche Automaten                                                                                                               |
+
+| **Typ** | **Name**        | **Sprache**                                                         |
+| ------- | --------------- | ------------------------------------------------------------------- |
+| 0       | allgemein       | Natürliche Sprachen (Englisch, Deutsch)                             |
+| 1       | kontextsensitiv | Übliche Programmiersprachen                                         |
+| 2       | kontextfrei     | Struktur/Syntax üblicher Programmiersprachen, z.B. ASN.1 aus OSI-RM |
+| 3       | regulär         | "reguläre Ausdrücke"                                                |
+
+| **Typ** | **Name**        | **Üblicher Analyseaufwand**  | **Softwarehilfen**         |
+| ------- | --------------- | ---------------------------- | -------------------------- |
+| 0       | allgemein       | Keine Obergrenze             | Keine                      |
+| 1       | kontextsensitiv | Kubisch & mehr zur Wortlänge | Nur für spezielle Sprachen |
+| 2       | kontextfrei     | Quadratisch zur Wortlänge    | Generatorsoftware          |
+| 3       | regulär         | Analog zur Wortlänge         | Bibliotheksfunktionen      |
