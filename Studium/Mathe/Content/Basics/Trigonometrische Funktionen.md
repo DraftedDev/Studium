@@ -46,4 +46,12 @@ $$
 Für $\alpha$ mit $\cos(\alpha) \neq 0$ ist die Lösungsmenge $\tan(x) = a$:
 => $\mathbb{L} = \{x_{0} + k \cdot \pi | k \in \mathbb{Z}\}$
 => $x_{0} = \arctan(\alpha)$
-# Additionstheoreme
+# Formeln
+$$
+\sin(-x) = -\sin(x) \\ \\
+\cos(-x) = \cos(x) \\ \\
+\sin(x \pm y) = \sin(x)\cos(y) \pm \sin(y)\cos(x) \\ \\
+\cos(x \pm y) = \cos(x)\cos(y) \mp \sin(x)\sin(y) \\ \\
+\tan(x \pm y) = \frac{\tan(x) \pm \tan(y)}{1 \mp \tan(x) \cdot \tan(y)}
+$$
+
