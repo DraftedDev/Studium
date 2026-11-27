@@ -4,6 +4,12 @@
 => $f_{1}(\alpha) = \cos(\alpha)$ ist die x-Koordinate des Punktes $(x,y)$ auf dem Einheitskreis.
 => $f_{2}(\alpha)=\sin(\alpha)$ ist die y-Koordinate des Punktes $(x,y)$ auf dem Einheitskreis.
 # Eigenschaften
+
+| **x**   | $0$ | $\frac{\pi}{2}$ | $\pi$ | $\frac{3\pi}{2}$ | $2\pi$ |
+| ------- | --- | --------------- | ----- | ---------------- | ------ |
+| **cos** | 1   | 0               | -1    | 0                | 1      |
+| **sin** | 0   | 1               | 0     | -1               | 0      |
+
 $W = [-1;1]$, Periode $2\pi=360\degree$; $\sin(0)=0$; $\cos(0)=1$
 $\sin\left( x+\frac{\pi}{2} \right)=\cos(x)$
 => $\cos(x)$ ist achsensymmetrisch zur y-Achse; $\cos(-x)=\cos(x)$
@@ -25,10 +31,19 @@ $\sin\left( x+\frac{\pi}{2} \right)=\cos(x)$
 ## Sinus
 Für $\alpha \in [-1;1]$, $x_{0} = \arcsin(\alpha) \in \left[ -\frac{\pi}{2}; \frac{\pi}{2} \right]$ ist die Lösungsmenge $\sin(x)=a$:
 => $\mathbb{L} = \{x_{0} + k \cdot 2 \pi | k \in \mathbb{Z}\} \cup \{\pi - x_{0} + k \cdot 2 \pi | k \in \mathbb{Z}\}$
+### Sinussatz
+$$
+\frac{\sin(\alpha)}{a} = \frac{\sin(\beta)}{b} = \frac{\sin(\gamma)}{c}
+$$
 ## Cosinus
 Für $\alpha \in [-1;1]$, $x_{0} = \arccos(\alpha) \in [0;\pi]$ ist die Lösungsmenge $\cos(x)=a$:
 => $\mathbb{L} = \{\pm x_{0} + k \cdot 2 \pi | k \in \mathbb{Z}\}$
+### Cosinussatz
+$$
+a^2 + b^2 - 2 \cdot a \cdot b \cdot \cos (\gamma) = c^2
+$$
 ## Tangens
 Für $\alpha$ mit $\cos(\alpha) \neq 0$ ist die Lösungsmenge $\tan(x) = a$:
 => $\mathbb{L} = \{x_{0} + k \cdot \pi | k \in \mathbb{Z}\}$
 => $x_{0} = \arctan(\alpha)$
+# Additionstheoreme
