@@ -76,8 +76,9 @@ $$
 \log_{a}(x) = \frac{\ln(x)}{\ln(a)}
 $$
 # Funktionswerte & Stetigkeit
-## Definition
-Falls für jede Folge $(x_{n})$ mit $\lim_{ n \to \infty }(x_{n})=a$, $x_{n} \in D_{f}$,
+**1):** Falls für jede Folge $(x_{n})$ mit $\lim_{ n \to \infty }(x_{n})=a$, $x_{n} \in D_{f}$,
 gilt: $\lim_{ n \to \infty }(f(x_{n})) = b$, schreibe $\lim_{ x \to a }(f(x)) = b$ der "Funktionswert", sonst existiert er nicht.
 
-$$
+**2):** Falls:
+- **1)** mit $x_{n} > a: \quad \lim_{ x \to a^+ }(f(x)) = b$
+- **1)** mit $x_{n} < a: \quad \lim_{ x \to a^- }(f(x)) = b$

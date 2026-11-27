@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mathe/Content/Basics/Reelle Funktionen.md",
+                "file": "Mathe/Content/Differentialrechnung.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Reelle Funktionen"
+              "title": "Differentialrechnung"
             }
           }
         ]
@@ -217,6 +217,7 @@
   "active": "fb9fd48ce24425ee",
   "lastOpenFiles": [
     "Mathe/Content/Basics/Reelle Funktionen.md",
+    "Mathe/Content/Differentialrechnung.md",
     "Mathe/Content/Basics/Ungleichungen & Beträge.md",
     "Mathe/Content/Basics/Trigonometrische Funktionen.md",
     "Mathe/Formelsammlung.pdf",
